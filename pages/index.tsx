@@ -1,43 +1,64 @@
+"use client";
+
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function Home() {
+  const router = useRouter();
+  const [isExiting, setIsExiting] = useState(false);
+
+  const handleClick = () => {
+    setIsExiting(true);
+    setTimeout(() => {
+      router.push("/homepage");
+    }, 600);
+  };
+
   return (
-    <main className="relative min-h-screen flex items-center justify-center">
-      {/* Background Video */}
+    <main className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/Tribes2.mp4" // place Tribes2.mp4 in /public
+        src="/Tribes2.mp4"
         autoPlay
         loop
         muted
         playsInline
       />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-2">
-          11 Tribes of Davao City
-        </h1>
-        <p className="text-white text-sm md:text-lg mb-6">
-          A journey into the heart of culture and tradition
-        </p>
-        <div className="flex items-center justify-center">
-          <button className="group relative px-20 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-green-500 to-red-500 overflow-hidden flex items-center justify-center hover:opacity-90 transition">
-            {/* Text */}
-            <span className="transform transition-transform duration-300 group-hover:-translate-x-3">
-              Enter
-            </span>
-
-            {/* Arrow icon */}
-            <HiArrowNarrowRight
-              className="absolute right-10 opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
-              size={20}
-            />
-          </button>
-        </div>
-      </div>
+      <AnimatePresence>
+        {!isExiting && (
+          <motion.div
+            className="relative z-10 text-center px-4"
+            initial={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2">
+              11 Tribes of Davao City
+            </h1>
+            <p className="text-white text-sm md:text-lg mb-6">
+              A journey into the heart of culture and tradition
+            </p>
+            <div className="flex items-center justify-center">
+              <button
+                onClick={handleClick}
+                className="group relative px-20 py-3 rounded-full text-white font-semibold bg-bgTour overflow-hidden flex items-center justify-center hover:bg-hoverTour transition"
+              >
+                <span className="transform transition-transform duration-300 group-hover:-translate-x-3">
+                  Enter
+                </span>
+                <HiArrowNarrowRight
+                  className="absolute right-10 opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
+                  size={20}
+                />
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   );
 }

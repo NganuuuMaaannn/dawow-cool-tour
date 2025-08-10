@@ -25,7 +25,9 @@ const config: Config = {
         baseColor: '#5c2928',
         hoverColor: "#723d3c",
         ecColor1: "#41B3A2",
-        ecColor2: "#0D7C66"
+        ecColor2: "#0D7C66",
+        bgTour: "#508D4E",
+        hoverTour: "#1A5319"
       },
     },
   },
