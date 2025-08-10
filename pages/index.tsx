@@ -1,21 +1,19 @@
-import Image from "next/image";
-import tribesBg from "../image/Tribes.png";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen flex items-center justify-center">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={tribesBg}
-          alt="11 Tribes of Davao City"
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-      </div>
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/Tribes2.mp4" // place Tribes2.mp4 in /public
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4">
@@ -32,7 +30,7 @@ export default function Home() {
               Enter
             </span>
 
-            {/* Arrow icon (absolute so it doesn't affect text centering) */}
+            {/* Arrow icon */}
             <HiArrowNarrowRight
               className="absolute right-10 opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
               size={20}
