@@ -12,7 +12,7 @@ export default function Home() {
   const handleClick = () => {
     setIsExiting(true);
     setTimeout(() => {
-      router.push("/homepage");
+      router.push("/mainPage");
     }, 600);
   };
 
