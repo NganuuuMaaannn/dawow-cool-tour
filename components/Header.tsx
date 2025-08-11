@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="top-0 left-0 w-full bg-bgTour ">
+      <header className="fixed top-0 left-0 w-full bg-bgTour z-50">
         <div className="mx-auto max-w-6xl bg-bgTour px-4 lg:px-2 flex items-center justify-between py-4">
           <div
             onClick={() => router.push("/")}
@@ -55,11 +55,11 @@ export default function Header() {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed top-16 right-4 bg-white text-black rounded-lg shadow-lg z-30 p-4 space-y-2 md:hidden">
+        <div className="fixed top-16 right-4 bg-white text-black rounded-lg shadow-lg z-[60] p-4 space-y-2 md:hidden">
           <button
             onClick={() => {
               setIsMenuOpen(false);
-              router.push("/homepage");
+              router.push("/mainPage");
             }}
             className="block w-full text-left px-4 py-2 rounded-lg hover:bg-gray-200"
           >
@@ -68,7 +68,7 @@ export default function Header() {
           <button
             onClick={() => {
               setIsMenuOpen(false);
-              router.push("/about");
+              router.push("/aboutTribes");
             }}
             className="block w-full text-left px-4 py-2 rounded-lg hover:bg-gray-200"
           >
@@ -77,7 +77,7 @@ export default function Header() {
           <button
             onClick={() => {
               setIsMenuOpen(false);
-              router.push("/tradition-culture");
+              router.push("/traditionAndCulture");
             }}
             className="block w-full text-left px-4 py-2 rounded-lg hover:bg-gray-200"
           >

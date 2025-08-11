@@ -10,7 +10,7 @@ export default function HomePage() {
 
   const handleClick = () => {
     setTimeout(() => {
-      router.push("/homepage");
+      router.push("/aboutTribes");
     }, 600);
   };
 
@@ -30,11 +30,8 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="absolute top-0 left-0 w-full h-full">
-        <div className="h-[35vh] lg:h-[50vh] bg-bgTour"></div>
-      </div>
 
-      <div className="relative flex flex-col items-center justify-start pt-10 gap-1 px-2">
+      <div className="flex flex-col items-center justify-start pt-20 gap-1 px-2">
         <div className="flex flex-col items-center w-full max-w-6xl">
           <div className="relative w-full">
             <Image
