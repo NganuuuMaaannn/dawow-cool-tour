@@ -14,13 +14,7 @@ export default function Page1() {
           <Image
             src={ataManobo}
             alt="11 Tribes of Davao City"
-            className="
-              rounded-lg shadow-lg object-cover
-              w-full max-w-[400px]  // default mobile size
-              sm:max-w-[500px]      // slightly bigger on small tablets
-              md:max-w-[600px]      // desktop size
-              h-auto
-            "
+            className="rounded-lg shadow-lg object-cover lg:w-full max-w-[600px] h-auto"
             priority
           />
         </div>
@@ -61,13 +55,7 @@ export default function Page1() {
           <Image
             src={ataManobo2}
             alt="11 Tribes of Davao City"
-            className="
-              rounded-lg shadow-lg object-cover
-              w-full max-w-[400px]  // default mobile size
-              sm:max-w-[500px]      // slightly bigger on small tablets
-              md:max-w-[600px]      // desktop size
-              h-auto
-            "
+            className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
           />
         </div>
@@ -78,13 +66,7 @@ export default function Page1() {
           <Image
             src={ataManobo3}
             alt="11 Tribes of Davao City"
-            className="
-              rounded-lg shadow-lg object-cover
-              w-full max-w-[400px]  // default mobile size
-              sm:max-w-[500px]      // slightly bigger on small tablets
-              md:max-w-[600px]      // desktop size
-              h-auto
-            "
+            className="rounded-lg shadow-lg object-cover lg:w-full max-w-[600px] h-auto"
             priority
           />
         </div>
