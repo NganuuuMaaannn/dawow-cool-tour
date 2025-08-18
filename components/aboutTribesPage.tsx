@@ -6,12 +6,12 @@ import aboutTribesPic from "../image/mainpage.jpg";
 export default function aboutTribesPage() {
   return (
     <>
-      <section className="max-w-4xl mx-auto px-4 py-12 flex flex-col items-center gap-8 mt-14 lg:mt-20">
+      <section className="max-w-6xl mx-auto px-4 py-12 flex flex-col items-center gap-8 mt-14 lg:mt-15">
         <div className="w-full flex justify-center">
           <Image
             src={aboutTribesPic}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover w-full max-w-[1000px] h-auto"
+            className="rounded-lg shadow-lg object-cover w-full max-w-[1500px] h-auto"
             priority
           />
         </div>

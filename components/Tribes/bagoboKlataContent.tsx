@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import ataManobo from "../../image/AtaManobo.jpg";
-import ataManobo2 from "../../image/AtaManobo2.png";
-import ataManobo3 from "../../image/AtaManobo3.jpg";
+import ataManobo from "../../image/Tribu-Klata.jpg";
+import ataManobo2 from "../../image/Tribu-Klata2.jpg";
+import ataManobo3 from "../../image/Tribu-Klata3.jpg";
 
 export default function Page1() {
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
@@ -102,6 +102,15 @@ export default function Page1() {
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-lg leading-relaxed text-justify">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
+            per conubia nostra inceptos himenaeos.
+          </p>
+          <p className="text-lg leading-relaxed text-justify mt-5">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
             faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
             pretium tellus duis convallis. Tempus leo eu aenean sed diam urna

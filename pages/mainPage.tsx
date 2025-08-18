@@ -8,12 +8,10 @@ export default function mainPage() {
   return (
     <div className="flex flex-col min-h-screen bg-bgLogin relative">
       
-      {/* Background Section */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
-        <div className="h-[35vh] lg:h-[50vh] bg-bgTour"></div>
+        <div className="h-[35vh] lg:h-[50vh] bg-gradient-to-b from-green-500 from-20% via-lime-400 via-60% to-yellow-300 to-90%"></div>
       </div>
 
-      {/* Content */}
       <Header />
       <main className="flex-grow">
         <MainContent />
