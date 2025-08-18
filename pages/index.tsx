@@ -36,8 +36,8 @@ export default function Home() {
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2">
-              11 Tribes of Davao City
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-2">
+              DaWow Cool Tour
             </h1>
             <p className="text-white text-sm md:text-lg mb-6">
               A journey into the heart of culture and tradition

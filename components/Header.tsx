@@ -11,15 +11,15 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-bgTour z-50">
-        <div className="mx-auto max-w-6xl bg-bgTour px-4 lg:px-2 flex items-center justify-between py-4">
+      <header className="fixed top-0 left-0 w-full bg-green-500 z-50">
+        <div className="mx-auto max-w-6xl bg-green-500 px-4 lg:px-2 flex items-center justify-between py-4">
           <div
             onClick={() => router.push("/")}
             className="text-lg text-white font-bold tracking-wide leading-tight cursor-pointer hover:opacity-80 hover:scale-105 transition-transform duration-200 block"
           >
-            11 TRIBES
+            DaWow
             <br />
-            <span className="text-sm font-normal">of Davao City</span>
+            <span className="text-sm font-normal">Cool Tour</span>
           </div>
 
           <nav className="hidden md:flex space-x-4">

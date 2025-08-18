@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -7,6 +8,7 @@ import mainpageImage from "../image/mainpage.jpg";
 
 export default function HomePage() {
   const router = useRouter();
+  const [selectedTribe, setSelectedTribe] = useState<string | null>(null);
 
   const handleClick = () => {
     setTimeout(() => {
@@ -14,9 +16,16 @@ export default function HomePage() {
     }, 600);
   };
 
+  const handleTribeClick = (link: string, name: string) => {
+    setSelectedTribe(name);
+    setTimeout(() => {
+      router.push(link);
+    }, 600);
+  };
+
   const tribes = [
     { name: "Ata Manobo", img: "/images/AtaManobo.png", link: "/tribes/ataManobo" },
-    { name: "Bagobo-Klata", img: "/images/bagobo-klata.png", link: "/tribes/bagobo-klata" },
+    { name: "Bagobo-Klata", img: "/images/bagobo-klata.png", link: "/tribes/bagoboKlata" },
     { name: "Bagobo-Tagabawa", img: "/images/bagobo-tagabawa.png", link: "/tribes/bagobo-tagabawa" },
     { name: "Obu Manuvu", img: "/images/obuManuvu.png", link: "/tribes/obu-manuvu" },
     { name: "Matigsalog", img: "/images/matigsalog.png", link: "/tribes/matigsalog" },
@@ -30,7 +39,6 @@ export default function HomePage() {
 
   return (
     <>
-
       <div className="flex flex-col items-center justify-start pt-20 gap-1 px-2">
         <div className="flex flex-col items-center w-full max-w-6xl">
           <div className="relative w-full">
@@ -61,8 +69,12 @@ export default function HomePage() {
           {tribes.map((tribe, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center cursor-pointer group"
-              onClick={() => router.push(tribe.link)}
+              className={`flex flex-col items-center cursor-pointer group transition-all duration-500 ${
+                selectedTribe === tribe.name
+                  ? "scale-110 opacity-0"
+                  : "opacity-100"
+              }`}
+              onClick={() => handleTribeClick(tribe.link, tribe.name)}
               style={{ flex: "0 0 calc(25% - 1.5rem)" }}
             >
               <div className="w-40 h-40 sm:w-48 sm:h-48 overflow-hidden rounded-lg shadow-md">
