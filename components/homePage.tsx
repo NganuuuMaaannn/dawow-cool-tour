@@ -25,16 +25,16 @@ export default function HomePage() {
 
   const tribes = [
     { name: "Ata Manobo", img: "/images/AtaManobo.png", link: "/tribes/ataManobo" },
-    { name: "Bagobo-Klata", img: "/images/bagobo-klata.png", link: "/tribes/bagoboKlata" },
-    { name: "Bagobo-Tagabawa", img: "/images/bagobo-tagabawa.png", link: "/tribes/bagobo-tagabawa" },
-    { name: "Obu Manuvu", img: "/images/obuManuvu.png", link: "/tribes/obu-manuvu" },
-    { name: "Matigsalog", img: "/images/matigsalog.png", link: "/tribes/matigsalog" },
-    { name: "Tausug", img: "/images/tausug.png", link: "/tribes/tausug" },
-    { name: "Sama", img: "/images/sama.png", link: "/tribes/sama" },
+    { name: "Bagobo - Klata", img: "/images/bagobo-klata.png", link: "/tribes/bagoboKlata" },
+    { name: "Bagobo - Tagabawa", img: "/images/bagobo-tagabawa.png", link: "/tribes/bagoboTagabawa" },
+    { name: "Bangsa - Kagan", img: "/images/kagan.png", link: "/tribes/bangsaKagan" },
+    { name: "Bangsa - Sama", img: "/images/sama.png", link: "/tribes/bangsaSama" },
     { name: "Iranun", img: "/images/iranun.png", link: "/tribes/iranun" },
     { name: "Maguindanaon", img: "/images/maguindanaon.png", link: "/tribes/maguindanaon" },
     { name: "Maranao", img: "/images/maranao.png", link: "/tribes/maranao" },
-    { name: "Kagan", img: "/images/kagan.png", link: "/tribes/kagan" },
+    { name: "Matigsalog", img: "/images/matigsalog.png", link: "/tribes/matigsalog" },
+    { name: "Ovu Manuvu", img: "/images/obuManuvu.png", link: "/tribes/ovuManuvu" },
+    { name: "Taosug", img: "/images/tausug.png", link: "/tribes/taosug" },
   ];
 
   return (

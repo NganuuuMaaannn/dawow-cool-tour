@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import ataManobo from "../../image/AtaManobo.jpg";
-import ataManobo2 from "../../image/AtaManobo2.png";
+import ataManobo2 from "../../image/AtaManobo2.jpg";
 import ataManobo3 from "../../image/AtaManobo3.jpg";
 
 export default function Page1() {
@@ -39,17 +39,17 @@ export default function Page1() {
             <Image
               src={fullscreenImage}
               alt="Fullscreen Image"
-              className="rounded-lg shadow-xl object-contain w-full max-h-[60vh] sm:max-h-[70vh]"
+              className="rounded-lg shadow-xl object-contain w-full max-h-[30vh] sm:max-h-[70vh]"
               width={800}
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-white leading-relaxed text-justify">
+            <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
             <button
-              className="absolute lg:top-7 lg:right-7 top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full lg:px-3 lg:py-2 px-3 py-2 text-sm text-lg"
+              className="absolute lg:top-7 lg:right-7 top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full lg:px-3 lg:py-1 px-3 py-1 text-lg"
               onClick={closeFullscreen}
             >
               ✕
@@ -69,7 +69,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo.src,
-              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+              "The Ata call the house they have constructed inside the tribal village as Binanwa. This is an exact replica of the houses you can find in the Paquibato District in Davao City. Here you can see how authentic and simple their daily living is, especially livelihood products that made them survive every day."
             )
           }
         >
@@ -83,13 +83,10 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Ata Manobo</h2>
           <p className="text-lg leading-relaxed text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-            per conubia nostra inceptos himenaeos.
+            The Ata call the house they have constructed inside the tribal village as Binanwa. 
+            This is an exact replica of the houses you can find in the Paquibato District in Davao City. 
+            Here you can see how authentic and simple their daily living is, especially livelihood products 
+            that made them survive every day.
           </p>
         </div>
       </section>
@@ -102,13 +99,16 @@ export default function Page1() {
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-lg leading-relaxed text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-            per conubia nostra inceptos himenaeos.
+            Inhabit the highlands of Davao City and Bukidnon, known for their affinity with mountainous landscapes. 
+            Their name, Ata, reflects their high-elevation settlement. Organized through kinship ties and led by a Datu, selected via customs of age and status.
+            Farming combines slash-and-burn (shifting cultivation) and terraced rice fields. Spiritually guided by a Baylan (healer/diviner) and observance of 
+            rituals like panubad, a thanksgiving at planting season’s end. Marriage typically arranged, with bride price and negotiated polygyny under strict terms. 
+            Traditional justice through mediation and customary law, including conflict rituals like &apos;sPangayaw&apos;s.
+          </p>
+          <p className="text-lg leading-relaxed text-justify mt-5">
+            Experience cultural and land displacement pressures, often targeted by logging and corporate agriculture. A local community group, LIPI Inc., actively 
+            protects their traditions and homeland. Communicate in the Ata-Manobo language (ISO code atd) with around 38,000 speakers; the New Testament was being 
+            translated in oral form to preserve their culture.
           </p>
         </div>
         <div
@@ -116,7 +116,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo2.src,
-              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+              "Inhabit the highlands of Davao City and Bukidnon, known for their affinity with mountainous landscapes. Their name, Ata, reflects their high-elevation settlement. Organized through kinship ties and led by a Datu, selected via customs of age and status. Farming combines slash-and-burn (shifting cultivation) and terraced rice fields. Spiritually guided by a Baylan (healer/diviner) and observance of rituals like panubad, a thanksgiving at planting season’s end. Marriage typically arranged, with bride price and negotiated polygyny under strict terms. Traditional justice through mediation and customary law, including conflict rituals like 'Pangayaw'. Experience cultural and land displacement pressures, often targeted by logging and corporate agriculture. A local community group, LIPI Inc., actively protects their traditions and homeland. Communicate in the Ata-Manobo language (ISO code atd) with around 38,000 speakers; the New Testament was being translated in oral form to preserve their culture."
             )
           }
         >
@@ -140,7 +140,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo3.src,
-              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+              "Authentic Indigenous Architecture – Handcrafted with bamboo and nipa, reflecting the Ata tribe’s rich cultural heritage. Eco-Friendly & Sustainable – Built from locally sourced, natural materials. Immersive Cultural Experience – Learn about Ata traditions, beliefs, and craftsmanship. Nature-Connected Living Experience fresh air and the soothing sound of nature in this traditional home."
             )
           }
         >
@@ -153,13 +153,10 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <p className="text-lg leading-relaxed text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-            per conubia nostra inceptos himenaeos.
+            Authentic Indigenous Architecture – Handcrafted with bamboo and nipa, reflecting the Ata tribe’s rich cultural heritage. 
+            Eco-Friendly & Sustainable – Built from locally sourced, natural materials. Immersive Cultural Experience – Learn 
+            about Ata traditions, beliefs, and craftsmanship. Nature-Connected Living Experience fresh air and the soothing sound of 
+            nature in this traditional home.
           </p>
         </div>
       </section>

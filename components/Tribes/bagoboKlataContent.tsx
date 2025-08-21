@@ -44,12 +44,12 @@ export default function Page1() {
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-white leading-relaxed text-justify">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
             <button
-              className="absolute lg:top-7 lg:right-7 top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full lg:px-3 lg:py-2 px-3 py-2 text-sm text-lg"
+              className="absolute lg:top-7 lg:right-7 top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full lg:px-3 lg:py-1 px-3 py-1 text-lg"
               onClick={closeFullscreen}
             >
               ✕
@@ -69,7 +69,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo.src,
-              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+              "Compared to the house that was built here several years ago, they added a typical Bagobo-Klata's kitchen and storage room. Inside you can also see some of their things that were translated from English to Tagalog to the Klata language."
             )
           }
         >
@@ -81,15 +81,10 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Ata Manobo</h2>
+          <h2 className="text-3xl font-bold mb-4">Bagobo - Klata</h2>
           <p className="text-lg leading-relaxed text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-            per conubia nostra inceptos himenaeos.
+            Compared to the house that was built here several years ago, they added a typical Bagobo-Klata&apos;s kitchen and storage room. 
+            Inside you can also see some of their things that were translated from English to Tagalog to the Klata language.
           </p>
         </div>
       </section>
@@ -102,22 +97,19 @@ export default function Page1() {
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-lg leading-relaxed text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-            per conubia nostra inceptos himenaeos.
+            Reside near Mount Apo and speak Klata (Giangan), a unique Southern Philippine language. Their ancestry worship includes 
+            Apo Sandawa (the mountain’s king) and the Philippine eagle, revered in their spiritual beliefs. Ancestral lands span 
+            thousands of hectares, pivotal as watersheds for over 1.7 million Davao residents. Face threats from land grabs by 
+            religious sects and large plantations. Indigenous sustainable farming includes abaca, root crops, coffee, and planting 
+            native trees to prevent landslides.
+
           </p>
           <p className="text-lg leading-relaxed text-justify mt-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-            per conubia nostra inceptos himenaeos.
+            Deep-rooted beadwork, textiles, and vivid headgear reflect rich artistry and ceremonial use. Maintain tribal schools 
+            teaching language, songs, instruments, and dances to younger generations. Their governance relies on Datus, with traditional 
+            conflict resolution through reconciliation and mediation. Their art includes ritual dances like Bagobo Rice Cycle, celebrating 
+            agriculture and harvest.
+
           </p>
         </div>
         <div
@@ -125,7 +117,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo2.src,
-              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+              "Reside near Mount Apo and speak Klata (Giangan), a unique Southern Philippine language. Their ancestry worship includes Apo Sandawa (the mountain’s king) and the Philippine eagle, revered in their spiritual beliefs. Ancestral lands span thousands of hectares, pivotal as watersheds for over 1.7 million Davao residents. Face threats from land grabs by religious sects and large plantations. Indigenous sustainable farming includes abaca, root crops, coffee, and planting native trees to prevent landslides. Deep-rooted beadwork, textiles, and vivid headgear reflect rich artistry and ceremonial use. Maintain tribal schools teaching language, songs, instruments, and dances to younger generations. Their governance relies on Datus, with traditional conflict resolution through reconciliation and mediation. Their art includes ritual dances like Bagobo Rice Cycle, celebrating agriculture and harvest."
             )
           }
         >
@@ -149,7 +141,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo3.src,
-              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+              "Language and culture face erosion as youth increasingly lose mastery of Klata. Cultural Masterpiece – Showcasing the unique craftsmanship of the Bagobo tribe. Authentic Design – Made from bamboo and woven nipa, preserving traditional architecture. Cultural Immersion – Discover the tribe’s artistry, weaving, and warm hospitality. Nature-Inspired Living – Blends seamlessly with lush surroundings for a serene escape."
             )
           }
         >
@@ -162,13 +154,10 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <p className="text-lg leading-relaxed text-justify">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-            per conubia nostra inceptos himenaeos.
+            Language and culture face erosion as youth increasingly lose mastery of Klata. Cultural Masterpiece – Showcasing 
+            the unique craftsmanship of the Bagobo tribe. Authentic Design – Made from bamboo and woven nipa, preserving 
+            traditional architecture. Cultural Immersion – Discover the tribe’s artistry, weaving, and warm hospitality. Nature-Inspired 
+            Living – Blends seamlessly with lush surroundings for a serene escape.
           </p>
         </div>
       </section>

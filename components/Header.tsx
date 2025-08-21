@@ -11,8 +11,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-green-500 z-50">
-        <div className="mx-auto max-w-6xl bg-green-500 px-4 lg:px-2 flex items-center justify-between py-4">
+      <header className="fixed top-0 left-0 w-full bg-bgTour z-50">
+        <div className="mx-auto max-w-6xl bg-bgTour px-4 lg:px-2 flex items-center justify-between py-4">
           <div
             onClick={() => router.push("/")}
             className="text-lg text-white font-bold tracking-wide leading-tight cursor-pointer hover:opacity-80 hover:scale-105 transition-transform duration-200 block"
@@ -36,7 +36,7 @@ export default function Header() {
               About 11 Tribes
             </button>
             <button
-              onClick={() => router.push("/traditionAndCulture")}
+              onClick={() => router.push("/visitUs")}
               className="text-lg px-4 py-2 border-gray-300 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
             >
               Tradition & Culture
@@ -72,16 +72,16 @@ export default function Header() {
             }}
             className="block w-full text-left px-4 py-2 rounded-lg hover:bg-gray-200"
           >
-            About
+            About 11 Tribes
           </button>
           <button
             onClick={() => {
               setIsMenuOpen(false);
-              router.push("/traditionAndCulture");
+              router.push("/visitUs");
             }}
             className="block w-full text-left px-4 py-2 rounded-lg hover:bg-gray-200"
           >
-            Tradition & Culture
+            Visit Us!
           </button>
         </div>
       )}
