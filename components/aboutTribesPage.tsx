@@ -1,12 +1,22 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import aboutTribesPic from "../image/mainpage.jpg";
 
 export default function AboutTribesPage() {
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setIsVisible(true), 100);
+  }, []);
+
   return (
     <>
-      <section className="max-w-6xl mx-auto px-4 py-12 flex flex-col items-center gap-12 mt-14 lg:mt-15">
+      <section 
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col items-center gap-12 mt-14 lg:mt-15 transition-all duration-700 ease-out ${
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+        }`}
+      >
         <div className="w-full flex justify-center">
           <Image
             src={aboutTribesPic}

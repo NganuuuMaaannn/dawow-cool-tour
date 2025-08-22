@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -9,6 +9,11 @@ import mainpageImage from "../image/mainpage.jpg";
 export default function HomePage() {
   const router = useRouter();
   const [selectedTribe, setSelectedTribe] = useState<string | null>(null);
+
+  const [isVisible, setIsVisible] = useState(false);
+  useEffect(() => {
+    setTimeout(() => setIsVisible(true), 100);
+  }, []);
 
   const handleClick = () => {
     setTimeout(() => {
@@ -39,7 +44,11 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-start pt-20 gap-1 px-2">
+      <div 
+        className={`flex flex-col items-center justify-start pt-20 gap-1 px-2 transition-all duration-700 ease-out ${
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+        }`}
+      >
         <div className="flex flex-col items-center w-full max-w-6xl">
           <div className="relative w-full">
             <Image
