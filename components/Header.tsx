@@ -15,7 +15,7 @@ export default function Header() {
         <div className="mx-auto max-w-6xl bg-bgTour px-4 lg:px-2 flex items-center justify-between py-4">
           <div
             onClick={() => router.push("/")}
-            className="text-lg text-white font-bold tracking-wide leading-tight cursor-pointer hover:opacity-80 hover:scale-105 transition-transform duration-200 block"
+            className="text-lg text-white font-bold tracking-wide leading-tight cursor-pointer hover:scale-105 transition-transform duration-200 block"
           >
             DaWow
             <br />
@@ -39,7 +39,7 @@ export default function Header() {
               onClick={() => router.push("/visitUs")}
               className="text-lg px-4 py-2 border-gray-300 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
             >
-              Tradition & Culture
+              Visit Us!
             </button>
           </nav>
 
