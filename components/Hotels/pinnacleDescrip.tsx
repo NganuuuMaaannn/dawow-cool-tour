@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { HiArrowNarrowRight } from "react-icons/hi";
+import { HiArrowNarrowLeft } from "react-icons/hi";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import hotel1 from "@/image/pinnacle1.jpg";
@@ -36,13 +36,13 @@ export default function PinnacleDescription() {
               onClick={handleClick}
               className="relative group px-6 sm:px-8 py-2 sm:py-3 rounded-full text-white font-semibold bg-bgTour overflow-hidden flex items-center justify-center hover:bg-hoverTour transition"
             >
-              <span className="transform transition-transform duration-300 group-hover:-translate-x-3">
-                Back
-              </span>
-              <HiArrowNarrowRight
-                className="absolute right-3 opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
+              <HiArrowNarrowLeft
+                className="absolute left-3 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
                 size={20}
               />
+              <span className="transform transition-transform duration-300 group-hover:translate-x-3">
+                Back
+              </span>
             </button>
           </div>
 
