@@ -1,7 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
-import AtaManoboContent from "@/components/Tribes/taosugContent";
+import AtaManoboContent from "@/components/Tribes/tausugContent";
 import Footer from "@/components/Footer";
 
 export default function Page1() {

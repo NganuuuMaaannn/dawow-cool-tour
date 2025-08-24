@@ -29,17 +29,17 @@ export default function HomePage() {
   };
 
   const tribes = [
-    { name: "Ata Manobo", img: "/images/AtaManobo.jpg", link: "/tribes/ataManobo" },
-    { name: "Bagobo - Klata", img: "/images/bagobo-klata.jpg", link: "/tribes/bagoboKlata" },
-    { name: "Bagobo - Tagabawa", img: "/images/bagobo-tagabawa.jpg", link: "/tribes/bagoboTagabawa" },
-    { name: "Matigsalog", img: "/images/matigsalog.jpg", link: "/tribes/matigsalog" },
-    { name: "Ovu Manuvu", img: "/images/obuManuvu.jpg", link: "/tribes/ovuManuvu" },
-    { name: "Iranun", img: "/images/iranun.jpg", link: "/tribes/iranun" },
-    { name: "Bangsa - Kagan", img: "/images/kagan.jpg", link: "/tribes/bangsaKagan" },
-    { name: "Maguindanaon", img: "/images/maguindanaon.jpg", link: "/tribes/maguindanaon" },
-    { name: "Maranao", img: "/images/maranao.jpg", link: "/tribes/maranao" },
-    { name: "Bangsa - Sama", img: "/images/sama.jpg", link: "/tribes/bangsaSama" },
-    { name: "Taosug", img: "/images/tausug.jpg", link: "/tribes/taosug" },
+    { name: "Ata Manobo", img: "/images/AtaManobo.png", link: "/tribes/ataManobo" },
+    { name: "Bagobo - Klata", img: "/images/bagobo-klata.png", link: "/tribes/bagoboKlata" },
+    { name: "Bagobo - Tagabawa", img: "/images/bagobo-tagabawa.png", link: "/tribes/bagoboTagabawa" },
+    { name: "Matigsalog", img: "/images/matigsalog.png", link: "/tribes/matigsalog" },
+    { name: "Ovu Manuvu", img: "/images/obuManuvu.png", link: "/tribes/ovuManuvu" },
+    { name: "Iranun", img: "/images/iranun.png", link: "/tribes/iranun" },
+    { name: "Bangsa - Kagan", img: "/images/kagan.png", link: "/tribes/bangsaKagan" },
+    { name: "Maguindanaon", img: "/images/maguindanaon.png", link: "/tribes/maguindanaon" },
+    { name: "Maranao", img: "/images/maranao.png", link: "/tribes/maranao" },
+    { name: "Bangsa - Sama", img: "/images/sama.png", link: "/tribes/bangsaSama" },
+    { name: "Tausug", img: "/images/tausug.png", link: "/tribes/tausug" },
   ];
 
   return (
