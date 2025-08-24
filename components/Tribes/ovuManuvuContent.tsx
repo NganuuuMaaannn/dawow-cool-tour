@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import ataManobo from "../../image/ovuManuvu.jpg";
 import ataManobo2 from "../../image/ovuManuvu2.jpg";
-import ataManobo3 from "../../image/ovuManuvu3.jpg";
+import ataManobo3 from "../../image/ovuManuvu3.png";
 
 export default function Page1() {
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
