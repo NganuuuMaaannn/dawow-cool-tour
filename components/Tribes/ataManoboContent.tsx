@@ -69,7 +69,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo.src,
-              "The Ata call the house they have constructed inside the tribal village as Binanwa. This is an exact replica of the houses you can find in the Paquibato District in Davao City. Here you can see how authentic and simple their daily living is, especially livelihood products that made them survive every day."
+              "The Ata call the house they have constructed inside the tribal village as Binanwa. This is an exact replica of the houses you can find in the Paquibato District in Davao City. Here you can see how authentic and simple their daily living is, especially livelihood products that made them survive every day. Inhabit the highlands of Davao City and Bukidnon, known for their affinity with mountainous landscapes. Their name, Ata, reflects their high-elevation settlement."
             )
           }
         >
@@ -86,7 +86,8 @@ export default function Page1() {
             The Ata call the house they have constructed inside the tribal village as Binanwa. 
             This is an exact replica of the houses you can find in the Paquibato District in Davao City. 
             Here you can see how authentic and simple their daily living is, especially livelihood products 
-            that made them survive every day.
+            that made them survive every day. Inhabit the highlands of Davao City and Bukidnon, known for 
+            their affinity with mountainous landscapes. Their name, Ata, reflects their high-elevation settlement.
           </p>
         </div>
       </section>
@@ -99,16 +100,11 @@ export default function Page1() {
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-lg leading-relaxed text-justify">
-            Inhabit the highlands of Davao City and Bukidnon, known for their affinity with mountainous landscapes. 
-            Their name, Ata, reflects their high-elevation settlement. Organized through kinship ties and led by a Datu, selected via customs of age and status.
+            Organized through kinship ties and led by a Datu, selected via customs of age and status.
             Farming combines slash-and-burn (shifting cultivation) and terraced rice fields. Spiritually guided by a Baylan (healer/diviner) and observance of 
             rituals like panubad, a thanksgiving at planting season’s end. Marriage typically arranged, with bride price and negotiated polygyny under strict terms. 
-            Traditional justice through mediation and customary law, including conflict rituals like &apos;sPangayaw&apos;s.
-          </p>
-          <p className="text-lg leading-relaxed text-justify mt-5">
-            Experience cultural and land displacement pressures, often targeted by logging and corporate agriculture. A local community group, LIPI Inc., actively 
-            protects their traditions and homeland. Communicate in the Ata-Manobo language (ISO code atd) with around 38,000 speakers; the New Testament was being 
-            translated in oral form to preserve their culture.
+            Traditional justice through mediation and customary law, including conflict rituals like &apos;sPangayaw&apos;s. Experience cultural and land displacement 
+            pressures, often targeted by logging and corporate agriculture. A local community group, LIPI Inc., actively protects their traditions and homeland.
           </p>
         </div>
         <div
@@ -116,7 +112,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo2.src,
-              "Inhabit the highlands of Davao City and Bukidnon, known for their affinity with mountainous landscapes. Their name, Ata, reflects their high-elevation settlement. Organized through kinship ties and led by a Datu, selected via customs of age and status. Farming combines slash-and-burn (shifting cultivation) and terraced rice fields. Spiritually guided by a Baylan (healer/diviner) and observance of rituals like panubad, a thanksgiving at planting season’s end. Marriage typically arranged, with bride price and negotiated polygyny under strict terms. Traditional justice through mediation and customary law, including conflict rituals like 'Pangayaw'. Experience cultural and land displacement pressures, often targeted by logging and corporate agriculture. A local community group, LIPI Inc., actively protects their traditions and homeland. Communicate in the Ata-Manobo language (ISO code atd) with around 38,000 speakers; the New Testament was being translated in oral form to preserve their culture."
+              "Organized through kinship ties and led by a Datu, selected via customs of age and status. Farming combines slash-and-burn (shifting cultivation) and terraced rice fields. Spiritually guided by a Baylan (healer/diviner) and observance of rituals like panubad, a thanksgiving at planting season’s end. Marriage typically arranged, with bride price and negotiated polygyny under strict terms. Traditional justice through mediation and customary law, including conflict rituals like 'sPangayaw's. Experience cultural and land displacement pressures, often targeted by logging and corporate agriculture. A local community group, LIPI Inc., actively protects their traditions and homeland."
             )
           }
         >
@@ -140,7 +136,7 @@ export default function Page1() {
           onClick={() =>
             openFullscreen(
               ataManobo3.src,
-              "Authentic Indigenous Architecture – Handcrafted with bamboo and nipa, reflecting the Ata tribe’s rich cultural heritage. Eco-Friendly & Sustainable – Built from locally sourced, natural materials. Immersive Cultural Experience – Learn about Ata traditions, beliefs, and craftsmanship. Nature-Connected Living Experience fresh air and the soothing sound of nature in this traditional home."
+              "Communicate in the Ata-Manobo language (ISO code atd) with around 38,000 speakers; the New Testament was being translated in oral form to preserve their culture.Authentic Indigenous Architecture – Handcrafted with bamboo and nipa, reflecting the Ata tribe’s rich cultural heritage. Eco-Friendly & Sustainable – Built from locally sourced, natural materials. Immersive Cultural Experience – Learn about Ata traditions, beliefs, and craftsmanship. Nature-Connected Living Experience fresh air and the soothing sound of nature in this traditional home."
             )
           }
         >
@@ -153,10 +149,11 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <p className="text-lg leading-relaxed text-justify">
-            Authentic Indigenous Architecture – Handcrafted with bamboo and nipa, reflecting the Ata tribe’s rich cultural heritage. 
-            Eco-Friendly & Sustainable – Built from locally sourced, natural materials. Immersive Cultural Experience – Learn 
-            about Ata traditions, beliefs, and craftsmanship. Nature-Connected Living Experience fresh air and the soothing sound of 
-            nature in this traditional home.
+            Communicate in the Ata-Manobo language (ISO code atd) with around 38,000 speakers; the New Testament was being 
+            translated in oral form to preserve their culture.Authentic Indigenous Architecture – Handcrafted with bamboo and nipa, 
+            reflecting the Ata tribe’s rich cultural heritage. Eco-Friendly & Sustainable – Built from locally sourced, natural materials. 
+            Immersive Cultural Experience – Learn about Ata traditions, beliefs, and craftsmanship. Nature-Connected Living Experience 
+            fresh air and the soothing sound of nature in this traditional home.
           </p>
         </div>
       </section>

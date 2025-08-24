@@ -7,6 +7,7 @@ import Image from "next/image";
 import hotel1 from "@/image/pinnacle1.jpg";
 import hotel2 from "@/image/pinnacle2.jpg";
 import hotel3 from "@/image/pinnacle3.jpg";
+import pinnaclepool from "@/image/PinnaclePool.jpg";
 
 export default function PinnacleDescription() {
   const router = useRouter();
@@ -69,6 +70,19 @@ export default function PinnacleDescription() {
               <Image
                 src={hotel3}
                 alt="Room 2"
+                width={600}
+                height={400}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-gray-800">Pool</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Image
+                src={pinnaclepool}
+                alt="Room 1"
                 width={600}
                 height={400}
                 className="w-full h-auto rounded-lg"
