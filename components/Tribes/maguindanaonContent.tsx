@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import ataManobo from "../../image/maguindanaon.jpg";
-import ataManobo2 from "../../image/mainpage.jpg";
+import ataManobo2 from "../../image/maguindanaon2.jpg";
 import ataManobo3 from "../../image/maguindanaon3.jpg";
 
 export default function Page1() {

@@ -33,7 +33,7 @@ export default function Header() {
               onClick={() => router.push("/aboutTribes")}
               className="text-lg px-4 py-2 border-gray-300 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
             >
-              About 11 Tribes
+              About Indigenous Communities
             </button>
             <button
               onClick={() => router.push("/visitUs")}
@@ -72,7 +72,7 @@ export default function Header() {
             }}
             className="block w-full text-left px-4 py-2 rounded-lg hover:bg-gray-200"
           >
-            About 11 Tribes
+            About <br /> Indigenous Communities
           </button>
           <button
             onClick={() => {
