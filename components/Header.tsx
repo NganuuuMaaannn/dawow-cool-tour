@@ -1,9 +1,9 @@
-
 "use client";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import headerBg from "@/image/headerBG.png";
 
 export default function Header() {
   const router = useRouter();
@@ -11,8 +11,11 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-bgTour z-50">
-        <div className="mx-auto max-w-6xl bg-bgTour px-4 lg:px-2 flex items-center justify-between py-4">
+      <header
+        className="fixed top-0 left-0 w-full z-50 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${headerBg.src})` }}
+      >
+        <div className="mx-auto max-w-6xl px-4 lg:px-2 flex items-center justify-between py-3">
           <div
             onClick={() => router.push("/")}
             className="text-lg text-white font-bold tracking-wide leading-tight cursor-pointer hover:scale-105 transition-transform duration-200 block"
@@ -25,19 +28,19 @@ export default function Header() {
           <nav className="hidden md:flex space-x-4">
             <button
               onClick={() => router.push("/mainPage")}
-              className="text-lg px-4 py-2 border-gray-300 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
+              className="text-lg px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
             >
               Home
             </button>
             <button
               onClick={() => router.push("/aboutTribes")}
-              className="text-lg px-4 py-2 border-gray-300 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
+              className="text-lg px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
             >
               About Indigenous Communities
             </button>
             <button
               onClick={() => router.push("/visitUs")}
-              className="text-lg px-4 py-2 border-gray-300 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
+              className="text-lg px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
             >
               Visit Us!
             </button>

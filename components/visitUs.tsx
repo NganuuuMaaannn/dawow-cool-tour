@@ -15,8 +15,8 @@ import evergreen2 from "@/image/evergreen2.webp";
 import evergreen3 from "@/image/evergreen3.webp";
 
 import sequoiaInn from "@/image/sequoiaInn.webp";
-import sequoiaInn2 from "@/image/sequoiaInn2.jpg";
-import sequoiaInn3 from "@/image/sequoiaInn3.jpg";
+import sequoiaInn2 from "@/image/sequoiaInn2.png";
+import sequoiaInn3 from "@/image/sequoiaInn3.png";
 
 import vbhInn from "@/image/vbhInn.jpg";
 import vbhInn2 from "@/image/vbhInn2.jpg";
@@ -31,7 +31,7 @@ import hari2 from "@/image/hari2.webp";
 import hari3 from "@/image/hari3.jpg";
 
 import ritz from "@/image/ritz.webp";
-import ritz2 from "@/image/ritz2.webp";
+import ritz2 from "@/image/ritz2.png";
 import ritz3 from "@/image/ritz3.jpg";
 
 import hamp from "@/image/hamp.jpeg";
@@ -97,7 +97,7 @@ export default function HotelAccommodations() {
 
   return (
     <main
-      className={`flex flex-col items-center px-4 py-12 bg-gray-100 mt-20 transition-all duration-700 ease-out ${
+      className={`flex flex-col items-center px-4 py-12 bg-gray-100 mt-10 transition-all duration-700 ease-out ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
       }`}
     >

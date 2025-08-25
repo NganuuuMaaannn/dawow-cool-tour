@@ -45,7 +45,7 @@ export default function HomePage() {
   return (
     <>
       <div 
-        className={`flex flex-col items-center justify-start pt-20 gap-1 px-2 transition-all duration-700 ease-out ${
+        className={`flex flex-col items-center justify-start pt-24 gap-1 px-2 transition-all duration-700 ease-out ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >

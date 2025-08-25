@@ -13,7 +13,7 @@ export default function AboutTribesPage() {
   return (
     <>
       <section 
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col items-center gap-12 mt-14 lg:mt-15 transition-all duration-700 ease-out ${
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col items-center gap-12 mt-10 lg:mt-14 transition-all duration-700 ease-out ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >

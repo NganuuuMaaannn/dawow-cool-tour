@@ -5,8 +5,8 @@ import { HiArrowNarrowLeft } from "react-icons/hi";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import hotel1 from "@/image/sequoiaInn.webp";
-import hotel2 from "@/image/sequoiaInn2.jpg";
-import hotel3 from "@/image/sequoiaInn3.jpg";
+import hotel2 from "@/image/sequoiaInn2.png";
+import hotel3 from "@/image/sequoiaInn3.png";
 
 export default function PinnacleDescription() {
   const router = useRouter();
@@ -24,7 +24,7 @@ export default function PinnacleDescription() {
 
   return (
     <main
-      className={`flex flex-col items-center px-4 py-12 bg-gray-100 mt-20 transition-all duration-700 ease-out ${
+      className={`flex flex-col items-center px-4 py-12 bg-gray-100 mt-10 transition-all duration-700 ease-out ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
       }`}
     >
