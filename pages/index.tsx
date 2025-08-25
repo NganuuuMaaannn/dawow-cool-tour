@@ -4,6 +4,8 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
+import watermark from "@/image/watermark.png";
 
 export default function Home() {
   const router = useRouter();
@@ -26,6 +28,17 @@ export default function Home() {
         muted
         playsInline
       />
+
+      <div className="absolute bottom-4 left-4 opacity-50 pointer-events-none select-none">
+        <Image
+          src={watermark}
+          alt="Watermark"
+          width={128}
+          height={128}
+          className="w-10 md:w-10 lg:w-10 h-auto"
+        />
+      </div>
+
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
 
       <AnimatePresence>
