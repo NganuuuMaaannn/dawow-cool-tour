@@ -39,7 +39,7 @@ export default function HomePage() {
     { name: "Maguindanaon", img: "/images/maguindanaon.png", link: "/tribes/maguindanaon" },
     { name: "Maranao", img: "/images/maranao.png", link: "/tribes/maranao" },
     { name: "Bangsa - Sama", img: "/images/sama.png", link: "/tribes/bangsaSama" },
-    { name: "Tausug", img: "/images/tausug.png", link: "/tribes/tausug" },
+    { name: "Tausog", img: "/images/tausug.png", link: "/tribes/tausug" },
   ];
 
   return (

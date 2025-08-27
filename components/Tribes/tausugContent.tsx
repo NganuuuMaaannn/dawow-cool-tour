@@ -15,9 +15,8 @@ export default function Page1() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const openFullscreen = (img: string, text: string) => {
+  const openFullscreen = (img: string) => {
     setFullscreenImage(img);
-    setFullscreenText(text);
   };
 
   const closeFullscreen = () => {
@@ -39,12 +38,12 @@ export default function Page1() {
             <Image
               src={fullscreenImage}
               alt="Fullscreen Image"
-              className="rounded-lg shadow-xl object-contain w-full max-h-[60vh] sm:max-h-[70vh]"
+              className="rounded-lg shadow-xl object-contain w-full max-h-[30vh] sm:max-h-[70vh]"
               width={800}
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
+            <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
@@ -66,12 +65,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo.src,
-              "The main highlight inside their tribal house is the Sultan's Chair. You can take pictures sitting on it while you wear their Batawi, Sablay, and Laphi which are their tribal clothes. On other days, you can also try their delicacies like their famous black soup called 'Tiyula itum'."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo.src)}
+
         >
           <Image
             src={ataManobo}
@@ -81,11 +76,13 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Taosug</h2>
-          <p className="text-lg leading-relaxed text-justify">
-            The main highlight inside their tribal house is the Sultan&apos;s Chair. You can take pictures sitting on it while you 
-            wear their Batawi, Sablay, and Laphi which are their tribal clothes. On other days, you can also try their delicacies 
-            like their famous black soup called &apos;Tiyula itum&apos;.
+          <h2 className="text-3xl font-bold mb-4">Tausog</h2>
+          <p className="text-base leading-relaxed text-justify">
+            The Tausug people are a major Muslim ethnic group in the Sulu Archipelago, Basilan, and parts of Mindanao, known for their rich cultural traditions and 
+            maritime heritage. Historically, they were skilled sailors, traders, and warriors, with communities organized under sultans, datus, and village elders. 
+            Their language, part of the Austronesian family, is widely spoken and reflects their identity and heritage. Islam strongly influences their culture,
+            guiding rituals, daily practices, and celebrations. Music, dance, and oral literature are integral, performed during weddings, religious festivals, 
+            and other communal events.
           </p>
         </div>
       </section>
@@ -97,21 +94,17 @@ export default function Page1() {
         }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-lg leading-relaxed text-justify">
-            Their name means “People of the Current,” based in the Sulu Archipelago. Historically led the Sultanate of Sulu, a 
-            powerful Muslim kingdom. Known for their martial prowess and the indigenous fighting art Kali/Silat. Speak the Tausug language, 
-            also used in trade across maritime Southeast Asia. Practice Islam with deep reverence, integrating local customs and royal codes.
-            Skilled in weaving, boat-building, and pearling industries. Perform dances like the Pangalay, showcasing grace and balance.
+          <p className="text-base leading-relaxed text-justify">
+            Traditional crafts, such as weaving mats and creating decorative items, demonstrate both artistry and functionality. Kinship and communal cooperation 
+            are key social values, ensuring strong community ties. Elders play a vital role in passing down cultural knowledge, traditions, and storytelling 
+            to younger generations. Education and cultural programs help preserve Sama heritage amid modernization and external pressures. Their maritime lifestyle 
+            emphasizes adaptability, resilience, and a deep connection to their environment. Rituals, prayers, and festive celebrations are intertwined with daily 
+            life, reflecting both spiritual and cultural identity.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo2.src,
-              "Their name means “People of the Current,” based in the Sulu Archipelago. Historically led the Sultanate of Sulu, a powerful Muslim kingdom. Known for their martial prowess and the indigenous fighting art Kali/Silat. Speak the Tausug language, also used in trade across maritime Southeast Asia. Practice Islam with deep reverence, integrating local customs and royal codes. Skilled in weaving, boat-building, and pearling industries. Perform dances like the Pangalay, showcasing grace and balance."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo2.src)}
         >
           <Image
             src={ataManobo2}
@@ -130,12 +123,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo3.src,
-              "Wear the badju and sawal—traditional clothes with elaborate embroidery. Their epic stories, such as the Parang Sabil, honor resistance and bravery. Known for their strong warrior heritage and cultural pride. Pearl of the South Seas – Influenced by Sulu’s rich maritime culture. Colorful & Bold Designs – Reflecting their warrior heritage. Islamic-Inspired Architecture – Elegant patterns and details in every corner. Cultural Pride – A celebration of Tausug bravery, artistry, and faith."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo3.src)}
+
         >
           <Image
             src={ataManobo3}
@@ -145,12 +134,28 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <p className="text-lg leading-relaxed text-justify">
-            Wear the badju and sawal—traditional clothes with elaborate embroidery. Their epic stories, such as the Parang 
-            Sabil, honor resistance and bravery. Known for their strong warrior heritage and cultural pride. Pearl of the South Seas – 
-            Influenced by Sulu’s rich maritime culture. Colorful & Bold Designs – Reflecting their warrior heritage. Islamic-Inspired 
-            Architecture – Elegant patterns and details in every corner. Cultural Pride – A celebration of Tausug bravery, artistry, and faith.
+          <p className="text-base leading-relaxed text-justify">
+              Festivals and cultural programs serve as platforms to celebrate Tausug heritage and promote community pride. Despite modernization and historical challenges, 
+              they actively preserve their language, rituals, and traditional crafts. Their resilience demonstrates the enduring importance of cultural heritage in shaping
+              social identity. Overall, the Tausug people exemplify a vibrant blend of Islamic faith, maritime tradition, and rich indigenous culture that continues to 
+              thrive in the Bangsamoro region.
           </p>
+          <p className="mt-3 text-sm text-white text-justify">
+            {fullscreenText}
+          </p>
+          
+          <p className="text-xs text-gray-400 mt-2">
+            Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022b, November 28). TAUSUG - Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM.
+            <a
+              href="https://bcpch.bangsamoro.gov.ph/tausug/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+              https://bcpch.bangsamoro.gov.ph/tausug/ 
+            </a>
+          </p>
+
         </div>
       </section>
     </>

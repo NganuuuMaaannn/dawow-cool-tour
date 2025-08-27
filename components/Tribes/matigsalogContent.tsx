@@ -15,9 +15,8 @@ export default function Page1() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const openFullscreen = (img: string, text: string) => {
+  const openFullscreen = (img: string) => {
     setFullscreenImage(img);
-    setFullscreenText(text);
   };
 
   const closeFullscreen = () => {
@@ -39,12 +38,12 @@ export default function Page1() {
             <Image
               src={fullscreenImage}
               alt="Fullscreen Image"
-              className="rounded-lg shadow-xl object-contain w-full max-h-[60vh] sm:max-h-[70vh]"
+              className="rounded-lg shadow-xl object-contain w-full max-h-[30vh] sm:max-h-[70vh]"
               width={800}
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
+            <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
@@ -66,12 +65,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo.src,
-              "One of the unique features of their house is how they designed their small windows. It was designed this way because the tribe uses the window to 'ngilam' or to alert themselves to a 'Mangayaw' or person seeking justice. You can also see their weaved bags and some of their indigenous fruits."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo.src)}
+
         >
           <Image
             src={ataManobo}
@@ -82,10 +77,11 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Matigsalog</h2>
-          <p className="text-lg leading-relaxed text-justify">
-            One of the unique features of their house is how they designed their small windows. It was designed this way 
-            because the tribe uses the window to &apos;ngilam&apos; or to alert themselves to a &apos;Mangayaw&apos; or person seeking justice. 
-            You can also see their weaved bags and some of their indigenous fruits.
+          <p className="text-base leading-relaxed text-justify">
+            The Matigsalug tribe, an indigenous group in Bukidnon and parts of Davao, is known for their strong cultural identity and deep 
+            connection to nature. The name “Matigsalug” means “people of the Salug River,” reflecting their origin and dependence on waterways 
+            for survival. Farming is their main livelihood, with corn, rice, and root crops as staples, while hunting and fishing supplement 
+            their food resources. The tribe is also skilled in weaving, basketry, and craft-making, which showcase both practicality and artistry. 
           </p>
         </div>
       </section>
@@ -97,23 +93,17 @@ export default function Page1() {
         }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-lg leading-relaxed text-justify">
-            Literally means “people of the Salug River,” a sector of Bukidnon in Mindanao. Subsist mainly through farming, 
-            guided by deep spiritual respect for nature. Preserve their customs through oral storytelling, chants, and 
-            traditional justice systems emphasizing restoration. Wear distinctive woven garments such as Tinilogas red blouses 
-            with stripes. Men are primary hunters and protectors, sustaining the community. Celebrate nature and community 
-            through storytelling that passes down history and values. Engage in balanced agriculture adapted to river ecosystems. 
-            Governed through customary processes that prioritize community harmony.
+          <p className="text-base leading-relaxed text-justify">
+            Their traditional clothing is decorated with beadwork and colorful patterns, symbolizing their heritage and creativity. Like many 
+            Lumad groups, the Matigsalug practice animism, believing in nature spirits and conducting rituals for protection, healing, and 
+            thanksgiving. Elders play an important role in preserving oral traditions, folktales, and wisdom that guide the community. Music 
+            and dance are also vital aspects of their culture, performed during rituals and gatherings to express unity and joy. Their houses, 
+            often made of bamboo and nipa, are simple yet functional, adapted to their environment. 
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo2.src,
-              "Literally means “people of the Salug River,” a sector of Bukidnon in Mindanao. Subsist mainly through farming, guided by deep spiritual respect for nature. Preserve their customs through oral storytelling, chants, and traditional justice systems emphasizing restoration. Wear distinctive woven garments such as Tinilogas red blouses with stripes. Men are primary hunters and protectors, sustaining the community. Celebrate nature and community through storytelling that passes down history and values. Engage in balanced agriculture adapted to river ecosystems. Governed through customary processes that prioritize community harmony."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo2.src)}
         >
           <Image
             src={ataManobo2}
@@ -132,12 +122,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo3.src,
-              "A distinct subgroup of the Manobo cultural family, with unique linguistic traits. Cultural traditions face pressures from development and assimilation. Highland Heritage – Originating from the highlands of Davao, showcasing unique hill tribe architecture. Bamboo & Wood Craftsmanship – Designed with precision and tradition in every detail. Cultural Storytelling – Each structure reflects the tribe’s rich folklore and history. Sustainable Living – Built in harmony with the mountains and forests."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo3.src)}
+
         >
           <Image
             src={ataManobo3}
@@ -147,13 +133,30 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <p className="text-lg leading-relaxed text-justify">
-            A distinct subgroup of the Manobo cultural family, with unique linguistic traits. Cultural traditions face 
-            pressures from development and assimilation. Highland Heritage – Originating from the highlands of Davao, 
-            showcasing unique hill tribe architecture. Bamboo & Wood Craftsmanship – Designed with precision and tradition 
-            in every detail. Cultural Storytelling – Each structure reflects the tribe’s rich folklore and history.
-            Sustainable Living – Built in harmony with the mountains and forests.
+          <p className="text-base leading-relaxed text-justify">
+              The Matigsalug also uphold indigenous laws and practices that stress cooperation, respect, and kinship. Despite the pressures of 
+              modernization, land issues, and cultural assimilation, they continue to preserve their identity. Participation in cultural events 
+              and festivals helps them showcase their heritage to the broader society. Their youth are taught traditional practices to ensure 
+              continuity of their culture. The tribe’s resilience lies in their efforts to protect their ancestral lands and way of life. 
+              Ultimately, the Matigsalug remain a symbol of cultural pride and survival, representing the enduring traditions of Bukidnon’s 
+              indigenous peoples.
           </p>
+          <p className="mt-3 text-sm text-white text-justify">
+            {fullscreenText}
+          </p>
+          
+          <p className="text-xs text-gray-400 mt-2">
+            Tribes in the Philippines. (2018, March 24). Bukidnon: The Matigsalug tribe. Tribes in the Philippines.
+            <a
+              href="https://tribesinthephilippines.wordpress.com/2018/03/24/bukidnon-the-matigsalug-tribe/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+               https://tribesinthephilippines.wordpress.com/2018/03/24/bukidnon-the-matigsalug-tribe/
+            </a>
+          </p>
+
         </div>
       </section>
     </>

@@ -15,9 +15,8 @@ export default function Page1() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const openFullscreen = (img: string, text: string) => {
+  const openFullscreen = (img: string) => {
     setFullscreenImage(img);
-    setFullscreenText(text);
   };
 
   const closeFullscreen = () => {
@@ -39,12 +38,12 @@ export default function Page1() {
             <Image
               src={fullscreenImage}
               alt="Fullscreen Image"
-              className="rounded-lg shadow-xl object-contain w-full max-h-[60vh] sm:max-h-[70vh]"
+              className="rounded-lg shadow-xl object-contain w-full max-h-[30vh] sm:max-h-[70vh]"
               width={800}
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
+            <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
@@ -66,12 +65,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo.src,
-              "Here you can see the typical beddings of a newlywed Maguindanaon. The interior of the house is decorated with how they design houses for every gathering, feast, and especially a wedding. One of the unique features of the house is the intricate design of their 'Likos', a Maguindanaon women's cloth intricately made with different colors and designs, it is commonly designed with different types of beads."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo.src)}
+
         >
           <Image
             src={ataManobo}
@@ -82,11 +77,12 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Maguindanaon</h2>
-          <p className="text-lg leading-relaxed text-justify">
-            Here you can see the typical beddings of a newlywed Maguindanaon. The interior of the house is decorated with how 
-            they design houses for every gathering, feast, and especially a wedding. One of the unique features of the house 
-            is the intricate design of their &apos;Likos&apos;, a Maguindanaon women&apos;s cloth intricately made with different colors and 
-            designs, it is commonly designed with different types of beads.
+          <p className="text-base leading-relaxed text-justify">
+            The Maguindanaon people are a major Muslim group in Mindanao, primarily residing in Maguindanao, Cotabato, and surrounding areas, known for their 
+            rich cultural heritage and Islamic traditions. They have a strong connection to agriculture, especially rice cultivation, and rely on river systems 
+            for fishing and transportation. Social structure is organized around datus, elders, and kinship networks, emphasizing cooperation, respect, and 
+            community cohesion. Islam plays a central role in guiding their daily life, rituals, and celebrations. Music, dance, and oral literature are important 
+            cultural expressions, often performed during weddings, festivals, and religious ceremonies. 
           </p>
         </div>
       </section>
@@ -98,22 +94,17 @@ export default function Page1() {
         }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-lg leading-relaxed text-justify">
-            Predominantly Muslim and known for their rich royal heritage and Islamic traditions. Live primarily in the province 
-            of Maguindanao and parts of Central Mindanao. Famous for their kulintang music, an ancient musical tradition using gongs. 
-            Traditionally governed by sultanates and councils of elders. Skilled in brassware, weaving, and boat-making, showcasing 
-            refined craftsmanship. Observe Islamic festivals such as Ramadhan, Eid al-Fitr, and Eid al-Adha. Use the Maguindanaon 
-            language, part of the Austronesian family. Wear elegant malong and inaul fabric, often handwoven with royal patterns.
+          <p className="text-base leading-relaxed text-justify">
+            Traditional attire is adorned with intricate embroidery and symbolic patterns that reflect social status and heritage. The Maguindanaon are skilled in 
+            crafts such as weaving, woodcarving, and brasswork, many of which feature Okir designs symbolizing harmony, spirituality, and identity. Their houses, 
+            especially traditional structures, are decorated with these intricate patterns, showcasing artistry and cultural pride. Education, both religious and 
+            secular, is valued for preserving knowledge and skills among the younger generation. Festivals and communal events provide platforms to celebrate cultural 
+            achievements and strengthen identity. Rituals, prayers, and traditional practices reinforce both Islamic faith and indigenous customs.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo2.src,
-              "Predominantly Muslim and known for their rich royal heritage and Islamic traditions. Live primarily in the province of Maguindanao and parts of Central Mindanao. Famous for their kulintang music, an ancient musical tradition using gongs. Traditionally governed by sultanates and councils of elders. Skilled in brassware, weaving, and boat-making, showcasing refined craftsmanship. Observe Islamic festivals such as Ramadhan, Eid al-Fitr, and Eid al-Adha. Use the Maguindanaon language, part of the Austronesian family. Wear elegant malong and inaul fabric, often handwoven with royal patterns."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo2.src)}
         >
           <Image
             src={ataManobo2}
@@ -132,12 +123,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo3.src,
-              "Storytelling, epics, and chants like the 'Darangen' preserve their oral history. Their culture reflects a fusion of Islamic influence and indigenous heritage. Majestic Cultural Influence – Known for vibrant colors and elegant designs. Architectural Elegance – Inspired by centuries-old Islamic artistry. Cultural Legacy – Experience the deep-rooted traditions of Mindanao royalty. Rich Symbolism – Every detail reflects spiritual and cultural significance."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo3.src)}
+
         >
           <Image
             src={ataManobo3}
@@ -147,12 +134,29 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <p className="text-lg leading-relaxed text-justify">
-            Storytelling, epics, and chants like the &apos;Darangen&apos; preserve their oral history. Their culture reflects a fusion of 
-            Islamic influence and indigenous heritage. Majestic Cultural Influence – Known for vibrant colors and elegant designs. 
-            Architectural Elegance – Inspired by centuries-old Islamic artistry. Cultural Legacy – Experience the deep-rooted 
-            traditions of Mindanao royalty. Rich Symbolism – Every detail reflects spiritual and cultural significance.
+          <p className="text-base leading-relaxed text-justify">
+              Despite modernization and external pressures, they actively maintain language, traditions, and craftsmanship. Their cultural expressions demonstrate 
+              resilience, creativity, and continuity across generations. Participation in cultural programs and preservation initiatives ensures that heritage remains 
+              vibrant. Overall, the Maguindanaon people exemplify a harmonious blend of artistry, spirituality, and social cohesion that continues to thrive in the 
+              Bangsamoro region.
           </p>
+          <p className="mt-3 text-sm text-white text-justify">
+            {fullscreenText}
+          </p>
+          
+          <p className="text-xs text-gray-400 mt-2">
+            Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022b, November 28). 
+            Maguindanaon - Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM.  
+            <a
+              href="https://bcpch.bangsamoro.gov.ph/maguindanaon/ "
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+              https://bcpch.bangsamoro.gov.ph/maguindanaon/ 
+            </a>
+          </p>
+
         </div>
       </section>
     </>
