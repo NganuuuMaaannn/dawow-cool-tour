@@ -15,9 +15,8 @@ export default function Page1() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const openFullscreen = (img: string, text: string) => {
+  const openFullscreen = (img: string) => {
     setFullscreenImage(img);
-    setFullscreenText(text);
   };
 
   const closeFullscreen = () => {
@@ -39,12 +38,12 @@ export default function Page1() {
             <Image
               src={fullscreenImage}
               alt="Fullscreen Image"
-              className="rounded-lg shadow-xl object-contain w-full max-h-[60vh] sm:max-h-[70vh]"
+              className="rounded-lg shadow-xl object-contain w-full max-h-[30vh] sm:max-h-[70vh]"
               width={800}
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
+            <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
@@ -66,12 +65,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo.src,
-              "The tribe showcases the replica of a traditional house of a royal family made of lauan, coco lumber, nipa, and bamboo. The exterior houses have icons and patterns carved by burning a portion of the wood, symbolizing royalty."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo.src)}
+
         >
           <Image
             src={ataManobo}
@@ -82,9 +77,10 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Bangsa - Kagan</h2>
-          <p className="text-lg leading-relaxed text-justify">
-            The tribe showcases the replica of a traditional house of a royal family made of lauan, coco lumber, nipa, and bamboo. 
-            The exterior houses have icons and patterns carved by burning a portion of the wood, symbolizing royalty.
+          <p className="text-base leading-relaxed text-justify">
+            The Kagan are an indigenous group in Davao who have largely embraced Islam, blending their ancestral customs with Islamic beliefs and practices. 
+            They primarily inhabit the highlands of Davao, where farming and small-scale trading form the backbone of their livelihoods. The Kagan maintain 
+            traditional practices, such as ritual ceremonies and communal gatherings, while integrating Islamic teachings into their daily lives. 
           </p>
         </div>
       </section>
@@ -96,23 +92,18 @@ export default function Page1() {
         }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-lg leading-relaxed text-justify">
-            Also known as Kalagan, a Muslim ethnolinguistic group from Davao and nearby areas. Live along coastal and riverine areas, 
-            often engaged in fishing and farming. Their culture blends indigenous roots with Islamic faith, resulting in unique traditions. 
-            Speak the Kalagan language, closely related to Tausug and Maguindanaon. Perform Muslim rites such as du&apos;a and zikir 
-            integrated with local customs. Wear modest yet colorful clothing, reflecting both Islamic and tribal aesthetics. Their 
-            traditional dances feature storytelling and community participation.
+          <p className="text-base leading-relaxed text-justify">
+            Their spiritual life includes prayers, observance of Islamic holidays, and respect for both ancestral spirits and Allah. Music, dance, and oral 
+            literature continue to play an important role in preserving their culture. Traditional attire, often adorned with local designs, is worn during 
+            significant events and ceremonies, reflecting both heritage and religious identity. The Kagan are known for their close-knit communities, where 
+            kinship, cooperation, and mutual respect are highly valued. Leadership is typically guided by elders and community councils, which oversee cultural 
+            and religious matters. They face challenges such as cultural assimilation, land disputes, and the pressures of modernization, but continue to uphold 
+            their identity. Education and cultural programs have been introduced to help preserve their language, traditions, and practices. 
           </p>
-
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo2.src,
-              "Also known as Kalagan, a Muslim ethnolinguistic group from Davao and nearby areas. Live along coastal and riverine areas, often engaged in fishing and farming. Their culture blends indigenous roots with Islamic faith, resulting in unique traditions. Speak the Kalagan language, closely related to Tausug and Maguindanaon. Perform Muslim rites such as du'a and zikir integrated with local customs. Wear modest yet colorful clothing, reflecting both Islamic and tribal aesthetics. Their traditional dances feature storytelling and community participation."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo2.src)}
         >
           <Image
             src={ataManobo2}
@@ -131,12 +122,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo3.src,
-              "Governance revolves around elders and religious leaders (Imams). They practice circumcision rituals, marriage customs, and Islamic education. Their cultural identity is less known but integral to Mindanao’s Muslim mosaic. Coastal Heritage – Showcasing their life along the shores of Davao Gulf. Fishing & Maritime Influence – Inspired by their seafaring traditions. Blended Culture – A mix of Islamic faith and indigenous customs. Functional & Sustainable – Homes adapted to coastal living."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo3.src)}
+
         >
           <Image
             src={ataManobo3}
@@ -146,13 +133,29 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <p className="text-lg leading-relaxed text-justify">
-            Governance revolves around elders and religious leaders (Imams). They practice circumcision rituals, marriage customs, 
-            and Islamic education. Their cultural identity is less known but integral to Mindanao’s Muslim mosaic. Coastal Heritage 
-            – Showcasing their life along the shores of Davao Gulf. Fishing & Maritime Influence – Inspired by their seafaring 
-            traditions. Blended Culture – A mix of Islamic faith and indigenous customs. Functional & Sustainable – Homes adapted to 
-            coastal living.
+          <p className="text-base leading-relaxed text-justify">
+              The Kagan also participate in regional events that highlight their culture, allowing them to showcase their unique heritage to a wider audience. 
+              Their cuisine, crafts, and agricultural techniques reflect both their indigenous roots and Islamic influence. Through resilience and adaptability, 
+              the Kagan maintain a balance between tradition and contemporary life. Younger generations are taught both religious teachings and traditional customs 
+              to ensure continuity. Overall, the Kagan represent a vibrant example of cultural fusion, demonstrating how indigenous communities can preserve their 
+              identity while embracing new influences.
           </p>
+          <p className="mt-3 text-sm text-white text-justify">
+            {fullscreenText}
+          </p>
+          
+          <p className="text-xs text-gray-400 mt-2">
+            Sunnexdesk. (2017, September 3). Kagan: The Islamized Davao natives. SunStar Publishing Inc. 
+            <a
+              href="https://www.sunstar.com.ph/amp/story/more-articles/kagan-the-islamized-davao-natives?fbclid=IwY2xjawMZV9VleHRuA2FlbQIxMQABHoSE-Tjaf2sEEr_E87XmKY3bUulZRfnkE1xFaCTzBvJ3hh5qeSYm5be4QUPM_aem_CmMEvG6r51iOLXgpyvdyvg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+              https://www.sunstar.com.ph/amp/story/more-articles/kagan-the-islamized-davao-natives?fbclid=IwY2xjawMZV9VleHRuA2FlbQIxMQABHoSE-Tjaf2sEEr_E87XmKY3bUulZRfnkE1xFaCTzBvJ3hh5qeSYm5be4QUPM_aem_CmMEvG6r51iOLXgpyvdyvg
+            </a>
+          </p>
+
         </div>
       </section>
     </>

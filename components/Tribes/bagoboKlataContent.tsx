@@ -15,9 +15,8 @@ export default function Page1() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const openFullscreen = (img: string, text: string) => {
+  const openFullscreen = (img: string) => {
     setFullscreenImage(img);
-    setFullscreenText(text);
   };
 
   const closeFullscreen = () => {
@@ -39,12 +38,12 @@ export default function Page1() {
             <Image
               src={fullscreenImage}
               alt="Fullscreen Image"
-              className="rounded-lg shadow-xl object-contain w-full max-h-[60vh] sm:max-h-[70vh]"
+              className="rounded-lg shadow-xl object-contain w-full max-h-[30vh] sm:max-h-[70vh]"
               width={800}
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
+            <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
@@ -66,12 +65,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo.src,
-              "Compared to the house that was built here several years ago, they added a typical Bagobo-Klata's kitchen and storage room. Inside you can also see some of their things that were translated from English to Tagalog to the Klata language."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo.src)}
+
         >
           <Image
             src={ataManobo}
@@ -82,9 +77,11 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Bagobo - Klata</h2>
-          <p className="text-lg leading-relaxed text-justify">
-            Compared to the house that was built here several years ago, they added a typical Bagobo-Klata&apos;s kitchen and storage room. 
-            Inside you can also see some of their things that were translated from English to Tagalog to the Klata language.
+          <p className="text-base leading-relaxed text-justify">
+            The Bagobo Klata, one of the recognized indigenous peoples in Davao City, are known for their rich traditions, colorful attire, 
+            and deep spiritual connection to nature. Their traditional practices include farming, weaving, and crafting, which not only provide 
+            livelihood but also express their artistry and identity. Rituals and ceremonies play an important role in their community, 
+            as these are performed to honor ancestral spirits and natural forces that they believe protect and guide them.
           </p>
         </div>
       </section>
@@ -96,30 +93,23 @@ export default function Page1() {
         }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-lg leading-relaxed text-justify">
-            Reside near Mount Apo and speak Klata (Giangan), a unique Southern Philippine language. Their ancestry worship includes 
-            Apo Sandawa (the mountain’s king) and the Philippine eagle, revered in their spiritual beliefs. Ancestral lands span 
-            thousands of hectares, pivotal as watersheds for over 1.7 million Davao residents. Face threats from land grabs by 
-            religious sects and large plantations. Indigenous sustainable farming includes abaca, root crops, coffee, and planting 
-            native trees to prevent landslides.
-
+          <p className="text-base leading-relaxed text-justify">
+            Their traditional clothing, adorned with beads and embroidery, reflects cultural pride and craftsmanship unique to their people. Music 
+            and dance are also central to their cultural life, with performances that tell stories of their history and beliefs. Despite the growing 
+            influence of modernization and urbanization, the Bagobo Klata remain resilient in maintaining their heritage. They actively teach their 
+            youth about customs, values, and traditions to ensure cultural continuity. 
           </p>
-          <p className="text-lg leading-relaxed text-justify mt-5">
-            Deep-rooted beadwork, textiles, and vivid headgear reflect rich artistry and ceremonial use. Maintain tribal schools 
-            teaching language, songs, instruments, and dances to younger generations. Their governance relies on Datus, with traditional 
-            conflict resolution through reconciliation and mediation. Their art includes ritual dances like Bagobo Rice Cycle, celebrating 
-            agriculture and harvest.
-
+          <p className="text-base leading-relaxed text-justify mt-2">
+            Community participation in local festivals further strengthens 
+            their identity and provides opportunities to share their culture with the wider public. These celebrations often include showcasing 
+            traditional dances, music, and crafts that highlight their creativity. Cultural education programs have also been initiated to deepen 
+            appreciation of Bagobo Klata heritage among the younger generation. By blending traditional practices with modern lifestyles, the tribe 
+            shows adaptability while preserving its authenticity. 
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo2.src,
-              "Reside near Mount Apo and speak Klata (Giangan), a unique Southern Philippine language. Their ancestry worship includes Apo Sandawa (the mountain’s king) and the Philippine eagle, revered in their spiritual beliefs. Ancestral lands span thousands of hectares, pivotal as watersheds for over 1.7 million Davao residents. Face threats from land grabs by religious sects and large plantations. Indigenous sustainable farming includes abaca, root crops, coffee, and planting native trees to prevent landslides. Deep-rooted beadwork, textiles, and vivid headgear reflect rich artistry and ceremonial use. Maintain tribal schools teaching language, songs, instruments, and dances to younger generations. Their governance relies on Datus, with traditional conflict resolution through reconciliation and mediation. Their art includes ritual dances like Bagobo Rice Cycle, celebrating agriculture and harvest."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo2.src)}
         >
           <Image
             src={ataManobo2}
@@ -138,12 +128,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo3.src,
-              "Language and culture face erosion as youth increasingly lose mastery of Klata. Cultural Masterpiece – Showcasing the unique craftsmanship of the Bagobo tribe. Authentic Design – Made from bamboo and woven nipa, preserving traditional architecture. Cultural Immersion – Discover the tribe’s artistry, weaving, and warm hospitality. Nature-Inspired Living – Blends seamlessly with lush surroundings for a serene escape."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo3.src)}
+
         >
           <Image
             src={ataManobo3}
@@ -153,12 +139,28 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <p className="text-lg leading-relaxed text-justify">
-            Language and culture face erosion as youth increasingly lose mastery of Klata. Cultural Masterpiece – Showcasing 
-            the unique craftsmanship of the Bagobo tribe. Authentic Design – Made from bamboo and woven nipa, preserving 
-            traditional architecture. Cultural Immersion – Discover the tribe’s artistry, weaving, and warm hospitality. Nature-Inspired 
-            Living – Blends seamlessly with lush surroundings for a serene escape.
+          <p className="text-base leading-relaxed text-justify">
+              They face challenges such as assimilation pressures and loss of ancestral lands, but their determination keeps their culture alive. 
+              Their efforts to safeguard traditions contribute significantly to Davao’s cultural diversity. The Bagobo Klata stand as a proud 
+              example of indigenous resilience and pride in the modern world. Ultimately, their culture remains a living testament to the strength 
+              of identity, heritage, and unity among indigenous peoples in the Philippines.
           </p>
+          <p className="mt-3 text-sm text-white text-justify">
+            {fullscreenText}
+          </p>
+          
+          <p className="text-xs text-gray-400 mt-2">
+            Albior, A. J. D. (2023, October 2). Bagobo Klata’s culture in the modern world. SunStar Davao.
+            <a
+              href="https://www.sunstar.com.ph/amp/story/davao/feature/bagobo-klatas-culture-in-the-modern-world"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+              https://www.sunstar.com.ph/amp/story/davao/feature/bagobo-klatas-culture-in-the-modern-world
+            </a>
+          </p>
+
         </div>
       </section>
     </>

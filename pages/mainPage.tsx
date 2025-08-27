@@ -2,13 +2,12 @@
 
 import Header from "@/components/Header";
 import MainContent from "@/components/homePage";
-import Footer from "@/components/Footer";
+import Footer from "@/components/FooterMainPage";
 import bgPattern from "@/image/tourBG.png";
 
 export default function mainPage() {
   return (
     <div className="flex flex-col min-h-screen bg-bgLogin relative">
-      
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <div
           className="h-[35vh] lg:h-[70vh] bg-cover bg-center bg-no-repeat relative"
@@ -18,11 +17,13 @@ export default function mainPage() {
         </div>
       </div>
 
-      <Header />
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <Header />
         <main className="flex-grow">
-        <MainContent />
-      </main>
-      <Footer />
+          <MainContent />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

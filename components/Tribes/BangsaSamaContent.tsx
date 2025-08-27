@@ -15,9 +15,8 @@ export default function Page1() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const openFullscreen = (img: string, text: string) => {
+  const openFullscreen = (img: string) => {
     setFullscreenImage(img);
-    setFullscreenText(text);
   };
 
   const closeFullscreen = () => {
@@ -39,12 +38,12 @@ export default function Page1() {
             <Image
               src={fullscreenImage}
               alt="Fullscreen Image"
-              className="rounded-lg shadow-xl object-contain w-full max-h-[60vh] sm:max-h-[70vh]"
+              className="rounded-lg shadow-xl object-contain w-full max-h-[30vh] sm:max-h-[70vh]"
               width={800}
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
+            <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
@@ -66,12 +65,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo.src,
-              "The tribe is known as the people who live peacefully at sea. One of the new things you can see within their house is the 'Lepa'. It's a type of traditional boat used by Sama tribe during festivals and weddings. The Lepa displayed in their house was given by Vice President Duterte when she was still a mayor. The Lepa she gave was a gift from the people of Tawi-Tawi during their Lepa Festival in 2019."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo.src)}
+
         >
           <Image
             src={ataManobo}
@@ -82,11 +77,13 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Bangsa - Sama</h2>
-          <p className="text-lg leading-relaxed text-justify">
-            The tribe is known as the people who live peacefully at sea. One of the new things you can see within their house is 
-            the &apos;Lepa&apos;. It&apos;s a type of traditional boat used by Sama tribe during festivals and weddings. The Lepa displayed in 
-            their house was given by Vice President Duterte when she was still a mayor. The Lepa she gave was a gift from the people 
-            of Tawi-Tawi during their Lepa Festival in 2019.
+          <p className="text-base leading-relaxed text-justify">
+            The Sama people, also called Sama Dilaut or Badjao, are a maritime indigenous community in the southern Philippines, primarily living in the 
+            Sulu Archipelago, Tawi-Tawi, and coastal areas of Mindanao. Their culture is closely tied to the sea, as many Sama live in stilt houses along 
+            the shore or aboard houseboats called lepa, which they skillfully navigate. Fishing is central to their livelihood, supplemented by small-scale 
+            trading, boat-making, and crafts. Music, dance, and oral literature are important cultural expressions, often performed during ceremonies, 
+            celebrations, and community gatherings. They practice a combination of Islam and animistic beliefs, showing respect for nature, ancestors, 
+            and spiritual forces.
           </p>
         </div>
       </section>
@@ -98,20 +95,17 @@ export default function Page1() {
         }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-lg leading-relaxed text-justify">
-            A seafaring people traditionally found in Tawi-Tawi, Sulu, and coastal Mindanao. Also called Sama-Bajau; some are known 
-            as “sea gypsies” for their nomadic lifestyle. Live in stilt houses and boats called lepa-lepa, central to their identity.
-            Masterful in fishing, boat-making, and free diving.
+          <p className="text-base leading-relaxed text-justify">
+            Traditional crafts, such as weaving mats and creating decorative items, demonstrate both artistry and functionality. Kinship and communal cooperation 
+            are key social values, ensuring strong community ties. Elders play a vital role in passing down cultural knowledge, traditions, and storytelling 
+            to younger generations. Education and cultural programs help preserve Sama heritage amid modernization and external pressures. Their maritime lifestyle 
+            emphasizes adaptability, resilience, and a deep connection to their environment. Rituals, prayers, and festive celebrations are intertwined with daily 
+            life, reflecting both spiritual and cultural identity.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo2.src,
-              "A seafaring people traditionally found in Tawi-Tawi, Sulu, and coastal Mindanao. Also called Sama-Bajau; some are known as “sea gypsies” for their nomadic lifestyle. Live in stilt houses and boats called lepa-lepa, central to their identity. Masterful in fishing, boat-making, and free diving."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo2.src)}
         >
           <Image
             src={ataManobo2}
@@ -130,12 +124,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo3.src,
-              "Known for the Regatta Festival, showcasing colorful sailboats (vintas). Observe Islam while maintaining indigenous sea rituals and practices. Speak Sama languages, with various dialects across the region. Wear brightly colored garments and woven headscarves. Their dances mimic ocean movements and marine life. Peaceful and resilient, their lifestyle adapts to tides, currents, and cultural tides. Seafaring Traditions – Known as the “people of the sea.” House on Stilts – Elevated design perfect for coastal living. Marine-Inspired Lifestyle – Built with fishing and sea trade in mind. Adaptable Architecture – Resilient against the tides and coastal conditions."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo3.src)}
+
         >
           <Image
             src={ataManobo3}
@@ -145,14 +135,28 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <p className="text-lg leading-relaxed text-justify">
-            Known for the Regatta Festival, showcasing colorful sailboats (vintas). Observe Islam while maintaining indigenous 
-            sea rituals and practices. Speak Sama languages, with various dialects across the region. Wear brightly colored 
-            garments and woven headscarves. Their dances mimic ocean movements and marine life. Peaceful and resilient, their 
-            lifestyle adapts to tides, currents, and cultural tides. Seafaring Traditions – Known as the “people of the sea.” House on
-            Stilts – Elevated design perfect for coastal living. Marine-Inspired Lifestyle – Built with fishing and sea trade in 
-            mind. Adaptable Architecture – Resilient against the tides and coastal conditions.
+          <p className="text-base leading-relaxed text-justify">
+              Clothing, music, and crafts often symbolize social roles, personal achievements, and communal status. Despite challenges such as displacement, poverty, 
+              and cultural assimilation, the Sama maintain pride in their traditions. They continue to participate in cultural preservation programs and festivals to 
+              share their heritage with wider communities. Overall, the Sama people exemplify a unique maritime culture that reflects resilience, creativity, and the 
+              richness of Philippine indigenous heritage.
           </p>
+          <p className="mt-3 text-sm text-white text-justify">
+            {fullscreenText}
+          </p>
+          
+          <p className="text-xs text-gray-400 mt-2">
+            National Commission for Culture and the Arts. (n.d.). Peoples of the Philippines: Sama. In Glimpses: Peoples of the Philippines. Retrieved August 25, 2025, from
+            <a
+              href="https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/sama/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+              https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/sama/ 
+            </a>
+          </p>
+
         </div>
       </section>
     </>

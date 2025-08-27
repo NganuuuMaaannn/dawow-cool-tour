@@ -17,12 +17,14 @@ export default function aboutTribes() {
           <div className="absolute inset-0 bg-gradient-to-b from-white/0 to-white/90"></div>
         </div>
       </div>
-      
-      <Header />
-      <main className="flex-grow">
-        <AboutContent />
-      </main>
-      <Footer />
+
+      <div className="relative z-10 flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow">
+          <AboutContent />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

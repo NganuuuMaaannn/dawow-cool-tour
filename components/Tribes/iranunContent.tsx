@@ -15,9 +15,8 @@ export default function Page1() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const openFullscreen = (img: string, text: string) => {
+  const openFullscreen = (img: string) => {
     setFullscreenImage(img);
-    setFullscreenText(text);
   };
 
   const closeFullscreen = () => {
@@ -39,12 +38,12 @@ export default function Page1() {
             <Image
               src={fullscreenImage}
               alt="Fullscreen Image"
-              className="rounded-lg shadow-xl object-contain w-full max-h-[60vh] sm:max-h-[70vh]"
+              className="rounded-lg shadow-xl object-contain w-full max-h-[30vh] sm:max-h-[70vh]"
               width={800}
               height={600}
             />
 
-            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
+            <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
 
@@ -66,12 +65,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo.src,
-              "Inside their house, you can have a close look at their 'Iroan', a traditional weaving machine that is commonly used by Iranun in creating their fabric textile called 'Inaol'. Aside from that, they have also displayed their version of 'Kampilan' a traditional weapon used by sultans and datu of the tribe."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo.src)}
+
         >
           <Image
             src={ataManobo}
@@ -82,10 +77,12 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Iranun</h2>
-          <p className="text-lg leading-relaxed text-justify">
-            Inside their house, you can have a close look at their &apos;Iroan&apos;, a traditional weaving machine that is commonly used 
-            by Iranun in creating their fabric textile called &apos;Inaol&apos;. Aside from that, they have also displayed their version 
-            of &apos;Kampilan&apos; a traditional weapon used by sultans and datu of the tribe.
+          <p className="text-base leading-relaxed text-justify">
+            The Iranun, an ethnolinguistic group in Mindanao, are historically known as seafarers, traders, and warriors whose culture has strongly 
+            influenced the Moro identity. Their communities are mainly found in Maguindanao, Lanao del Sur, and parts of Cotabato, where they live 
+            close to coastal and riverine areas that sustain their livelihood. Traditionally, the Iranun were skilled in navigation, boat-building, 
+            and maritime trade, connecting Mindanao with neighboring regions. They also had a reputation as fierce defenders of their territory, often 
+            engaging in sea raids during pre-colonial and colonial times. 
           </p>
         </div>
       </section>
@@ -97,22 +94,17 @@ export default function Page1() {
         }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-lg leading-relaxed text-justify">
-            Reside in parts of Lanao del Sur and Maguindanao; culturally close to Maranao and Maguindanaon. Historically fierce 
-            warriors and seafarers, known for defending their territories. Speak the Iranun language, sharing linguistic roots 
-            with Maranao. It was part of the Sultanate of Maguindanao, contributing to its military strength. Islamic faith is 
-            central, guiding daily life, rituals, and social structure. Known for epic chants and genealogy recitations, preserving 
-            oral traditions. Crafts include brass-making and weapon forging, especially kris blades.
+          <p className="text-base leading-relaxed text-justify">
+            Islam plays a central role in their identity, shaping their values, traditions, and daily practices. Their cultural life includes traditional 
+            attire, music, dances, and rituals that reflect both Islamic influences and indigenous heritage. The Iranun speak their own distinct language, 
+            which is part of the Austronesian family and closely related to Maguindanaon and Maranao. Farming, fishing, and trading remain important sources 
+            of livelihood, though many Iranun have also adapted to modern professions. Oral traditions, epic stories, and genealogies are preserved by 
+            elders to pass on wisdom and history to the youth. Their society values kinship, respect, and loyalty, which strengthen communal ties. 
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo2.src,
-              "Reside in parts of Lanao del Sur and Maguindanao; culturally close to Maranao and Maguindanaon. Historically fierce warriors and seafarers, known for defending their territories. Speak the Iranun language, sharing linguistic roots with Maranao. It was part of the Sultanate of Maguindanao, contributing to its military strength. Islamic faith is central, guiding daily life, rituals, and social structure. Known for epic chants and genealogy recitations, preserving oral traditions. Crafts include brass-making and weapon forging, especially kris blades."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo2.src)}
         >
           <Image
             src={ataManobo2}
@@ -131,12 +123,8 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() =>
-            openFullscreen(
-              ataManobo3.src,
-              "Observe Islamic holidays and Ranao traditions, including sacred pilgrimages. Proud of their maritime heritage and resistance to colonial incursions. Actively preserve tribal customs through education and local leadership. Naval Heritage – Skilled boat builders and navigators of Mindanao waters. Islamic Cultural Roots – Embodying faith and tradition in design. Warrior Legacy – History of bravery and resistance. Functional Coastal Homes – Designed for both land and sea living."
-            )
-          }
+          onClick={() => openFullscreen(ataManobo3.src)}
+
         >
           <Image
             src={ataManobo3}
@@ -146,13 +134,42 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <p className="text-lg leading-relaxed text-justify">
-            Observe Islamic holidays and Ranao traditions, including sacred pilgrimages. Proud of their maritime 
-            heritage and resistance to colonial incursions. Actively preserve tribal customs through education and 
-            local leadership. Naval Heritage – Skilled boat builders and navigators of Mindanao waters. Islamic 
-            Cultural Roots – Embodying faith and tradition in design. Warrior Legacy – History of bravery and resistance.
-            Functional Coastal Homes – Designed for both land and sea living.
+          <p className="text-base leading-relaxed text-justify">
+              The Iranun also uphold artistic expressions such as weaving and brasswork, contributing to Mindanao’s diverse cultural heritage. Despite 
+              challenges from displacement, modernization, and assimilation, they remain determined to preserve their cultural identity. Efforts to revitalize 
+              traditions are supported by cultural organizations and the BARMM government. Their resilience highlights both pride in their heritage and 
+              adaptability to change. Ultimately, the Iranun represent a people whose history, faith, and traditions continue to play a vital role in the 
+              cultural fabric of the Bangsamoro region.
           </p>
+          <p className="mt-3 text-sm text-white text-justify">
+            {fullscreenText}
+          </p>
+          
+          <p className="text-xs text-gray-400 mt-2">
+            Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022, November 28). Iranun - Bangsamoro Commission for the 
+            Preservation of Cultural Heritage - BARMM.
+            <a
+              href="https://bcpch.bangsamoro.gov.ph/iranun/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+              https://bcpch.bangsamoro.gov.ph/iranun/
+            </a>
+          </p>
+
+          <p className="text-xs text-gray-400 mt-2">
+            Project, J. (n.d.-a). Iranun in Philippines. 
+            <a
+              href="https://www.equatorinitiative.org/2020/04/24/solution11483/ "
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+              https://joshuaproject.net/people_groups/12209/RP 
+            </a>
+          </p>
+
         </div>
       </section>
     </>
