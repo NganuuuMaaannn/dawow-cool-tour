@@ -22,7 +22,7 @@ export default function Home() {
     <main className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/Tribes2.mp4"
+        src="/Tribes3.mp4"
         autoPlay
         loop
         muted
