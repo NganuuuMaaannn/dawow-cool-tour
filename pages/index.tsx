@@ -4,8 +4,6 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import Image from "next/image";
-import watermark from "@/image/watermark.png";
 
 export default function Home() {
   const router = useRouter();
@@ -29,14 +27,18 @@ export default function Home() {
         playsInline
       />
 
-      <div className="absolute bottom-4 left-4 opacity-50 pointer-events-none select-none">
-        <Image
-          src={watermark}
-          alt="Watermark"
-          width={128}
-          height={128}
-          className="w-10 md:w-10 lg:w-10 h-auto"
-        />
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-50 pointer-events-none select-none">
+        <p className="text-xs text-gray-100 mt-2 text-center">
+          Kadayawan sa Davao
+          <a
+            href="https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline ml-1"
+          >
+            https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL
+          </a>
+        </p>
       </div>
 
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
@@ -61,7 +63,7 @@ export default function Home() {
                 className="group relative px-20 py-3 rounded-full text-white font-semibold bg-bgTour overflow-hidden flex items-center justify-center hover:bg-hoverTour transition"
               >
                 <span className="transform transition-transform duration-300 group-hover:-translate-x-3">
-                  Enter
+                  Explore
                 </span>
                 <HiArrowNarrowRight
                   className="absolute right-10 opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
