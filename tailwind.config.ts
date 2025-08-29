@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
+        times: ["Times New Roman", "Times", "serif"],
       },
       animation: {
         'bounce-left': 'bounce-left 1s ease-out',
