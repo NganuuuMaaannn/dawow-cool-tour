@@ -27,21 +27,24 @@ export default function Home() {
         playsInline
       />
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-50 pointer-events-none select-none">
-        <p className="text-xs text-gray-100 mt-2 text-center">
-          Kadayawan sa Davao
-          <a
-            href="https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline ml-1"
-          >
-            https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL
-          </a>
-        </p>
-      </div>
+    {/* Overlay - push behind with z-0 */}
+    <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
 
-      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+    {/* Your link - bring forward with z-10 */}
+    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-50 select-none z-10">
+      <p className="text-xs text-gray-500 mt-2 text-center">
+        Kadayawan sa Davao
+        <a
+          href="https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline ml-1"
+        >
+          https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL
+        </a>
+      </p>
+    </div>
+
 
       <AnimatePresence>
         {!isExiting && (
