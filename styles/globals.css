@@ -17,6 +17,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Open Sans", "Segoe UI", "Roboto", "sans-serif";
 }
 
