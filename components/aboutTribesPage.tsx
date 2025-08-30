@@ -28,7 +28,7 @@ export default function AboutTribesPage() {
 
         <div className="w-full text-black grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <p className="text-lg leading-relaxed text-justify">
+            <p className="text-base leading-relaxed text-justify">
               Davao, the second largest region in the Philippines located  in Mindanao, is home of 11 indigenous and Moro tribes that 
               reflect a diverse range of heritages. They are the Ata, Bagobo - Klata, Bagobo - Tagabawa, Matigsalug, Obu - Manuvu, Iranun, 
               Kagan, Maguindanaon, Maranao, Sama, and Tausog. Regardless of having diverse languages, practices, and ways of life, all 
@@ -37,7 +37,7 @@ export default function AboutTribesPage() {
           </div>
 
           <div>
-            <p className="text-lg leading-relaxed text-justify">
+            <p className="text-base leading-relaxed text-justify">
               The 11 tribes are known for their colorful clothing, ravishing textiles, lively dances, and exceptional artistry that makes 
               their heritage pass through generations. Through their traditional music, ritual practices, weaving,  and beadwork, it shows 
               the richness and unique identity of Mindanao. These tribes continued their traditions regardless of modernism, they still 
@@ -46,7 +46,7 @@ export default function AboutTribesPage() {
           </div>
 
           <div>
-            <p className="text-lg leading-relaxed text-justify">
+            <p className="text-base leading-relaxed text-justify">
               Acknowledging the 11 tribes of Mindanao is more than just appreciating their resilience and solidarity but also learning the 
               ethnicity of Mindanao. These communities serve as a reminder to us of the value of respecting diversity and preserving cultural 
               traditions. Mindanao&apos;s identity is greatly influenced by its heritage, which further contributes to the Philippines&apos; multi-cultural 
