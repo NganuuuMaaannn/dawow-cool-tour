@@ -29,28 +29,28 @@ export default function AboutTribesPage() {
         <div className="w-full text-black grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <p className="text-lg leading-relaxed text-justify">
-              Mindanao, the second-largest island in the Philippines, is home to a rich tapestry of cultures represented by the 11 
-              tribes of its indigenous and Moro communities. These tribes include the Ata, Bagobo, Banwaon, B’laan, Dibabawon, 
-              Higaonon, Mamanwa, Mandaya, Mangguangan, Manobo, and Matigsalug. Each tribe has its own language, traditions, and way 
-              of life, yet they all share a deep connection to their ancestral lands and natural environment.
+              Davao, the second largest region in the Philippines located  in Mindanao, is home of 11 indigenous and Moro tribes that 
+              reflect a diverse range of heritages. They are the Ata, Bagobo - Klata, Bagobo - Tagabawa, Matigsalug, Obu - Manuvu, Iranun, 
+              Kagan, Maguindanaon, Maranao, Sama, and Tausog. Regardless of having diverse languages, practices, and ways of life, all 
+              tribes have a strong bond with their ancestors and their environment.
             </p>
           </div>
 
           <div>
             <p className="text-lg leading-relaxed text-justify">
-              The 11 tribes are known for their colorful attire, vibrant dances, and unique craftsmanship that reflect centuries of 
-              cultural heritage. From weaving and beadwork to traditional music and rituals, their practices highlight the diversity 
-              and richness of Mindanaoan identity. Despite modernization, these tribes continue to preserve their customs and celebrate 
-              them through festivals, rituals, and gatherings that strengthen community bonds.
+              The 11 tribes are known for their colorful clothing, ravishing textiles, lively dances, and exceptional artistry that makes 
+              their heritage pass through generations. Through their traditional music, ritual practices, weaving,  and beadwork, it shows 
+              the richness and unique identity of Mindanao. These tribes continued their traditions regardless of modernism, they still 
+              celebrate their way of festivals, ceremonies, gatherings that strengthens the relationships between their communities.
             </p>
           </div>
 
           <div>
             <p className="text-lg leading-relaxed text-justify">
-              Honoring the 11 tribes of Mindanao is more than a celebration of culture—it is also a recognition of resilience and 
-              unity. By keeping their traditions alive, these communities remind us of the importance of cultural preservation and 
-              respect for diversity. Their heritage plays a vital role in shaping Mindanao’s identity and contributes to the broader 
-              story of the Philippines as a nation of many cultures.
+              Acknowledging the 11 tribes of Mindanao is more than just appreciating their resilience and solidarity but also learning the 
+              ethnicity of Mindanao. These communities serve as a reminder to us of the value of respecting diversity and preserving cultural 
+              traditions. Mindanao&apos;s identity is greatly influenced by its heritage, which further contributes to the Philippines&apos; multi-cultural 
+              identity.
             </p>
           </div>
         </div>
