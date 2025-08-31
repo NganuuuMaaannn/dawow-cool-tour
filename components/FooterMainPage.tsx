@@ -1,9 +1,10 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import logo1 from "../image/dvo.png";
 import logo2 from "../image/hcdc.png";
-import { useRouter } from "next/navigation";
+import devIcon from "../image/devIcon.png"
 
 export default function Footer() {
   const router = useRouter();
@@ -172,12 +173,18 @@ export default function Footer() {
           <div className="flex space-x-6 items-center mt-3 sm:mt-0">
             <a
               onClick={() => router.push("/devCred")}
-              target="_blank"
               rel="noopener noreferrer"
-              className="mr-3 text-sm text-gray-400 hover:opacity-80 hover:scale-105 transition-transform duration-200 block"
+              className="text-devColor flex items-center gap-2 text-sm hover:opacity-80 hover:scale-105 transition-transform duration-200 cursor-pointer"
             >
+              <Image
+                src={devIcon}
+                alt="Developer Icon"
+                width={25}
+                height={25}
+              />
               Developers
             </a>
+
             <a
               href="https://www.facebook.com/hcdcofficial"
               target="_blank"
@@ -192,6 +199,7 @@ export default function Footer() {
                 className="object-contain"
               />
             </a>
+
             <a
               href="https://www.facebook.com/davaocitygov"
               target="_blank"

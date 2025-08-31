@@ -11,9 +11,18 @@ const config: Config = {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      keyframes: {
+        shineCycle: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "5%": { transform: "translateX(0%)", opacity: "1" },
+          "15%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(100%)", opacity: "0" },
+        },
+      },
       animation: {
         'bounce-left': 'bounce-left 1s ease-out',
-        'bounce-left2': 'bounce-left2 1s ease-out infinite'
+        'bounce-left2': 'bounce-left2 1s ease-out infinite',
+        shineCycle: "shineCycle 6s ease-in-out infinite",
       },
       colors: {
         background: "var(--background)",
@@ -28,7 +37,8 @@ const config: Config = {
         ecColor2: "#0D7C66",
         bgTour: "#73141c",
         hoverTour: "#96242e",
-        bgBlue:"377fbc",
+        bgBlue:"#377fbc",
+        devColor: "#2978c3",
       },
     },
   },

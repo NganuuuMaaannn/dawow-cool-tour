@@ -72,6 +72,11 @@ export default function Home() {
                   className="absolute right-10 opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
                   size={20}
                 />
+
+                <span
+                  className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/40 to-transparent 
+                            -translate-x-full animate-shineCycle group-hover:animate-none"
+                ></span>
               </button>
             </div>
           </motion.div>
