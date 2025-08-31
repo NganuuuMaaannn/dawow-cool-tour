@@ -3,8 +3,11 @@
 import Image from "next/image";
 import logo1 from "../image/dvo.png";
 import logo2 from "../image/hcdc.png";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
+  const router = useRouter();
+
   return (
     <footer className="bg-white mt-8">
       {/* References Section */}
@@ -167,6 +170,14 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-6 items-center mt-3 sm:mt-0">
+            <a
+              onClick={() => router.push("/devCred")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-3 text-sm text-gray-400 hover:opacity-80 hover:scale-105 transition-transform duration-200 block"
+            >
+              Developers
+            </a>
             <a
               href="https://www.facebook.com/hcdcofficial"
               target="_blank"
