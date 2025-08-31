@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        merriweather: ["Merriweather", "Georgia", "Times New Roman", "serif"],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       animation: {
         'bounce-left': 'bounce-left 1s ease-out',
