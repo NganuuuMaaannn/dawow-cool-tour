@@ -4,8 +4,11 @@
 import Image from "next/image";
 import logo1 from "../image/dvo.png";
 import logo2 from "../image/hcdc.png";
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
+  const router = useRouter();
+
   return (
     <footer className="w-full bg-white text-gray-400 py-4">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
@@ -14,6 +17,14 @@ export default function Footer() {
         </div>
 
         <div className="flex space-x-6 items-center">
+          <a
+            onClick={() => router.push("/devCred")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-3 text-sm hover:opacity-80 hover:scale-105 transition-transform duration-200 block"
+          >
+            Developers
+          </a>
           <a
             href="https://www.facebook.com/hcdcofficial"
             target="_blank"
