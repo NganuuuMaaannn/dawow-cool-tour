@@ -19,7 +19,7 @@ export default function HotelAccommodations() {
         isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
     }`}
     >
-        <h1 className="text-2xl font-semibold text-black mt-5 mb-5 text-center w-full">
+        <h1 className="text-3xl font-semibold text-black mt-5 mb-5 text-left w-full max-w-6xl">
             Developers
         </h1>
 
