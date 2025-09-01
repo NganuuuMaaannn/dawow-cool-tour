@@ -109,7 +109,7 @@ export default function HotelAccommodations() {
 
 
         {/* Pinnacle Hotel */}
-        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8 cursor-default">
           <div className="flex-1 flex flex-col justify-between relative">
             <div>
               {/* CTA Button */}
@@ -148,7 +148,14 @@ export default function HotelAccommodations() {
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
                 <HiGlobeAlt className="text-bgTour" size={20} />
-                <span className="text-sm font-medium">swiftbook.io</span>
+                <a
+                  href="https://swiftbook.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium hover:text-gray-500"
+                >
+                  swiftbook.io
+                </a>
               </div>
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
@@ -194,7 +201,7 @@ export default function HotelAccommodations() {
 
 
         {/* Evergreen Hotel */}
-        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8 cursor-default">
           <div className="flex-1 flex flex-col justify-between relative">
             <div>
               {/* CTA Button */}
@@ -274,7 +281,7 @@ export default function HotelAccommodations() {
 
 
         {/* Sequonia Inn */}
-        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8 cursor-default">
           <div className="flex-1 flex flex-col justify-between relative">
             <div>
               {/* CTA Button */}
@@ -313,7 +320,14 @@ export default function HotelAccommodations() {
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
                 <FaFacebook className="text-bgTour" size={20} />
-                <span className="text-sm font-medium">Sequoia Inn</span>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100066354794990"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium hover:text-gray-500"
+                >
+                  Sequoia Inn
+                </a>
               </div>
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
@@ -358,7 +372,7 @@ export default function HotelAccommodations() {
 
 
         {/* VBH Inn */}
-        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8 cursor-default">
           <div className="flex-1 flex flex-col justify-between relative">
             <div>
               {/* CTA Button */}
@@ -397,7 +411,14 @@ export default function HotelAccommodations() {
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
                 <FaFacebook className="text-bgTour" size={20} />
-                <span className="text-sm font-medium">VBH Inn Davao City</span>
+                <a
+                  href="https://www.facebook.com/vbhinndavaocity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium hover:text-gray-500"
+                >
+                  VBH Inn Davao City
+                </a>
               </div>
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
@@ -443,7 +464,7 @@ export default function HotelAccommodations() {
 
 
         {/* Crown Regency Residences Davao */}
-        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8 cursor-default">
           <div className="flex-1 flex flex-col justify-between relative">
             <div>
               {/* CTA Button */}
@@ -482,7 +503,14 @@ export default function HotelAccommodations() {
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
                 <FaFacebook className="text-bgTour" size={20} />
-                <span className="text-sm font-medium">Crown Regency Residences Davao</span>
+                <a
+                  href="https://www.facebook.com/crr.davao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium hover:text-gray-500"
+                >
+                  Crown Regency Residences Davao
+                </a>
               </div>
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
@@ -528,7 +556,7 @@ export default function HotelAccommodations() {
 
 
         {/* Hari Royale Suites */}
-        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8 cursor-default">
           <div className="flex-1 flex flex-col justify-between relative">
             <div>
               {/* CTA Button */}
@@ -567,7 +595,14 @@ export default function HotelAccommodations() {
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
                 <HiGlobeAlt className="text-bgTour" size={20} />
-                <span className="text-sm font-medium">hrsdavao.com</span>
+                <a
+                  href="https://www.hrsdavao.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium hover:text-gray-500"
+                >
+                  hrsdavao.com
+                </a>
               </div>
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
@@ -613,7 +648,7 @@ export default function HotelAccommodations() {
 
 
         {/* The Ritz Hotel at Garden Oases */}
-        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8 cursor-default">
           <div className="flex-1 flex flex-col justify-between relative">
             <div>
               {/* CTA Button */}
@@ -652,7 +687,14 @@ export default function HotelAccommodations() {
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
                 <FaFacebook className="text-bgTour" size={20} />
-                <span className="text-sm font-medium">The Ritz Hotel at Garden Oases</span>
+                <a
+                  href="https://www.facebook.com/theritzhoteldavao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium hover:text-gray-500"
+                >
+                  The Ritz Hotel at Garden Oases
+                </a>
               </div>
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
@@ -698,7 +740,7 @@ export default function HotelAccommodations() {
 
 
         {/* Hampton Suites */}
-        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8">
+        <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col lg:flex-row gap-8 cursor-default">
           <div className="flex-1 flex flex-col justify-between relative">
             <div>
               {/* CTA Button */}
@@ -737,7 +779,14 @@ export default function HotelAccommodations() {
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
                 <FaFacebook className="text-bgTour" size={20} />
-                <span className="text-sm font-medium">Hampton Suites</span>
+                <a
+                  href="https://www.facebook.com/hamptonsuitesdavao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium hover:text-gray-500"
+                >
+                  Hampton Suites
+                </a>
               </div>
 
               <div className="flex items-center gap-2 text-gray-700 mt-3">
