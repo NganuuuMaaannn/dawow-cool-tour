@@ -10,7 +10,7 @@ A project of HCDC 4th year Tourism.
 ## Features
 
 * **Welcome Page** for welcoming users
-* **Hom, About Indigenous Communities, and Visit Us!** for users to navigate with
+* **Home, About Indigenous Communities, and Visit Us!** for users to navigate with
 * **11 tribes icon** about the 11 tribes
 * **User-Friendly UI** it can view using mobile phones
 
