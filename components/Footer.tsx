@@ -1,14 +1,13 @@
 
 "use client";
 
-import { useRouter } from "next/navigation";
 import Image from "next/image";
 import logo1 from "../image/dvo.png";
 import logo2 from "../image/hcdc.png";
 import devIcon from "../image/devIcon.png"
+import Link from "next/link";
 
 export default function Footer() {
-  const router = useRouter();
 
   return (
     <footer className="w-full bg-white text-gray-400 py-4">
@@ -18,10 +17,9 @@ export default function Footer() {
         </div>
 
         <div className="flex space-x-6 items-center">
-          <a
-            onClick={() => router.push("/devCred")}
-            rel="noopener noreferrer"
-            className="text-devColor flex items-center gap-2 text-sm hover:opacity-80 hover:scale-105 transition-transform duration-200 cursor-pointer"
+          <Link 
+            href="/devCred" 
+            className="text-devColor flex items-center gap-2 text-sm hover:opacity-80 hover:scale-105 transition-transform duration-200"
           >
             <Image
               src={devIcon}
@@ -30,7 +28,7 @@ export default function Footer() {
               height={25}
             />
             Developers
-          </a>
+          </Link>
 
           <a
             href="https://www.facebook.com/hcdcofficial"
