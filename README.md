@@ -1,6 +1,6 @@
 # Dawow Cool Tour
 
-A project of HCDC 4th year Tourism
+A project of HCDC 4th year Tourism.
 
 > **Live Demo**
 
