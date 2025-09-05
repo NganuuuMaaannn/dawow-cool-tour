@@ -80,7 +80,7 @@ npm start
 
 ## Links
 
-* 🔗 **Live Demo**: [Vercel](https:dawow-cool-tour.vercel.app)
+* 🔗 **Live Demo**: https:dawow-cool-tour.vercel.app
 
 
 ---
