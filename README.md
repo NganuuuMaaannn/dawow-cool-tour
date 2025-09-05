@@ -25,23 +25,7 @@ A project of HCDC 4th year Tourism.
 
 ---
 
-## Project Structure
-
-```
-/dawow-cool-tour
-│
-├── /image               # Images & Icons
-├── /components          # Reusable components
-├── /pages               # Next.js pages
-├── /public              # Static assets
-├── /styles              # Global styles
-├── package.json         # Project dependencies
-└── README.md            # Project documentation
-```
-
----
-
-## Links
+## Live Demo Link
 
 * 🔗 **Live Demo**: [dawow-cool-tour.vercel.app](https://dawow-cool-tour.vercel.app)
 
