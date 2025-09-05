@@ -33,14 +33,13 @@ export default function Home() {
     {/* Your link - bring forward with z-10 */}
     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-50 select-none z-10">
       <p className="text-xs text-gray-500 mt-2 text-center">
-        Kadayawan sa Davao
         <a
           href="https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline ml-1"
+          className="hover:underline"
         >
-          https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL
+          Kadayawan sa Davao
         </a>
       </p>
     </div>

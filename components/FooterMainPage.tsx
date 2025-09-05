@@ -11,8 +11,7 @@ import References from "./References";
 export default function Footer() {
 
   return (
-    <footer className="w-full bg-white text-gray-400 py-4">
-      <References />
+    <footer className="bg-white text-gray-400 py-4">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
         <div className="text-sm text-center sm:text-left">
           © {new Date().getFullYear()} 11 Tribes of Davao City. All rights reserved. 
@@ -63,6 +62,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
+      <References />
     </footer>
   );
 }
