@@ -21,38 +21,7 @@ A project of HCDC 4th year Tourism.
 | Tech         | Description                          |
 | ------------ | ------------------------------------ |
 | NextJS       | Frontend framework                   |
-| Vercel       | Building & Deeploying                |
-
----
-
-## Installation
-
-1. **Clone the Repository**
-
-```bash
-git clone https://github.com/NganuuuMaaannn/dawow-cool-tour.git
-cd dawow-cool-tour
-```
-
-2. **Install Dependencies**
-
-```bash
-npm install
-```
-
-3. **Run the development server**
-
-```bash
-npm run dev
-```
-
-Open http://localhost:3000 with your browser to see the result.
-
-4. **Build for production**
-```bash
-npm run build
-npm start
-```
+| Vercel       | Building & Deploying                |
 
 ---
 
@@ -69,12 +38,6 @@ npm start
 ├── package.json         # Project dependencies
 └── README.md            # Project documentation
 ```
-
-## Requirements
-
-* **Node.js** (v18 or later recommended)
-* **npm** (comes with Node.js)
-
 
 ---
 
