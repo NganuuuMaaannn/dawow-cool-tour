@@ -2,8 +2,6 @@
 
 A project of HCDC 4th year Tourism.
 
-> **Live Demo**
-
 ![DawowCoolTour](https://github.com/user-attachments/assets/9b0d0eea-e096-4d9f-b42e-b2a11b6184b3)
 ---
 
