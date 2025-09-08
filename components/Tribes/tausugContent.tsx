@@ -144,17 +144,31 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022b, November 28). TAUSUG - Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM.
-            <a
-              href="https://bcpch.bangsamoro.gov.ph/tausug/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-              https://bcpch.bangsamoro.gov.ph/tausug/ 
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1075431348129191&set=a.483264004012598"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Tausug
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://bcpch.bangsamoro.gov.ph/tausug/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022b, November 28). TAUSUG - Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM.
+              </a>
+            </li>
+          </ul>
+
 
         </div>
       </section>

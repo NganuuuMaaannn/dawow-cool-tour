@@ -145,17 +145,31 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            Tribes in the Philippines. (2018, March 24). Bukidnon: The Matigsalug tribe. Tribes in the Philippines.
-            <a
-              href="https://tribesinthephilippines.wordpress.com/2018/03/24/bukidnon-the-matigsalug-tribe/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-               https://tribesinthephilippines.wordpress.com/2018/03/24/bukidnon-the-matigsalug-tribe/
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1060752616263731&set=a.483263987345933"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Matigsalog
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://tribesinthephilippines.wordpress.com/2018/03/24/bukidnon-the-matigsalug-tribe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Tribes in the Philippines. (2018, March 24). Bukidnon: The Matigsalug tribe. Tribes in the Philippines.
+              </a>
+            </li>
+          </ul>
+
 
         </div>
       </section>

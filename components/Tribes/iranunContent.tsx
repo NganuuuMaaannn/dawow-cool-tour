@@ -145,30 +145,44 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022, November 28). Iranun - Bangsamoro Commission for the 
-            Preservation of Cultural Heritage - BARMM.
-            <a
-              href="https://bcpch.bangsamoro.gov.ph/iranun/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-              https://bcpch.bangsamoro.gov.ph/iranun/
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1064588482546811&set=a.483263987345933"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Iranun
+              </a>
+            </li>
 
-          <p className="text-xs text-gray-400 mt-2">
-            Project, J. (n.d.-a). Iranun in Philippines. 
-            <a
-              href="https://www.equatorinitiative.org/2020/04/24/solution11483/ "
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-              https://joshuaproject.net/people_groups/12209/RP 
-            </a>
-          </p>
+            <li>
+              <a
+                href="https://www.equatorinitiative.org/2020/04/24/solution11483/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Project, J. (n.d.-a). Iranun in Philippines.
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://bcpch.bangsamoro.gov.ph/iranun/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022, November 28). Iranun - Bangsamoro Commission for the 
+                Preservation of Cultural Heritage - BARMM.
+              </a>
+            </li>
+
+          </ul>
+
 
         </div>
       </section>

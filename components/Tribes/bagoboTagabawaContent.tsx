@@ -148,29 +148,41 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            RemigieCoway. (n.d.). BAGOBO TAGABAWA TRIBE presentation-2 [PPTX slides]. SlideShare. Retrieved August 27, 2025, from
-            <a
-              href="https://www.slideshare.net/slideshow/bagobo-tagabawa-tribe-presentation-2-pptx/275529557"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-               https://www.slideshare.net/slideshow/bagobo-tagabawa-tribe-presentation-2-pptx/275529557
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1067079842297675&set=a.483263987345933"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Bagobo - Tagabawa
+              </a>
+            </li>
 
-          <p className="text-xs text-gray-400 mt-2">
-            Almerez, J. (n.d.). Bagobo-Tagabawa tribe [PowerPoint slides]. Scribd. Retrieved August 27, 2025, from
-            <a
-              href="https://www.slideshare.net/slideshow/bagobo-tagabawa-tribe-presentation-2-pptx/275529557"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-               http://www.scribd.com/presentation/466187486/bagobo-tagabawa-tribe
-            </a>
-          </p>
+            <li>
+              <a
+                href="https://www.slideshare.net/slideshow/bagobo-tagabawa-tribe-presentation-2-pptx/275529557"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                RemigieCoway. (n.d.). BAGOBO TAGABAWA TRIBE presentation-2 [PPTX slides]. SlideShare. Retrieved August 27, 2025
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.slideshare.net/slideshow/bagobo-tagabawa-tribe-presentation-2-pptx/275529557"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Almerez, J. (n.d.). Bagobo-Tagabawa tribe [PowerPoint slides]. Scribd. Retrieved August 27, 2025
+              </a>
+            </li>
+          </ul>
 
         </div>
       </section>

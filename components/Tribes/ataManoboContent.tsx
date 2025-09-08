@@ -145,29 +145,41 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            Yodisphere. (2023, September 17). Ata Manobo tribe culture and traditions. 
-            <a
-              href="https://www.yodisphere.com/2023/09/Ata-Manobo-Tribe-Culture-Traditions.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-              https://www.yodisphere.com/2023/09/Ata-Manobo-Tribe-Culture-Traditions.html
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1063798645959128&set=a.483263987345933"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Ata Manobo
+              </a>
+            </li>
 
-          <p className="text-xs text-gray-400 mt-2">
-            SunStar. (2010, May 16). Ata tribe building cultural village to preserve their ways.
-            <a
-              href="https://www.sunstar.com.ph/more-articles/ata-tribe-building-cultural-village-to-preserve-their-ways"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-               https://www.sunstar.com.ph/more-articles/ata-tribe-building-cultural-village-to-preserve-their-ways
-            </a>
-          </p>
+            <li>
+              <a
+                href="https://www.yodisphere.com/2023/09/Ata-Manobo-Tribe-Culture-Traditions.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Yodisphere. (2023, September 17). Ata Manobo tribe culture and traditions.
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.sunstar.com.ph/more-articles/ata-tribe-building-cultural-village-to-preserve-their-ways"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                SunStar. (2010, May 16). Ata tribe building cultural village to preserve their ways.
+              </a>
+            </li>
+          </ul>
 
         </div>
       </section>

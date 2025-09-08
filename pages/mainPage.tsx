@@ -2,7 +2,7 @@
 
 import Header from "@/components/Header";
 import MainContent from "@/components/homePage";
-import Footer from "@/components/FooterMainPage";
+import Footer from "@/components/Footer";
 import bgPattern from "@/image/tourBG.png";
 
 export default function mainPage() {

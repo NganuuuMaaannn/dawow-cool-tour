@@ -149,17 +149,30 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            Albior, A. J. D. (2023, October 2). Bagobo Klata’s culture in the modern world. SunStar Davao.
-            <a
-              href="https://www.sunstar.com.ph/amp/story/davao/feature/bagobo-klatas-culture-in-the-modern-world"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-              https://www.sunstar.com.ph/amp/story/davao/feature/bagobo-klatas-culture-in-the-modern-world
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1065418952463764&set=a.483263987345933"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Bagobo - Klata
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.sunstar.com.ph/amp/story/davao/feature/bagobo-klatas-culture-in-the-modern-world"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Albior, A. J. D. (2023, October 2). Bagobo Klata’s culture in the modern world. SunStar Davao.
+              </a>
+            </li>
+          </ul>
 
         </div>
       </section>

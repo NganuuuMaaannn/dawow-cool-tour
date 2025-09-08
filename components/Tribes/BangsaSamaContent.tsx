@@ -144,18 +144,32 @@ export default function Page1() {
           <p className="mt-3 text-sm text-white text-justify">
             {fullscreenText}
           </p>
-          
-          <p className="text-xs text-gray-400 mt-2">
-            National Commission for Culture and the Arts. (n.d.). Peoples of the Philippines: Sama. In Glimpses: Peoples of the Philippines. Retrieved August 25, 2025, from
-            <a
-              href="https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/sama/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-              https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/sama/ 
-            </a>
-          </p>
+
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo?fbid=1062991546039838&set=a.483263987345933"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Bangsa - Sama
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://ncca.gov.ph/about-culture-and-arts/culture-profile/glimpses-peoples-of-the-philippines/sama/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                National Commission for Culture and the Arts. (n.d.). Peoples of the Philippines: Sama. In Glimpses: Peoples of the Philippines. Retrieved August 25, 2025
+              </a>
+            </li>
+          </ul>
+      
 
         </div>
       </section>
