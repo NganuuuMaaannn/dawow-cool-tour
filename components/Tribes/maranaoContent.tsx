@@ -144,18 +144,32 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            Office, B. I., & Office, B. I. (2022, August 3). Sarimanok rising: The colorful culture of Maranaos - BARMM Official Website. BARMM Official Website - 
-            Bangsamoro Autonomous Region in Muslim Mindanao.   
-            <a
-              href="https://bangsamoro.gov.ph/news/latest-news/sarimanok-rising-the-colorful-culture-of-maranaos/?fbclid=IwY2xjawMZV9tleHRuA2FlbQIxMQABHu5MyDB6jNT9LjS81i7EV_J7-H_OnbuUX2NOPAOJZi4GbRfSqzF_CkNKw__1_aem_fJmLDqJ82bXu3pTFrf6NCw"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-              https://bangsamoro.gov.ph/news/latest-news/sarimanok-rising-the-colorful-culture-of-maranaos/?fbclid=IwY2xjawMZV9tleHRuA2FlbQIxMQABHu5MyDB6jNT9LjS81i7EV_J7-H_OnbuUX2NOPAOJZi4GbRfSqzF_CkNKw__1_aem_fJmLDqJ82bXu3pTFrf6NCw 
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1067855145553478&set=a.483263987345933"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Maranao
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://bangsamoro.gov.ph/news/latest-news/sarimanok-rising-the-colorful-culture-of-maranaos/?fbclid=IwY2xjawMZV9tleHRuA2FlbQIxMQABHu5MyDB6jNT9LjS81i7EV_J7-H_OnbuUX2NOPAOJZi4GbRfSqzF_CkNKw__1_aem_fJmLDqJ82bXu3pTFrf6NCw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Office, B. I., & Office, B. I. (2022, August 3). Sarimanok rising: The colorful culture of Maranaos - BARMM Official Website. BARMM Official Website - 
+                Bangsamoro Autonomous Region in Muslim Mindanao.
+              </a>
+            </li>
+          </ul>
+
 
         </div>
       </section>

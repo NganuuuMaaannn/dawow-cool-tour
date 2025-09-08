@@ -145,17 +145,31 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            Obu manuvu tribe – Equator Initiative. (2020, April 24).
-            <a
-              href="https://www.equatorinitiative.org/2020/04/24/solution11483/ "
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-               https://www.equatorinitiative.org/2020/04/24/solution11483/
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1075432648129061&set=a.483264004012598"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Ovu Manuvu
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.equatorinitiative.org/2020/04/24/solution11483/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Obu manuvu tribe – Equator Initiative. (2020, April 24)
+              </a>
+            </li>
+          </ul>
+
 
         </div>
       </section>

@@ -144,17 +144,30 @@ export default function Page1() {
             {fullscreenText}
           </p>
           
-          <p className="text-xs text-gray-400 mt-2">
-            Sunnexdesk. (2017, September 3). Kagan: The Islamized Davao natives. SunStar Publishing Inc. 
-            <a
-              href="https://www.sunstar.com.ph/amp/story/more-articles/kagan-the-islamized-davao-natives?fbclid=IwY2xjawMZV9VleHRuA2FlbQIxMQABHoSE-Tjaf2sEEr_E87XmKY3bUulZRfnkE1xFaCTzBvJ3hh5qeSYm5be4QUPM_aem_CmMEvG6r51iOLXgpyvdyvg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline ml-1"
-            >
-              https://www.sunstar.com.ph/amp/story/more-articles/kagan-the-islamized-davao-natives?fbclid=IwY2xjawMZV9VleHRuA2FlbQIxMQABHoSE-Tjaf2sEEr_E87XmKY3bUulZRfnkE1xFaCTzBvJ3hh5qeSYm5be4QUPM_aem_CmMEvG6r51iOLXgpyvdyvg
-            </a>
-          </p>
+          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
+          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+            <li>
+              <a
+                href="https://www.facebook.com/photo/?fbid=1061438989528427&set=a.483263987345933"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Kadayawan sa Davao. (2025). Bangsa - Kagan.
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.sunstar.com.ph/amp/story/more-articles/kagan-the-islamized-davao-natives?fbclid=IwY2xjawMZV9VleHRuA2FlbQIxMQABHoSE-Tjaf2sEEr_E87XmKY3bUulZRfnkE1xFaCTzBvJ3hh5qeSYm5be4QUPM_aem_CmMEvG6r51iOLXgpyvdyvg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Sunnexdesk. (2017, September 3). Kagan: The Islamized Davao natives. SunStar Publishing Inc.
+              </a>
+            </li>
+          </ul>
 
         </div>
       </section>
