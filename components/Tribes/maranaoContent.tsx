@@ -59,7 +59,7 @@ export default function Page1() {
 
       {/* Section 1 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out ${
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >
@@ -88,7 +88,7 @@ export default function Page1() {
 
       {/* Section 2 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 ${
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >
@@ -116,61 +116,62 @@ export default function Page1() {
 
       {/* Section 3 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-400 ${
+        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >
-        <div
-          className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo3.src)}
+        <div className="flex flex-col md:flex-row items-start gap-8">
+          <div
+            className="md:w-1/2 flex justify-center cursor-pointer order-1 md:order-1"
+            onClick={() => openFullscreen(ataManobo3.src)}
+          >
+            <Image
+              src={ataManobo3}
+              alt="11 Tribes of Davao City"
+              className="rounded-lg shadow-lg object-cover h-auto"
+              priority
+            />
+          </div>
 
-        >
-          <Image
-            src={ataManobo3}
-            alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover h-auto"
-            priority
-          />
-        </div>
-        <div className="md:w-1/2 text-black order-2">
-          <p className="text-base leading-relaxed text-justify">
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
+            <p className="text-base leading-relaxed text-justify text-black">
               Festivals and ceremonies provide opportunities for the community to celebrate and display their cultural wealth. Education, both religious and secular, 
               supports the continuity of their cultural knowledge and Islamic values. Despite modernization and external pressures, the Maranao remain committed to 
               preserving their heritage. Their art and architecture serve as tangible representations of identity and history. Rituals and traditional practices reinforce 
               spiritual devotion while maintaining social cohesion. Overall, the Maranao exemplify a resilient and creative culture that blends artistry, faith, and 
               tradition in contemporary Mindanao.
-          </p>
-          <p className="mt-3 text-sm text-white text-justify">
-            {fullscreenText}
-          </p>
+            </p>
           
-          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
-          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
-            <li>
-              <a
-                href="https://www.facebook.com/photo/?fbid=1067855145553478&set=a.483263987345933"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                Kadayawan sa Davao. (2025). Maranao
-              </a>
-            </li>
+            <div className="bg-bgLogin rounded-md mt-3">
+              <div className="bg-white p-4 border-l-2 border-blue-500">
+                <p className="text-xs text-gray-400 cursor-default">Reference</p>
+                <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/photo/?fbid=1067855145553478&set=a.483263987345933"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      Kadayawan sa Davao. (2025). Maranao
+                    </a>
+                  </li>
 
-            <li>
-              <a
-                href="https://bangsamoro.gov.ph/news/latest-news/sarimanok-rising-the-colorful-culture-of-maranaos/?fbclid=IwY2xjawMZV9tleHRuA2FlbQIxMQABHu5MyDB6jNT9LjS81i7EV_J7-H_OnbuUX2NOPAOJZi4GbRfSqzF_CkNKw__1_aem_fJmLDqJ82bXu3pTFrf6NCw"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                Office, B. I., & Office, B. I. (2022, August 3). Sarimanok rising: The colorful culture of Maranaos - BARMM Official Website. BARMM Official Website - 
-                Bangsamoro Autonomous Region in Muslim Mindanao.
-              </a>
-            </li>
-          </ul>
-
-
+                  <li>
+                    <a
+                      href="https://bangsamoro.gov.ph/news/latest-news/sarimanok-rising-the-colorful-culture-of-maranaos/?fbclid=IwY2xjawMZV9tleHRuA2FlbQIxMQABHu5MyDB6jNT9LjS81i7EV_J7-H_OnbuUX2NOPAOJZi4GbRfSqzF_CkNKw__1_aem_fJmLDqJ82bXu3pTFrf6NCw"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      Office, B. I., & Office, B. I. (2022, August 3). Sarimanok rising: The colorful culture of Maranaos - BARMM Official Website. BARMM Official Website - 
+                      Bangsamoro Autonomous Region in Muslim Mindanao.
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

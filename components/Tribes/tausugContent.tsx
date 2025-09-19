@@ -59,7 +59,7 @@ export default function Page1() {
 
       {/* Section 1 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out ${
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >
@@ -89,7 +89,7 @@ export default function Page1() {
 
       {/* Section 2 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 ${
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >
@@ -117,7 +117,7 @@ export default function Page1() {
 
       {/* Section 3 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-400 ${
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-400 cursor-default ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >
@@ -140,36 +140,35 @@ export default function Page1() {
               social identity. Overall, the Tausug people exemplify a vibrant blend of Islamic faith, maritime tradition, and rich indigenous culture that continues to 
               thrive in the Bangsamoro region.
           </p>
-          <p className="mt-3 text-sm text-white text-justify">
-            {fullscreenText}
-          </p>
           
-          <p className="text-xs text-gray-400 mt-5 cursor-default">Reference</p>
-          <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
-            <li>
-              <a
-                href="https://www.facebook.com/photo/?fbid=1075431348129191&set=a.483264004012598"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                Kadayawan sa Davao. (2025). Tausug
-              </a>
-            </li>
+          <div className="bg-bgLogin rounded-md mt-3">
+            <div className="bg-white p-4 border-l-2 border-blue-500">
+              <p className="text-xs text-gray-400 cursor-default">Reference</p>
+              <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+                <li>
+                  <a
+                    href="https://www.facebook.com/photo/?fbid=1075431348129191&set=a.483264004012598"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Kadayawan sa Davao. (2025). Tausug
+                  </a>
+                </li>
 
-            <li>
-              <a
-                href="https://bcpch.bangsamoro.gov.ph/tausug/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:underline"
-              >
-                Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022b, November 28). TAUSUG - Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM.
-              </a>
-            </li>
-          </ul>
-
-
+                <li>
+                  <a
+                    href="https://bcpch.bangsamoro.gov.ph/tausug/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022b, November 28). TAUSUG - Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM.
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </>
