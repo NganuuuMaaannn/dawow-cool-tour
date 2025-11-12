@@ -12,8 +12,8 @@ export default function Footer() {
   return (
     <footer className="w-full bg-white text-gray-400 py-4">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center">
-        <div className="text-sm text-center sm:text-left">
-          © {new Date().getFullYear()} 11 Tribes of Davao City. All rights reserved. 
+        <div className="text-sm text-center sm:text-left cursor-default">
+          © {new Date().getFullYear()} Love, Davao! All rights reserved. 
         </div>
 
         <div className="flex space-x-6 items-center">

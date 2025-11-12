@@ -3,8 +3,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { HiArrowNarrowRight } from "react-icons/hi";
-import mainpageImage from "../image/mainpage.jpg";
 
 export default function HomePage() {
   const router = useRouter();
@@ -14,12 +12,6 @@ export default function HomePage() {
   useEffect(() => {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
-
-  const handleClick = () => {
-    setTimeout(() => {
-      router.push("/aboutTribes");
-    }, 600);
-  };
 
   const handleTribeClick = (link: string, name: string) => {
     setSelectedTribe(name);
@@ -32,14 +24,14 @@ export default function HomePage() {
     { name: "Ata Manobo", img: "/images/AtaManobo.png", link: "/tribes/ataManobo" },
     { name: "Bagobo - Klata", img: "/images/bagobo-klata.png", link: "/tribes/bagoboKlata" },
     { name: "Bagobo - Tagabawa", img: "/images/bagobo-tagabawa.png", link: "/tribes/bagoboTagabawa" },
-    { name: "Matigsalog", img: "/images/matigsalog.png", link: "/tribes/matigsalog" },
-    { name: "Ovu Manuvu", img: "/images/obuManuvu.png", link: "/tribes/ovuManuvu" },
+    { name: "Matigsalug", img: "/images/matigsalog.png", link: "/tribes/matigsalog" },
+    { name: "Obu Manuvu", img: "/images/obuManuvu.png", link: "/tribes/ovuManuvu" },
     { name: "Iranun", img: "/images/iranun.png", link: "/tribes/iranun" },
     { name: "Bangsa - Kagan", img: "/images/kagan.png", link: "/tribes/bangsaKagan" },
     { name: "Maguindanaon", img: "/images/maguindanaon.png", link: "/tribes/maguindanaon" },
     { name: "Maranao", img: "/images/maranao.png", link: "/tribes/maranao" },
     { name: "Bangsa - Sama", img: "/images/sama.png", link: "/tribes/bangsaSama" },
-    { name: "Tausog", img: "/images/tausug.png", link: "/tribes/tausug" },
+    { name: "Tausug", img: "/images/tausug.png", link: "/tribes/tausug" },
   ];
 
   return (
@@ -50,26 +42,7 @@ export default function HomePage() {
         }`}
       >
         <div className="flex flex-col items-center w-full max-w-6xl">
-          <div className="relative w-full">
-            <Image
-              src={mainpageImage}
-              alt="Main page"
-              className="rounded-lg shadow-lg w-full h-auto"
-            />
-
-            <button
-              onClick={handleClick}
-              className="absolute left-1/2 bottom-4 lg:bottom-10 -translate-x-1/2 group px-6 sm:px-8 py-2 sm:py-3 rounded-full text-white font-semibold bg-bgTour overflow-hidden flex items-center justify-center hover:bg-hoverTour transition"
-            >
-              <span className="transform transition-transform duration-300 group-hover:-translate-x-3">
-                About Indigenous Communities
-              </span>
-              <HiArrowNarrowRight
-                className="absolute right-3 opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
-                size={20}
-              />
-            </button>
-          </div>
+          <h1 className="text-black text-3xl lg:text-4xl font-montserrat font-bold mt-5 mb-5 cursor-default">Kadayawan E-Village</h1>
         </div>
       </div>
 
