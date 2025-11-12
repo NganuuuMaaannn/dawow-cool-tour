@@ -8,12 +8,12 @@ import { useRouter } from "next/navigation";
 
 import davao from "@/image/davao.png"
 import main1 from "@/image/Carousel/ata.jpg";
-import main2 from "@/image/Carousel/bago.jpg";
+import main2 from "@/image/Carousel/bago.png";
 import main3 from "@/image/Carousel/iranun.jpg";
-import main4 from "@/image/Carousel/klata.jpg";
+import main4 from "@/image/Carousel/klata.png";
 import main5 from "@/image/Carousel/magui.jpg";
 import main6 from "@/image/Carousel/maranao.jpg";
-import main7 from "@/image/Carousel/obu.jpg";
+import main7 from "@/image/Carousel/obu.png";
 import main8 from "@/image/Carousel/sama.jpg";
 import main9 from "@/image/Carousel/tau.jpg";
 
