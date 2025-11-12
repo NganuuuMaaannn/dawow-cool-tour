@@ -4,6 +4,8 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
+import davao from "@/image/davao.png"
 
 export default function Home() {
   const router = useRouter();
@@ -12,7 +14,7 @@ export default function Home() {
   const handleClick = () => {
     setIsExiting(true);
     setTimeout(() => {
-      router.push("/mainPage");
+      router.push("/carouselPage");
     }, 600);
   };
 
@@ -27,22 +29,22 @@ export default function Home() {
         playsInline
       />
 
-    {/* Overlay - push behind with z-0 */}
-    <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+      {/* Overlay - push behind with z-0 */}
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
 
-    {/* Your link - bring forward with z-10 */}
-    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-50 select-none z-10">
-      <p className="text-xs text-gray-500 mt-2 text-center">
-        <a
-          href="https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline"
-        >
-          Kadayawan sa Davao
-        </a>
-      </p>
-    </div>
+      {/* Your link - bring forward with z-10 */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-50 select-none z-10">
+        <p className="text-xs text-gray-500 mt-2 text-center">
+          <a
+            href="https://www.facebook.com/watch/?v=1468188284306231&rdid=UPYdZ4D2bCphn1SL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Kadayawan sa Davao
+          </a>
+        </p>
+      </div>
 
 
       <AnimatePresence>
@@ -53,18 +55,20 @@ export default function Home() {
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-6xl font-montserrat font-normal text-white mb-2">
-              DaWow Cool Tour
-            </h1>
-            <p className="text-white text-sm md:text-lg mb-6">
-              A journey into the heart of culture and tradition
+            <Image
+              src={davao}alt="Davao City view"
+              className="object-cover w-full h-full rounded-3xl select-none"
+              priority
+            />
+            <p className="font-montserrat text-white text-sm md:text-lg mb-6 mt-2">
+              Come home to culture, come home to Davao.
             </p>
             <div className="flex items-center justify-center">
               <button
                 onClick={handleClick}
                 className="group relative px-20 py-3 rounded-full text-white font-semibold bg-bgTour overflow-hidden flex items-center justify-center hover:bg-hoverTour transition"
               >
-                <span className="transform transition-transform duration-300 group-hover:-translate-x-3">
+                <span className="font-montserrat transform transition-transform duration-300 group-hover:-translate-x-3">
                   Explore
                 </span>
                 <HiArrowNarrowRight
