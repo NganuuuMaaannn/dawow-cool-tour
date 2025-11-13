@@ -17,14 +17,17 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-bgLogin relative">
 
-      {/* BACK BUTTON */}
-      <button
-        className="fixed top-6 left-6 z-30 bg-red-700 px-4 py-2 rounded-full shadow-lg hover:bg-red-900 transition flex items-center gap-2"
-        onClick={() => window.history.back()}
-      >
-        <FaArrowLeft className="text-white" />
-        <span className="font-montserrat font-semibold text-white">Back</span>
-      </button>
+      <header className="w-full bg-bgLogin text-white flex items-center gap-3 p-4 fixed top-0 left-0 z-20">
+        <button
+          onClick={() => history.back()}
+          className="bg-red-700 text-white rounded-full w-[50px] h-[50px] flex items-center justify-center hover:scale-110 transition-transform"
+        >
+          <FaArrowLeft size={18} />
+        </button>
+        <span className="text-sm text-black sm:text-sm pl-3 cursor-default">
+          Photo Courtesy: <strong>Tong Yang, SM City Davao Ecoland</strong>
+        </span>
+      </header>
 
       {/* GALLERY GRID */}
       <div className="min-h-screen flex justify-center items-center px-6 pb-20">
