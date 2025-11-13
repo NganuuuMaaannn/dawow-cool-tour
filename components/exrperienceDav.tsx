@@ -19,6 +19,12 @@ export default function ExperienceDavao() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
+  const handleClick = () => {
+    setTimeout(() => {
+      router.push("/mainPage");
+    }, 600);
+  };
+
   return (
     <main
       className={`relative flex flex-col lg:flex-row w-full min-h-screen overflow-hidden transition-all duration-700 ease-out ${
@@ -27,7 +33,7 @@ export default function ExperienceDavao() {
     >
       {/* Back Button */}
       <button
-        onClick={() => history.back()}
+        onClick={handleClick}
         className="absolute top-5 left-5 z-20 bg-bgTour hover:bg-hoverTour text-black rounded-full p-3 shadow-lg hover:scale-110 transition-transform"
       >
         <FaArrowLeft color="white" size={18} />

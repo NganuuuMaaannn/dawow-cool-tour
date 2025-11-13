@@ -40,6 +40,10 @@ const config: Config = {
         bgBlue:"#377fbc",
         devColor: "#2978c3",
       },
+      screens: {
+        'hd': '1280px',
+        'fhd': '1920px',
+      },
     },
   },
   plugins: [],

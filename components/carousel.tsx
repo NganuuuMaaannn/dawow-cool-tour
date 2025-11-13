@@ -74,12 +74,12 @@ export default function HomePage() {
       </div>
 
       {/* Carousel */}
-      <div className="relative mt-10 mb-10 flex items-center justify-center w-full max-w-7xl h-[260px] sm:h-[380px] md:h-[450px] lg:h-[500px]">
+      <div className="relative mt-10 mb-10 hd:-mt-12 fhd:mt-10 flex items-center justify-center w-full max-w-7xl h-[260px] sm:h-[380px] md:h-[450px] lg:h-[500px]">
         {/* Left Arrow */}
         {current > 0 && (
           <button
             onClick={prevSlide}
-            className="absolute left-4 sm:left-10 md:left-28 top-1/2 -translate-y-1/2 bg-bgTour hover:bg-bgTour/80 text-white rounded-full p-2 sm:p-4 md:p-5 shadow-lg transition z-30"
+            className="absolute left-4 sm:left-10 md:left-28 hd:left-72 fhd:left-32 top-1/2 -translate-y-1/2 bg-bgTour hover:bg-bgTour/80 text-white rounded-full p-2 sm:p-4 md:p-5 shadow-lg transition z-30"
           >
             <FaChevronLeft size={18} />
           </button>
@@ -107,12 +107,23 @@ export default function HomePage() {
           return (
             <div
               key={index}
-              className={`absolute w-[260px] h-[180px] sm:w-[400px] sm:h-[250px] md:w-[650px] md:h-[400px] lg:w-[880px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl transition-all duration-700 ease-in-out transform ${transform}`}
+              className={`absolute 
+                w-[260px] h-[180px] 
+                sm:w-[400px] sm:h-[250px] 
+                md:w-[650px] md:h-[400px] 
+                hd:w-[550px] hd:h-[330px]
+                fhd:w-[800px] fhd:h-[500px] 
+                lg:w-[880px] lg:h-[500px] 
+                rounded-3xl overflow-hidden shadow-2xl 
+                transition-all duration-700 ease-in-out transform ${transform}`}
             >
               <Image
                 src={img}
                 alt={`Slide ${index}`}
                 className="object-cover w-full h-full rounded-3xl select-none"
+                width={0}
+                height={0}
+                sizes="100vw"
                 priority
               />
             </div>
@@ -123,7 +134,7 @@ export default function HomePage() {
         {current < total - 1 && (
           <button
             onClick={nextSlide}
-            className="absolute right-4 sm:right-10 md:right-28 top-1/2 -translate-y-1/2 bg-bgTour hover:bg-hoverTour/80 text-white rounded-full p-2 sm:p-4 md:p-5 shadow-lg transition z-30"
+            className="absolute right-4 sm:right-10 md:right-28 hd:right-72 fhd:right-32 top-1/2 -translate-y-1/2 bg-bgTour hover:bg-hoverTour/80 text-white rounded-full p-2 sm:p-4 md:p-5 shadow-lg transition z-30"
           >
             <FaChevronRight className="pl-1" size={18} />
           </button>

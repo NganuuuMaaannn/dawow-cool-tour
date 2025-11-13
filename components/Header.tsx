@@ -24,6 +24,9 @@ export default function Header() {
               src={davao}
               alt="Love, Davao!"
               className="object-contain w-[140px] sm:w-[160px] select-none"
+              width={0}
+              height={0}
+              sizes="100vw"
               priority
             />
             <span className="text-[9px] ml-11 -mt-2 block">Mabuhay ug Madayaw!</span>
