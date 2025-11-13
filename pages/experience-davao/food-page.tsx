@@ -27,6 +27,24 @@ export default function FoodsPage() {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
+  const handleClickVikings = () => {
+    setTimeout(() => {
+      router.push("/experience-davao/food/vikings");
+    }, 600);
+  };
+
+  const handleClickTongyang = () => {
+    setTimeout(() => {
+      router.push("/experience-davao/food/tongyang");
+    }, 600);
+  };
+
+  const handleClickHuckle = () => {
+    setTimeout(() => {
+      router.push("/experience-davao/food/huckleberry");
+    }, 600);
+  };
+
   return (
     <main className="relative min-h-screen flex flex-col items-center bg-bgLogin">
 
@@ -92,7 +110,7 @@ export default function FoodsPage() {
 
           {/* RIGHT — IMAGE */}
           <div
-            onClick={() => router.push("food/vikings")}
+            onClick={handleClickVikings}
             className="
               absolute cursor-pointer group
               top-auto bottom-[20px] right-4  
@@ -200,7 +218,7 @@ export default function FoodsPage() {
 
           {/* RIGHT — IMAGE */}
           <div
-            onClick={() => router.push("food/vikings")}
+            onClick={handleClickTongyang}
             className="
               absolute cursor-pointer group
               top-auto bottom-[20px] right-4  
@@ -285,7 +303,7 @@ export default function FoodsPage() {
 
           {/* RIGHT — IMAGE */}
           <div
-            onClick={() => router.push("food/vikings")}
+            onClick={handleClickHuckle}
             className="
               absolute cursor-pointer group
               top-auto bottom-[20px] right-4  

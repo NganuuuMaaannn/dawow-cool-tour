@@ -69,6 +69,7 @@ export default function HomePage() {
                   width={208}
                   height={208}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-200"
+                  priority
                 />
               </div>
               <p className="mt-2 text-center text-black font-semibold text-sm sm:text-base">

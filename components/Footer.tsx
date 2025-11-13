@@ -26,6 +26,8 @@ export default function Footer() {
               alt="Developer Icon"
               width={25}
               height={25}
+              sizes="100vw"
+              priority
             />
             Developers
           </Link>
@@ -42,6 +44,8 @@ export default function Footer() {
               width={100}
               height={30}
               className="object-contain"
+              sizes="100vw"
+              priority
             />
           </a>
 
@@ -56,6 +60,8 @@ export default function Footer() {
               alt="Davao City Facebook page"
               width={100}
               height={30}
+              sizes="100vw"
+              priority
               className="object-contain"
             />
           </a>
