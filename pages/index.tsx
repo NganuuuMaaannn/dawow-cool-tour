@@ -60,7 +60,7 @@ export default function Home() {
               className="object-cover w-full h-full rounded-3xl select-none"
               priority
             />
-            <p className="font-montserrat text-white text-sm md:text-lg mb-6 mt-2">
+            <p className=" text-white text-sm md:text-lg mb-6 mt-2">
               Come home to culture, come home to Davao.
             </p>
             <div className="flex items-center justify-center">

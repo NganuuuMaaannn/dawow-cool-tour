@@ -60,7 +60,7 @@ export default function ExperienceDavao() {
 
       {/* Panel 2 - Attractions */}
       <div
-        onClick={() => router.push("/food-page")} 
+        onClick={() => router.push("/experience-davao/attraction-page")} 
         className="relative flex-1 flex items-center justify-center overflow-hidden group transition-all duration-700 ease-in-out hover:lg:flex-[1.5] min-h-[50vh] lg:min-h-screen"
       >
         <Image
