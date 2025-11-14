@@ -35,19 +35,19 @@ export default function Header() {
           <nav className="hidden md:flex space-x-4">
             <button
               onClick={() => router.push("/experience-davao")}
-              className="font-montserrat text-lg font-bold px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
+              className="font-montserrat text-lg font-bold px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-hoverTour transition"
             >
               Experience, Davao!
             </button>
             <button
               onClick={() => router.push("/visitUs")}
-              className="font-montserrat text-lg font-bold px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
+              className="font-montserrat text-lg font-bold px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-hoverTour transition"
             >
               Connect, Davao!
             </button>
             <button
               onClick={() => router.push("/visitUs")}
-              className="font-montserrat text-lg font-bold px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-black transition"
+              className="font-montserrat text-lg font-bold px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-hoverTour transition"
             >
               About Love, Davao!
             </button>
