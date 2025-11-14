@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 
 import type { TourGuide } from "@/components/TourGuideCard";
 import TourGuideCard from "@/components/TourGuideCard";
-import guides from "../data/tour-guides.json";
+import guides from "@/pages/data/tour-guides.json";
 
 export default function TourGuide() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,7 +45,7 @@ export default function TourGuide() {
             <FaArrowLeft size={18} />
           </button>
 
-          <h1 className="text-black text-2xl sm:text-3xl font-semibold">
+          <h1 className="text-black text-2xl sm:text-3xl pl-3 font-semibold">
             Tour Guides
           </h1>
         </div>

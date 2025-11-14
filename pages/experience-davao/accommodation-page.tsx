@@ -64,8 +64,8 @@ export default function AccommodationPage() {
 
             <section
                 className={`mt-24 w-full max-w-6xl px-4 sm:px-8 flex flex-col gap-16 pb-10 transition-all duration-700 ease-out
-          ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
-        `}
+                    ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+                `}
             >
 
 
@@ -395,7 +395,7 @@ export default function AccommodationPage() {
                         <Image src={micro4} alt="Vikings" className="w-full h-full object-cover" priority />
                     </div>
                 </div>
-                <hr className="w-full border-bgTour"/>
+                <hr className="w-full border-bgTour" />
 
 
 
@@ -410,7 +410,7 @@ export default function AccommodationPage() {
                         <h2 className="text-2xl md:text-4xl text-black font-bold mb-5 flex items-center gap-2">
                             Home Crest Hotel
                             <span className="flex items-center text-yellow-400 text-xl">
-                                <HiStar /> <HiStar /> <HiStar /> 
+                                <HiStar /> <HiStar /> <HiStar />
                             </span>
                         </h2>
 
