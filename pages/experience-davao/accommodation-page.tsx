@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 
@@ -39,6 +40,7 @@ import {
 import { HiStar, HiGlobeAlt } from "react-icons/hi";
 
 export default function AccommodationPage() {
+    const router = useRouter();
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -50,7 +52,7 @@ export default function AccommodationPage() {
 
             <header className="w-full bg-bgTour text-white flex items-center gap-3 p-4 shadow-md fixed top-0 left-0 z-20">
                 <button
-                    onClick={() => history.back()}
+                    onClick={() => router.push("/experience-davao")}
                     className="bg-white text-bgTour rounded-full p-2 hover:scale-110 transition-transform"
                 >
                     <FaArrowLeft size={18} />

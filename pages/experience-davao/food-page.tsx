@@ -50,7 +50,7 @@ export default function FoodsPage() {
 
       <header className="w-full bg-red-700 text-white flex items-center gap-3 p-4 shadow-md fixed top-0 left-0 z-20">
         <button
-          onClick={() => history.back()}
+          onClick={() => router.push("/experience-davao")}
           className="bg-white text-red-700 rounded-full p-2 hover:scale-110 transition-transform"
         >
           <FaArrowLeft size={18} />

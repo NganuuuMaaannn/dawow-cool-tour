@@ -16,14 +16,16 @@ import main6 from "@/image/Carousel/maranao.jpg";
 import main7 from "@/image/Carousel/obu.png";
 import main8 from "@/image/Carousel/sama.jpg";
 import main9 from "@/image/Carousel/tau.jpg";
+import main10 from "@/image/Carousel/kagan.jpg";
+import main11 from "@/image/Carousel/matigsalug.jpg";
 
 export default function HomePage() {
   const router = useRouter();
-  const [current, setCurrent] = useState(4);
+  const [current, setCurrent] = useState(5);
   const [animating, setAnimating] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  const images = [main1, main2, main3, main4, main5, main6, main7, main8, main9];
+  const images = [main1, main2, main3, main4, main5, main6, main7, main8, main9, main10, main11];
   const total = images.length;
 
   // ✨ Fade in animation setup
