@@ -79,7 +79,7 @@ export default function ExperienceDavao() {
 
       {/* Panel 3 - Accommodation */}
       <div
-        onClick={() => router.push("/food-page")} 
+        onClick={() => router.push("/experience-davao/accommodation-page")} 
         className="relative flex-1 flex items-center justify-center overflow-hidden group transition-all duration-700 ease-in-out hover:lg:flex-[1.5] min-h-[50vh] lg:min-h-screen"
       >
         <Image
@@ -88,7 +88,7 @@ export default function ExperienceDavao() {
           fill
           className="object-cover opacity-60 group-hover:opacity-90 transition-opacity duration-500"
         />
-        <div className="absolute inset-0 bg-green-600 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-bgTour mix-blend-multiply"></div>
         <h2 className="absolute text-white font-semibold tracking-wide z-10 select-none text-2xl sm:text-5xl md:text-5xl 
                        lg:rotate-[-90deg] lg:bottom-52 lg:-right-32 
                        bottom-10 right-1/2 translate-x-1/2 lg:translate-x-0">

@@ -3,23 +3,31 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+
 import eagle1 from "@/image/Attraction/eagle1.png";
 import eagle2 from "@/image/Attraction/eagle2.png";
+
 import ppark1 from "@/image/Attraction/ppark1.png";
 import ppark2 from "@/image/Attraction/ppark2.png";
 import ppark3 from "@/image/Attraction/ppark3.png";
+
 import national1 from "@/image/Attraction/national1.png";
 import national2 from "@/image/Attraction/national2.png";
+
 import croc1 from "@/image/Attraction/croc1.png";
 import croc2 from "@/image/Attraction/croc2.png";
+
 import malagos1 from "@/image/Attraction/malagos1.png";
 import malagos2 from "@/image/Attraction/malagos2.png";
 import malagos3 from "@/image/Attraction/malagos3.png";
+
 import eden1 from "@/image/Attraction/eden1.png";
 import eden2 from "@/image/Attraction/eden2.png";
 import eden3 from "@/image/Attraction/eden3.png";
+
 import bamboo1 from "@/image/Attraction/bamboo1.png";
 import bamboo2 from "@/image/Attraction/bamboo2.png";
+
 import bone1 from "@/image/Attraction/bone1.png";
 import bone2 from "@/image/Attraction/bone2.png";
 
@@ -35,7 +43,7 @@ import { HiMiniBuildingOffice } from "react-icons/hi2";
 
 import { HiClock } from "react-icons/hi";
 
-export default function FoodsPage() {
+export default function AttractionPage() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -104,11 +112,20 @@ export default function FoodsPage() {
 
             {/* CREDITS BOX */}
             <div className="bg-bgLogin rounded-md mt-6 w-full">
-              <div className="bg-white p-4 border-l-4 border-blue-500">
+              <div className="bg-white p-4 border-l-4 border-cyan-500">
                 <p className="text-xs text-gray-400">Photo Courtesy</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2">
                   <li>Guide to the Philippines</li>
-                  <li>newsinfo.inquirer.net</li>
+                  <li>
+                    <a
+                      href="https://newsinfo.inquirer.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      newsinfo.inquirer.net
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -153,12 +170,39 @@ export default function FoodsPage() {
 
             {/* CREDITS BOX */}
             <div className="bg-bgLogin rounded-md mt-6 w-full">
-              <div className="bg-white p-4 border-l-4 border-blue-500">
+              <div className="bg-white p-4 border-l-4 border-cyan-500">
                 <p className="text-xs text-gray-400">Photo Courtesy</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2">
-                  <li>Meanttogo.com</li>
-                  <li>www.discoverthephilippines.com</li>
-                  <li>realbreezdavaotours.com</li>
+                  <li>
+                    <a
+                      href="http://Meanttogo.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      Meanttogo.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.discoverthephilippines.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.discoverthephilippines.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://realbreezdavaotours.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      realbreezdavaotours.com
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -237,10 +281,19 @@ export default function FoodsPage() {
 
             {/* CREDITS BOX */}
             <div className="bg-bgLogin rounded-md mt-6 w-full">
-              <div className="bg-white p-4 border-l-4 border-blue-500">
+              <div className="bg-white p-4 border-l-4 border-cyan-500">
                 <p className="text-xs text-gray-400">Photo Courtesy</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2">
-                  <li>www.nationalmuseum.gov.ph</li>
+                  <li>
+                    <a
+                      href="http://www.nationalmuseum.gov.ph"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.nationalmuseum.gov.ph
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -289,11 +342,29 @@ export default function FoodsPage() {
 
             {/* CREDITS BOX */}
             <div className="bg-bgLogin rounded-md mt-6 w-full">
-              <div className="bg-white p-4 border-l-4 border-blue-500">
+              <div className="bg-white p-4 border-l-4 border-cyan-500">
                 <p className="text-xs text-gray-400">Photo Courtesy</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2">
-                  <li>Poorlakwatchera.blogspot.com </li>
-                  <li>www.phtourguide.com </li>
+                  <li>
+                    <a
+                      href="http://Poorlakwatchera.blogspot.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      Poorlakwatchera.blogspot.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.phtourguide.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.phtourguide.com
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -366,10 +437,19 @@ export default function FoodsPage() {
 
             {/* CREDITS BOX */}
             <div className="bg-bgLogin rounded-md mt-6 w-full">
-              <div className="bg-white p-4 border-l-4 border-blue-500">
+              <div className="bg-white p-4 border-l-4 border-cyan-500">
                 <p className="text-xs text-gray-400">Photo Courtesy</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2">
-                  <li>www.malagos.com</li>
+                  <li>
+                    <a
+                      href="http://www.malagos.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.malagos.com
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -430,12 +510,39 @@ export default function FoodsPage() {
 
             {/* CREDITS BOX */}
             <div className="bg-bgLogin rounded-md mt-6 w-full">
-              <div className="bg-white p-4 border-l-4 border-blue-500">
+              <div className="bg-white p-4 border-l-4 border-cyan-500">
                 <p className="text-xs text-gray-400">Photo Courtesy</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2">
-                  <li>www.edennaturepark.com</li>
-                  <li>www.agoda.com</li>
-                  <li>www.moneymax.ph</li>
+                  <li>
+                    <a
+                      href="http://www.edennaturepark.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.edennaturepark.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.agoda.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.agoda.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.moneymax.ph"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.moneymax.ph
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -509,11 +616,29 @@ export default function FoodsPage() {
 
             {/* CREDITS BOX */}
             <div className="bg-bgLogin rounded-md mt-6 w-full">
-              <div className="bg-white p-4 border-l-4 border-blue-500">
+              <div className="bg-white p-4 border-l-4 border-cyan-500">
                 <p className="text-xs text-gray-400">Photo Courtesy</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2">
-                  <li>www.youtube.com</li>
-                  <li>davaobamboo.com</li>
+                  <li>
+                    <a
+                      href="http://www.youtube.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.youtube.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://davaobamboo.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      davaobamboo.com
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -554,11 +679,29 @@ export default function FoodsPage() {
 
             {/* CREDITS BOX */}
             <div className="bg-bgLogin rounded-md mt-6 w-full">
-              <div className="bg-white p-4 border-l-4 border-blue-500">
+              <div className="bg-white p-4 border-l-4 border-cyan-500">
                 <p className="text-xs text-gray-400">Photo Courtesy</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2">
-                  <li>www.tripadvisor.com </li>
-                  <li>wondrousdrifter.com</li>
+                  <li>
+                    <a
+                      href="http://www.tripadvisor.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      www.tripadvisor.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="http://wondrousdrifter.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline"
+                    >
+                      wondrousdrifter.com
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
