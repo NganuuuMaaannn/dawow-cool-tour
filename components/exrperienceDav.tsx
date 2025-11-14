@@ -7,10 +7,10 @@ import Image from "next/image";
 
 import food from "@/image/food.jpg";
 import eagle from "@/image/eagle.jpg";
-import accom from "@/image/accom.jpg";
-import tour from "@/image/tour.jpg";
-import event from "@/image/event.jpg";
-
+import accom from "@/image/ac.jpg";
+import tour from "@/image/tg.jpg";
+import event from "@/image/ea1.jpg";
+  
 export default function ExperienceDavao() {
   const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
@@ -54,7 +54,7 @@ export default function ExperienceDavao() {
         <h2 className="absolute text-white font-semibold tracking-wide z-10 select-none text-2xl sm:text-5xl md:text-5xl 
                        lg:rotate-[-90deg] lg:bottom-20 lg:right-2 
                        bottom-10 right-1/2 translate-x-1/2 lg:translate-x-0">
-          Food
+          Foods
         </h2>
       </div>
 
@@ -98,7 +98,7 @@ export default function ExperienceDavao() {
 
       {/* Panel 4 - Tour Guides */}
       <div
-        onClick={() => router.push("/food-page")} 
+        onClick={() => router.push("/experience-davao/tour-guide-page")} 
         className="relative flex-1 flex items-center justify-center overflow-hidden group transition-all duration-700 ease-in-out hover:lg:flex-[1.5] min-h-[50vh] lg:min-h-screen"
       >
         <Image
