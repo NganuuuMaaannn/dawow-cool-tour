@@ -1,17 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
-
-import logo1 from "@/image/Logo/cca.jpg";
-import logo2 from "@/image/Logo/chatme.jpg";
-import logo3 from "@/image/Logo/dc logo.jpg";
-import logo4 from "@/image/Logo/DOT.png";
-import logo5 from "@/image/Logo/hcdc_logo.png";
-import logo6 from "@/image/Logo/ids.jpg";
-import logo7 from "@/image/Logo/Life-is-Here-small.png";
-import logo8 from "@/image/Logo/love-philippines-logo-png_seeklogo-619869.png";
-import logo9 from "@/image/Logo/tourism logo.jpg";
 
 export default function AboutLoveDavao() {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,7 +14,7 @@ export default function AboutLoveDavao() {
       className={`flex justify-center items-center px-4 py-12 bg-gray-100 mt-10 transition-all duration-700 ease-out ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
     >
-      <div className="w-full mt-5 max-w-6xl">
+      <div className="w-full mt-10 max-w-6xl">
         <div className="bg-white  rounded-2xl shadow-xl p-10 md:p-14 space-y-10 cursor-default mx-auto">
 
           <h1 className="text-3xl font-montserrat md:text-4xl font-bold text-center text-gray-800">
@@ -65,62 +54,6 @@ export default function AboutLoveDavao() {
               Wherever you are in the world, Davao awaits you with open arms. Truly, Love, Davao!
             </p>
           </div>
-
-          <div className="pt-10">
-            <div className="flex flex-col items-center space-y-10">
-
-              {/* TOP ROW - 4 logos desktop, 2 mobile */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-14 place-items-center">
-                {[logo1, logo2, logo3, logo4].map((logo, index) => (
-                  <div
-                    key={index}
-                    className="w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center bg-white rounded-xl shadow-sm p-3 hover:scale-105 transition"
-                  >
-                    <Image
-                      src={logo}
-                      alt={`Logo ${index + 1}`}
-                      className="object-contain w-full h-full"
-                    />
-                  </div>
-                ))}
-              </div>
-
-              {/* BOTTOM ROW - 5 logos desktop, but last centered on mobile */}
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 sm:gap-14 place-items-center">
-
-                {/* First 4 logos normally */}
-                {[logo5, logo6, logo7, logo8].map((logo, index) => (
-                  <div
-                    key={index}
-                    className="w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center bg-white rounded-xl shadow-sm p-3 hover:scale-105 transition"
-                  >
-                    <Image
-                      src={logo}
-                      alt={`Logo row 2 - ${index + 1}`}
-                      className="object-contain w-full h-full"
-                    />
-                  </div>
-                ))}
-
-                {/* LAST LOGO — CENTERED ON MOBILE */}
-                <div
-                  className="
-                    w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center 
-                    bg-white rounded-xl shadow-sm p-3 hover:scale-105 transition
-                    col-span-2 sm:col-span-1 justify-self-center
-                  ">
-                  <Image
-                    src={logo9}
-                    alt="Last Logo"
-                    className="object-contain w-full h-full"
-                  />
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
         </div>
       </div>
     </main>
