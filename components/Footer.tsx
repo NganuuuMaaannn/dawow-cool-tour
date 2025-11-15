@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import devIcon from "../image/devIcon.png";
 
 import dvo from "../image/dvo.png";
 import logo1 from "@/image/Logo/cca.jpg";
@@ -10,7 +9,6 @@ import logo3 from "@/image/Logo/dc logo.jpg";
 import logo4 from "@/image/Logo/DOT.png";
 import logo5 from "@/image/Logo/hcdc_logo.png";
 import logo6 from "@/image/Logo/ids.jpg";
-import logo7 from "@/image/Logo/Life-is-Here-small.png";
 import logo8 from "@/image/Logo/love-philippines-logo-png_seeklogo-619869.png";
 import logo9 from "@/image/Logo/tourism logo.jpg";
 

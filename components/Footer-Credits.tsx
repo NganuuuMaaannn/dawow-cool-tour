@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import devIcon from "../image/devIcon.png";
+import Link from "next/link";
 
 import dvo from "../image/dvo.png";
 import logo1 from "@/image/Logo/cca.jpg";
@@ -10,7 +11,6 @@ import logo3 from "@/image/Logo/dc logo.jpg";
 import logo4 from "@/image/Logo/DOT.png";
 import logo5 from "@/image/Logo/hcdc_logo.png";
 import logo6 from "@/image/Logo/ids.jpg";
-import logo7 from "@/image/Logo/Life-is-Here-small.png";
 import logo8 from "@/image/Logo/love-philippines-logo-png_seeklogo-619869.png";
 import logo9 from "@/image/Logo/tourism logo.jpg";
 
@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full bg-white text-gray-400 py-6">
 
-      <a
+      <Link
         href="/devCred"
         className="absolute bottom-3 right-3 hover:opacity-80 hover:scale-110 transition"
       >
@@ -30,7 +30,7 @@ export default function Footer() {
           height={30}
           className="object-contain"
         />
-      </a>
+      </Link>
 
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-4">
 
