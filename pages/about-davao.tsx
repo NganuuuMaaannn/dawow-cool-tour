@@ -1,7 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
-import VisitUs from "@/components/visitUs";
+import VisitUs from "@/components/about-love";
 import Footer from "@/components/Footer";
 
 export default function traditionAndCulture() {
