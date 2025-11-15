@@ -46,7 +46,7 @@ export default function Header() {
               Connect, Davao!
             </button>
             <button
-              onClick={() => router.push("/visitUs")}
+              onClick={() => router.push("/about-davao")}
               className="font-montserrat text-lg font-bold px-4 py-2 rounded-lg text-white hover:bg-gray-200 hover:text-hoverTour transition"
             >
               About Love, Davao!
@@ -87,7 +87,7 @@ export default function Header() {
           <button
             onClick={() => {
               setIsMenuOpen(false);
-              router.push("/visitUs");
+              router.push("/about-davao");
             }}
             className="block w-full text-left px-4 py-2 rounded-lg hover:bg-gray-200"
           >
