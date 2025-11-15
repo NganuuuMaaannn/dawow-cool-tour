@@ -18,6 +18,20 @@ import logo9 from "@/image/Logo/tourism logo.jpg";
 export default function Footer() {
   return (
     <footer className="relative w-full bg-white text-gray-400 py-6">
+
+      <a
+        href="/devCred"
+        className="absolute bottom-3 right-3 hover:opacity-80 hover:scale-110 transition"
+      >
+        <Image
+          src={devIcon}
+          alt="Developer Icon"
+          width={30}
+          height={30}
+          className="object-contain"
+        />
+      </a>
+
       <div className="max-w-6xl mx-auto flex flex-col items-center gap-4">
 
         <div className="text-sm text-center cursor-default">
