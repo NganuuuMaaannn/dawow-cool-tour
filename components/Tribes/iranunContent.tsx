@@ -1,24 +1,90 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import ataManobo from "../../image/iranun.jpg";
-import ataManobo2 from "../../image/iranun2.jpg";
-import ataManobo3 from "../../image/iranun3.jpg";
+import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
+
+import ataManobo from "@/image/Iranun/iranun.jpg";
+import ataManobo2 from "@/image/Iranun/iranun2.jpg";
+import ataManobo3 from "@/image/Iranun/iranun3.jpg";
+
+import ed1 from "@/image/Iranun/ed1.png";
+import ed2 from "@/image/Iranun/ed2.png";
+import ed3 from "@/image/Iranun/ed3.png";
+import ed4 from "@/image/Iranun/ed4.png";
+import ed5 from "@/image/Iranun/ed5.png";
+import ed6 from "@/image/Iranun/ed6.png";
+import ed7 from "@/image/Iranun/ed7.png";
+import ed8 from "@/image/Iranun/ed8.png";
+import ed9 from "@/image/Iranun/ed9.png";
 
 export default function Page1() {
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
   const [fullscreenText, setFullscreenText] = useState<string>("");
-
   const [isVisible, setIsVisible] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  const CARD_WIDTH = 300;
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, []);
+
+  const images = [
+    ed1,
+    ed2,
+    ed3,
+    ed4,
+    ed5,
+    ed6,
+    ed7,
+    ed8,
+    ed9,
+  ];
+
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const slideLeft = () => {
+    if (slideIndex > 0) setSlideIndex(slideIndex - 1);
+  };
+
+  const slideRight = () => {
+    if (translateX >= maxTranslate) return;
+    setSlideIndex(slideIndex + 1);
+  };
+
+
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const [maxTranslate, setMaxTranslate] = useState(0);
+
+  useEffect(() => {
+    if (!sliderRef.current) return;
+
+    const trackWidth = sliderRef.current.scrollWidth;
+
+    const containerWidth = sliderRef.current.offsetParent
+      ? sliderRef.current.offsetParent.clientWidth
+      : sliderRef.current.clientWidth;
+
+    const max = trackWidth - containerWidth;
+
+    setMaxTranslate(max > 0 ? max : 0);
+  }, [images.length, isDesktop]);
+
+  const translateX = Math.min(slideIndex * CARD_WIDTH, maxTranslate);
+
   useEffect(() => {
     setTimeout(() => setIsVisible(true), 100);
   }, []);
 
-  const openFullscreen = (img: string) => {
-    setFullscreenImage(img);
-  };
-
+  const openFullscreen = (img: string) => setFullscreenImage(img);
   const closeFullscreen = () => {
     setFullscreenImage(null);
     setFullscreenText("");
@@ -31,8 +97,18 @@ export default function Page1() {
           className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 transition-opacity duration-300 px-4"
           onClick={closeFullscreen}
         >
+
+          {/* Close Button (ALWAYS top-right) */}
+          <button
+            className="absolute top-4 right-4 bg-bgTour/80 text-white p-3 rounded-full shadow-md hover:bg-hoverTour/80 transition"
+            onClick={closeFullscreen}
+          >
+            <FaTimes size={18} />
+          </button>
+
           <div
-            className="relative w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl flex flex-col items-center p-4 sm:p-6"
+            className="relative w-full max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl 
+                  flex flex-col items-center p-4 sm:p-6"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
@@ -46,14 +122,8 @@ export default function Page1() {
             <p className="mt-0 sm:mt-3 text-sm sm:text-base md:text-sm text-white leading-relaxed text-justify">
               {fullscreenText}
             </p>
-
-            <button
-              className="absolute lg:top-7 lg:right-7 top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full lg:px-3 lg:py-1 px-3 py-1 text-lg"
-              onClick={closeFullscreen}
-            >
-              ✕
-            </button>
           </div>
+
         </div>
       )}
 
@@ -185,6 +255,63 @@ export default function Page1() {
           </div>
         </div>
       </section>
+
+
+     <section
+        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-500 
+          ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+        `}
+      >
+        <div className="relative">
+          {slideIndex > 0 && (
+            <button
+              onClick={slideLeft}
+              className="hidden lg:flex absolute -left-5 top-1/2 -translate-y-1/2 
+              bg-bgTour/90 hover:bg-bgTour/80 shadow-xl w-10 h-10 rounded-full z-20 
+              items-center justify-center transition active:scale-90"
+            >
+              <FaChevronLeft className="text-white pr-0" size={18} />
+            </button>
+          )}
+
+          {translateX < maxTranslate && (
+            <button
+              onClick={slideRight}
+              className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 
+              bg-bgTour/90 hover:bg-bgTour/80 shadow-xl w-10 h-10 rounded-full z-20 
+              items-center justify-center transition active:scale-90"
+            >
+              <FaChevronRight className="text-white pl-1" size={18} />
+            </button>
+          )}
+
+          <div className="overflow-x-auto lg:overflow-hidden w-full scrollbar-none snap-x snap-mandatory whitespace-nowrap">
+            <div
+              ref={sliderRef}
+              className="flex gap-5 transition-transform duration-700 ease-in-out whitespace-nowrap"
+              style={{
+                transform: isDesktop ? `translateX(-${translateX}px)` : "none"
+              }}
+            >
+              {images.map((img, idx) => (
+                <div
+                  key={idx}
+                  className="min-w-[300px] flex-shrink-0 snap-center rounded-2xl hover:scale-[0.97] transition-all cursor-pointer"
+                  onClick={() => openFullscreen(img.src)}
+                >
+                  <Image
+                    src={img}
+                    alt="Gallery"
+                    className="rounded-2xl object-cover w-full h-[200px]"
+                    priority
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }
