@@ -14,7 +14,7 @@ export default function Home() {
   const handleClick = () => {
     setIsExiting(true);
     setTimeout(() => {
-      router.push("/carouselPage");
+      router.push("/Learn-Davao");
     }, 600);
   };
 

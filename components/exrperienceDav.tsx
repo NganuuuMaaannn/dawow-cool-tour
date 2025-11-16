@@ -21,7 +21,7 @@ export default function ExperienceDavao() {
 
   const handleClick = () => {
     setTimeout(() => {
-      router.push("/mainPage");
+      router.push("/Kadayawan-E-Village");
     }, 600);
   };
 

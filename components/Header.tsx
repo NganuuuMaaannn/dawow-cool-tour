@@ -17,7 +17,7 @@ export default function Header() {
       >
         <div className="mx-auto max-w-6xl px-4 lg:px-2 flex items-center justify-between py-3">
           <div
-            onClick={() => router.push("/mainPage")}
+            onClick={() => router.push("/Kadayawan-E-Village")}
             className="text-lg text-white font-normal font-montserrat tracking-wide leading-tight cursor-pointer hover:scale-105 transition-transform duration-200 block"
           >
             <Image

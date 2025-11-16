@@ -52,7 +52,7 @@ export default function HomePage() {
     }, 400);
   };
 
-  const handleClick = () => router.push("/mainPage");
+  const handleClick = () => router.push("/Kadayawan-E-Village");
 
   return (
     <div

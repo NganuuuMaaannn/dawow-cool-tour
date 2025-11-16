@@ -75,7 +75,7 @@ export default function GalleryPage() {
           </div>
 
           <button
-            className="absolute top-6 right-6 z-30 bg-white text-gray-900 p-3 rounded-full shadow-md hover:bg-gray-300 transition"
+            className="absolute top-4 right-4 bg-bgTour/80 text-white p-3 rounded-full shadow-md hover:bg-hoverTour/80 transition"
             onClick={closeModal}
           >
             <FaTimes size={18} />

@@ -20,7 +20,7 @@ export default function Footer() {
     <footer className="relative w-full bg-white text-gray-400 py-6">
 
       <Link
-        href="/devCred"
+        href="/Developer-Credit"
         className="absolute bottom-3 right-3 hover:opacity-80 hover:scale-110 transition"
       >
         <Image

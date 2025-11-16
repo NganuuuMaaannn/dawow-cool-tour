@@ -53,7 +53,7 @@ export default function HotelAccommodations() {
                             </a>
 
                             <a
-                                href="https://www.facebook.com/seanthesheepzxc"
+                                href="https://www.facebook.com/seanthesheepzx"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-blue-600 transition-colors duration-200"
