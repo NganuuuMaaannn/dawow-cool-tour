@@ -1,15 +1,15 @@
 "use client";
 
 import Header from "@/components/Header";
-import AboutLove from "@/components/about-love";
-import Footer from "@/components/Footer-Credits";
+import ConnectDavao from "@/components/connect-davao";
+import Footer from "@/components/Footer";
 
-export default function AboutLovePage() {
+export default function ConnectDavaoPage() {
   return (
     <div className="flex flex-col min-h-screen bg-bgLogin">
       <Header />
       <main className="flex-grow">
-        <AboutLove />
+        <ConnectDavao />
       </main>
       <Footer />
     </div>
