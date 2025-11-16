@@ -142,7 +142,7 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Matigsalog</h2>
+          <h2 className="text-3xl font-bold mb-4">Matigsalug</h2>
           <p className="text-sm leading-relaxed text-justify">
             The Matigsalug tribe, an indigenous group in Bukidnon and parts of Davao, is known for their strong cultural identity and deep 
             connection to nature. The name “Matigsalug” means “people of the Salug River,” reflecting their origin and dependence on waterways 

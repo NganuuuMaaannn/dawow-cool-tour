@@ -148,7 +148,7 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Tausog</h2>
+          <h2 className="text-3xl font-bold mb-4">Tausug</h2>
           <p className="text-base leading-relaxed text-justify">
             The Tausug people are a major Muslim ethnic group in the Sulu Archipelago, Basilan, and parts of Mindanao, known for their rich cultural traditions and 
             maritime heritage. Historically, they were skilled sailors, traders, and warriors, with communities organized under sultans, datus, and village elders. 
