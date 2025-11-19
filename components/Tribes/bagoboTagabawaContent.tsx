@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/BagoboTagabawa/bagoboTagabawa.jpg";
-import ataManobo2 from "@/image/BagoboTagabawa/bagoboTagabawa2.jpg";
-import ataManobo3 from "@/image/BagoboTagabawa/bagoboTagabawa3.jpg";
+// import ataManobo from "@/image/BagoboTagabawa/bagoboTagabawa.jpg";
+// import ataManobo2 from "@/image/BagoboTagabawa/bagoboTagabawa2.jpg";
+// import ataManobo3 from "@/image/BagoboTagabawa/bagoboTagabawa3.jpg";
 
 import ed1 from "@/image/BagoboTagabawa/ed1.png";
 import ed4 from "@/image/BagoboTagabawa/ed4.png";
@@ -132,11 +132,11 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
+          onClick={() => openFullscreen(ed9.src)}
 
         >
           <Image
-            src={ataManobo}
+            src={ed9}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -145,14 +145,12 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Bagobo - Tagabawa</h2>
           <p className="text-sm leading-relaxed text-justify">
-            The Bagobo Tagabawa, one of the subgroups of the Bagobo people in Mindanao, are known for their rich culture, artistry, and deep
-            connection to their ancestral traditions. They inhabit areas in Davao, particularly around Mount Apo, where farming serves as their
-            primary livelihood. The tribe is highly recognized for their intricate weaving, embroidery, and beadwork, which display symbolic
-            patterns and reflect their creativity and identity. Their traditional clothing is distinct, made with vibrant designs that highlight
-            social standing and cultural pride. Music and dance are integral to their rituals, often performed during harvest celebrations,
-            weddings, and community gatherings. The Bagobo Tagabawa also have strong animistic beliefs, showing reverence to nature and ancestral
-            spirits through ceremonies and offerings. Storytelling, chants, and oral literature are passed down from elders to the youth to preserve
-            wisdom and values. They also practice indigenous laws and codes of conduct that emphasize respect, bravery, and unity.
+            The Bagobo-Tagabawa are the first inhabitants of the southern and eastern slopes of Mt. Apo, committed to protecting the mountain’s rich biodiversity.
+            Their ancestral domain stretches from Lipadas River (Davao City) to Saguing River (Makilala), including areas in Toril, Sta. Cruz, Digos, Bansalan,
+            Kidapawan, and nearby upland and coastal areas. The Bagobo-Tagabawa family is patriarchal in nature with the father as the head. It also includes the
+            other relatives who wish to live with them. The Bagobo-Tagabawa family observes close family ties and a closer relationship to Manama (God). For the
+            Bagobo-Tagabawa, marriage is a community responsibility, not just a family matter. Elders from both sides, called togal, meet to decide the marriage and
+            agree on the sablag or bride price, which may include horses, carabaos, and a kamag’ge (gold necklace).
           </p>
         </div>
       </section>
@@ -164,22 +162,21 @@ export default function Page1() {
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-sm leading-relaxed text-justify">
-            Despite modernization, the tribe continues to value their cultural expressions, incorporating them into festivals such as the Kadayawan Festival
-            in Davao. Their arts and crafts, such as woven fabrics and brass ornaments, are also recognized as important contributions to Mindanao’s
-            cultural heritage. The tribe faces challenges like land encroachment and assimilation pressures, but they strive to safeguard their traditions
-            through education and community initiatives. Their resilience is seen in the way they continue teaching the younger generation
-            about traditional dances, farming methods, and spiritual practices. The Bagobo Tagabawa are also deeply tied to Mount Apo,
-            which they regard as sacred, strengthening their bond with nature. Through their collective efforts, the tribe demonstrates
-            cultural strength and adaptability in the modern era. Ultimately, the Bagobo Tagabawa represent a living heritage that
-            highlights the diversity and richness of indigenous Filipino identity.
+            The Bagobo-Tagabawa serve as Bantay Bukid or forest guards to protect their ancestral land, especially the home of the Philippine Eagle. Their knowledge
+            and strength make them effective stewards of Mt. Apo, helping keep the air and water clean for their people. Farming supports the daily needs of the
+            Bagobo-Tagabawa. They grow rice, corn, banana, coffee, cacao, vegetables, and fruits like durian, marang, lanzones, rambutan, and mangosteen in the rich
+            volcanic soil of Mt. Apo. They plant rice with corn, and sesame, cassava, and other root crops around the fields. To protect health and the environment,
+            they practice organic farming, especially in Brgy. Sibulan, which is declared an organic zone. Bagobo-Tagabawa is very spiritual. As such, most activities
+            are coupled with rituals and paying attention to signs in the environment. Panubadtubad is one of the rituals performed by a Taranitoan (ritualist) seeking
+            guidance from Manama (God) when an activity is undertaken in the community. A white-feathered chicken is often slain during the ritual.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed4.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed4}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -195,10 +192,10 @@ export default function Page1() {
         <div className="flex flex-col md:flex-row items-start gap-8">
           <div
             className="md:w-1/2 flex justify-center cursor-pointer order-1 md:order-1"
-            onClick={() => openFullscreen(ataManobo3.src)}
+            onClick={() => openFullscreen(ed1.src)}
           >
             <Image
-              src={ataManobo3}
+              src={ed1}
               alt="11 Tribes of Davao City"
               className="rounded-lg shadow-lg object-cover h-auto"
               priority
@@ -207,12 +204,14 @@ export default function Page1() {
 
           <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
             <p className="text-sm leading-relaxed text-justify text-black">
-              The Bagobo-Tagabawa, known as the “people of the south,” are the earliest settlers on the slopes of Mt. Apo, which they regard as sacred and feel
-              responsible for protecting. Their ancestral lands span Davao City, North Cotabato, and nearby areas. They practice a patriarchal family system and
-              view marriage as a community affair arranged by elders, with a sablag or bride price. Their clothing, woven from abaca fibers and dyed with natural
-              pigments, reflects artistry and cultural memory. The Bagobo-Tagabawa are also known as Bantay Bukid (forest guardians), protecting Mt. Apo and the
-              Philippine Eagle. Farming is their main livelihood, producing rice, corn, cacao, coffee, and tropical fruits, alongside organic farming to ensure
-              sustainability.
+              It means the flow of the water, symbolizing continuing life through the grace of Manama. Subuwan/Sibulan signifies the water where ancestors ended conflicts
+              with other IP groups. The festival showcases authentic Bagobo-Tagabawa cultures, with each sitio having a booth for local products, and the youths lead in
+              educating others about Bagobo-Tagabawa culture and arts. In Brgy. Kapatagan in Digos City, Davao del Sur, the Dorong Festival is held to give honor or
+              dorong to Manama for blessing Bagobo-Tagabawa leaders with wisdom and heart to serve unconditionally. The Dorong Festival is open to other communities in
+              Davao del Sur as a gesture of strengthening peace and unity. Dorong is now an attraction in Kapatagan every September. The Sin’abban Festival celebrates
+              the oneness of the Bagobo-Tagabawa and gives the ancestors the opportunity to solidify unity with neighboring communities. Held in Sta. Cruz, Davao del Sur,
+              and Bagobo-Tagabawa are the leading initiators of the festival. The highlights include indigenous games, cuisines, arts and crafts, the playing of musical
+              instruments, and community dancing.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">
@@ -220,36 +219,13 @@ export default function Page1() {
                 <p className="text-xs text-gray-400 cursor-default">Reference</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
                   <li>
-                    <a
-                      href="https://www.facebook.com/photo/?fbid=1067079842297675&set=a.483263987345933"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Kadayawan sa Davao. (2025). Bagobo - Tagabawa
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Bagobo-Tagabawa.  [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
-
                   <li>
-                    <a
-                      href="https://www.slideshare.net/slideshow/bagobo-tagabawa-tribe-presentation-2-pptx/275529557"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      RemigieCoway. (n.d.). BAGOBO TAGABAWA TRIBE presentation-2 [PPTX slides]. SlideShare. Retrieved August 27, 2025
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Bagobo-Tagabawa.  [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
-
                   <li>
-                    <a
-                      href="https://www.slideshare.net/slideshow/bagobo-tagabawa-tribe-presentation-2-pptx/275529557"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Almerez, J. (n.d.). Bagobo-Tagabawa tribe [PowerPoint slides]. Scribd. Retrieved August 27, 2025
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Bagobo-Tagabawa.  [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
                 </ul>
               </div>
@@ -313,7 +289,7 @@ export default function Page1() {
           </div>
         </div>
       </section>
-      
+
     </>
   );
 }

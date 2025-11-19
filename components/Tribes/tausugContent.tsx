@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/Tausug/taosug.jpg";
-import ataManobo2 from "@/image/Tausug/taosug2.jpg";
-import ataManobo3 from "@/image/Tausug/taosug3.jpg";
+// import ataManobo from "@/image/Tausug/taosug.jpg";
+// import ataManobo2 from "@/image/Tausug/taosug2.jpg";
+// import ataManobo3 from "@/image/Tausug/taosug3.jpg";
 
 import ed1 from "@/image/Tausug/ed1.png";
 import ed2 from "@/image/Tausug/ed2.png";
@@ -131,17 +131,16 @@ export default function Page1() {
 
       {/* Section 1 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
+          onClick={() => openFullscreen(ed10.src)}
 
         >
           <Image
-            src={ataManobo}
+            src={ed10}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -150,36 +149,34 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Tausug</h2>
           <p className="text-base leading-relaxed text-justify">
-            The Tausug people are a major Muslim ethnic group in the Sulu Archipelago, Basilan, and parts of Mindanao, known for their rich cultural traditions and 
-            maritime heritage. Historically, they were skilled sailors, traders, and warriors, with communities organized under sultans, datus, and village elders. 
-            Their language, part of the Austronesian family, is widely spoken and reflects their identity and heritage. Islam strongly influences their culture,
-            guiding rituals, daily practices, and celebrations. Music, dance, and oral literature are integral, performed during weddings, religious festivals, 
-            and other communal events.
+            The Tausug, whose name means “People of the Current” (from tau meaning “people” and sug meaning “sea current”), are one of the major Muslim ethnolinguistic
+            groups in the Sulu Archipelago, particularly in Sulu, Basilan, Tawi-Tawi, and parts of Zamboanga Peninsula. They are historically known as warriors, sailors,
+            and traders, playing a central role in the political and cultural development of the Sulu Sultanate, which was one of the most powerful Islamic kingdoms in
+            Southeast Asia. Their language, Sinug, is spoken widely in Sulu and serves as a lingua franca in many Muslim communities in Mindanao.
           </p>
         </div>
       </section>
 
       {/* Section 2 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-base leading-relaxed text-justify">
-            Traditional crafts, such as weaving mats and creating decorative items, demonstrate both artistry and functionality. Kinship and communal cooperation 
-            are key social values, ensuring strong community ties. Elders play a vital role in passing down cultural knowledge, traditions, and storytelling 
-            to younger generations. Education and cultural programs help preserve Sama heritage amid modernization and external pressures. Their maritime lifestyle 
-            emphasizes adaptability, resilience, and a deep connection to their environment. Rituals, prayers, and festive celebrations are intertwined with daily 
-            life, reflecting both spiritual and cultural identity.
+            Tausug traditional governance was shaped by the Sulu Sultanate, which served as the highest political and religious authority. At the top of the hierarchy
+            is the Sultan, who represents both political leadership and spiritual legitimacy. Supporting the Sultan are the Datu, who govern specific territories and
+            clans. Within the communities, disputes are resolved through the values of maratabat (honor) and bud (custom), which ensure that respect, dignity, and
+            family reputation are maintained. Today, Tausug communities still recognize religious leaders such as the imam and khalifa, who guide Islamic practices and
+            moral decisions.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed9.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed9}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -189,63 +186,62 @@ export default function Page1() {
 
       {/* Section 3 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-400 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
-        <div
-          className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo3.src)}
+        <div className="flex flex-col md:flex-row items-start gap-8">
+          <div
+            className="md:w-1/2 flex justify-center cursor-pointer order-1 md:order-1"
+            onClick={() => openFullscreen(ed7.src)}
+          >
+            <Image
+              src={ed7}
+              alt="11 Tribes of Davao City"
+              className="rounded-lg shadow-lg object-cover h-auto"
+              priority
+            />
+          </div>
 
-        >
-          <Image
-            src={ataManobo3}
-            alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover h-auto"
-            priority
-          />
-        </div>
-        <div className="md:w-1/2 text-black order-2">
-          <p className="text-base leading-relaxed text-justify">
-              Festivals and cultural programs serve as platforms to celebrate Tausug heritage and promote community pride. Despite modernization and historical challenges, 
-              they actively preserve their language, rituals, and traditional crafts. Their resilience demonstrates the enduring importance of cultural heritage in shaping
-              social identity. Overall, the Tausug people exemplify a vibrant blend of Islamic faith, maritime tradition, and rich indigenous culture that continues to 
-              thrive in the Bangsamoro region.
-          </p>
-          
-          <div className="bg-bgLogin rounded-md mt-3">
-            <div className="bg-white p-4 border-l-2 border-blue-500">
-              <p className="text-xs text-gray-400 cursor-default">Reference</p>
-              <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
-                <li>
-                  <a
-                    href="https://www.facebook.com/photo/?fbid=1075431348129191&set=a.483264004012598"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Kadayawan sa Davao. (2025). Tausug
-                  </a>
-                </li>
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
+            <p className="text-sm leading-relaxed text-justify text-black">
+              Traditional Tausug clothing is elegant and vibrant, symbolizing beauty, nobility, and cultural identity. Women wear the sablay or badju (embroidered blouse)
+              paired with a patadyong or habbul tiyahian (handwoven wrap skirt), often accessorized with jewelry and a hiḍjut (head covering). Men typically wear the badju
+              lapi, a fitted long-sleeved shirt with colorful embroidery, paired with sawal (trousers), and a pis siyabit, which is a handwoven square cloth worn around
+              the head or shoulder. Tausug textiles often feature intricate geometric patterns symbolizing lineage, bravery, and social class. The Tausug economy traditionally
+              revolves around fishing, sea trade, pearl diving, coconut farming, and handicrafts. Because they live in coastal and island environments, the sea plays a
+              central role in their way of life. They are skilled navigators and fishermen, traveling between islands for trade and fishing. Tausug communities are also known
+              for crafting barong and kris, traditional bladed weapons that represent honor and warrior identity. Many Tausug also engage in weaving, mat making, and producing
+              cultural textiles and garments. The Tausug are predominantly Muslim, and Islam influences their values, social behavior, and communal traditions. They observe
+              Sambayang (five daily prayers), fasting during Ramadan, and Islamic marriage and burial rites. Religious observances are guided by the imam, while spiritual leaders
+              and elders ensure that customs and Islamic teachings are maintained. Cultural practices such as pagkanduli (thanksgiving feast) and pagduwaa (prayer ritual)
+              demonstrate the blending of Islamic devotion and Tausug cultural heritage.
+            </p>
 
-                <li>
-                  <a
-                    href="https://bcpch.bangsamoro.gov.ph/tausug/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022b, November 28). TAUSUG - Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM.
-                  </a>
-                </li>
-              </ul>
+            <div className="bg-bgLogin rounded-md mt-3">
+              <div className="bg-white p-4 border-l-2 border-blue-500">
+                <p className="text-xs text-gray-400 cursor-default">Reference</p>
+                <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Traditional Tausug instrument at the Tribal Village [Photograph].
+                    Magsaysay Park, Davao City, Philippines.
+                  </li>
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Traditional Tausug patterns and clothes at the Tribal Village [Photograph].
+                    Magsaysay Park, Davao City, Philippines.
+                  </li>
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Traditional Tausog instrument at the Tribal Village [Photograph].
+                    Magsaysay Park, Davao City, Philippines.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
 
-     <section
+      <section
         className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-500 
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}

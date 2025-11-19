@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/Matigsalog/matigsalog.jpg";
+// import ataManobo from "@/image/Matigsalog/matigsalog.jpg";
 import ataManobo2 from "@/image/Matigsalog/matigsalog2.jpg";
-import ataManobo3 from "@/image/Matigsalog/matigsalog3.jpg";
+// import ataManobo3 from "@/image/Matigsalog/matigsalog3.jpg";
 
 import ed2 from "@/image/Matigsalog/ed2.png";
 import ed3 from "@/image/Matigsalog/ed3.png";
@@ -39,6 +39,7 @@ export default function Page1() {
     ed2,
     ed3,
     ed4,
+    ataManobo2,
     ed5,
     ed6,
     ed7,
@@ -125,17 +126,16 @@ export default function Page1() {
 
       {/* Section 1 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
+          onClick={() => openFullscreen(ed5.src)}
 
         >
           <Image
-            src={ataManobo}
+            src={ed5}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -144,40 +144,43 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Matigsalug</h2>
           <p className="text-sm leading-relaxed text-justify">
-            The Matigsalug tribe, an indigenous group in Bukidnon and parts of Davao, is known for their strong cultural identity and deep 
-            connection to nature. The name “Matigsalug” means “people of the Salug River,” reflecting their origin and dependence on waterways 
-            for survival. Farming is their main livelihood, with corn, rice, and root crops as staples, while hunting and fishing supplement 
-            their food resources. The tribe is also skilled in weaving, basketry, and craft-making, which showcase both practicality and artistry.
-            Their traditional clothing is decorated with beadwork and colorful patterns, symbolizing their heritage and creativity. Like many 
-            Lumad groups, the Matigsalug practice animism, believing in nature spirits and conducting rituals for protection, healing, and 
-            thanksgiving. Elders play an important role in preserving oral traditions, folktales, and wisdom that guide the community.  
+            The Matigsalug are the people along the Salug River, originally living in the Pantaron mountain ranges of central Mindanao.
+            They named rivers, creeks, mountains, and places after their ancestors. They are typically small in stature, dark brown in
+            complexion, and curly-haired. Today, around 50,000 Matigsalug live in the Salug Valley (Kitaotao and San Fernando, Bukidnon),
+            recognized as their ancestral domain. The Matigsalug family has a strong kinship with the father as the main decision-maker,
+            while the mother plays an important supportive role. The children are expected to respect and follow their parents. They used
+            to practice lapowan or arranged marriage, sometimes even from childhood, but this is now rarely practiced because the younger
+            generation values love and respect in relationships. The elders now accept these changes, showing cultural sensitivity between
+            generations.
           </p>
         </div>
       </section>
 
       {/* Section 2 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-sm leading-relaxed text-justify">
-            Music and dance are also vital aspects of their culture, performed during rituals and gatherings to express unity and joy. Their houses, 
-            often made of bamboo and nipa, are simple yet functional, adapted to their environment. The Matigsalug also uphold indigenous laws and 
-            practices that stress cooperation, respect, and kinship. Despite the pressures of modernization, land issues, and cultural assimilation, 
-            they continue to preserve their identity. Participation in cultural events and festivals helps them showcase their heritage to the broader 
-            society. Their youth are taught traditional practices to ensure continuity of their culture. The tribe’s resilience lies in their efforts 
-            to protect their ancestral lands and way of life. Ultimately, the Matigsalug remain a symbol of cultural pride and survival, representing 
-            the enduring traditions of Bukidnon’s indigenous peoples.
+            The Matigsalug are known for their distinct and elaborate traditional clothing. Women wear the malalab blouse, ampit skirt with a tabed,
+            and accessories like arang, arites, bali-eg, binukol, bulusu, and bobbat. Men wear the binukad with bandera/salu shorts tied with sinalapid,
+            and a tangkulo headgear showing leadership. Their binenus beaded sling bag completes their cultural identity. Matigsalug men wear short,
+            tight-fitting knee-length pants and beaded turbans with goat/horse hair. Matigsalug women wear mid-length blouses, skirts, and bead strands
+            on wooden ear disks. Their clothing is colorfully embroidered with geometric patterns. The Matigsalug rely on agriculture as their primary
+            livelihood, planting corn, sweet potato, rice, banana, cassava, and vegetables. Their fertile soil and good climate make crops productive,
+            and these products are sold fresh along the Bukidnon-Davao National Road at affordable prices. The Matigsalug rely mainly on farming as their
+            livelihood, planting rice, corn, camote, cassava, banana, and fruit trees, with baloloy as their best rice variety. Men prepare seedlings using
+            a todak or orak, and grains are pounded through binayo using traditional tools. They also do pangayam or hunting at night with dogs to catch
+            deer, wild boar, snake, monkey, monitor lizard, and civet cat.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed6.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed6}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -187,17 +190,16 @@ export default function Page1() {
 
       {/* Section 3 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="flex flex-col md:flex-row items-start gap-8">
           <div
             className="md:w-1/2 flex justify-center cursor-pointer order-1 md:order-1"
-            onClick={() => openFullscreen(ataManobo3.src)}
+            onClick={() => openFullscreen(ed2.src)}
           >
             <Image
-              src={ataManobo3}
+              src={ed2}
               alt="11 Tribes of Davao City"
               className="rounded-lg shadow-lg object-cover h-auto"
               priority
@@ -206,37 +208,35 @@ export default function Page1() {
 
           <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
             <p className="text-sm leading-relaxed text-justify text-black">
-              The Matigsalug, meaning “people from the river,” originated from the Pantaron Mountain Ranges, where the Salug River provided food and resources. Their 
-              ancestral lands extend across Arakan (North Cotabato), Marilog District (Davao City), and Bukidnon. They follow a patriarchal family system, with arranged 
-              marriages (lapowan) once common, though younger generations now prioritize love and respect. Known for their intricate traditional attire, women wear 
-              the malalabblouse and ampit skirt with ornaments, while men use the binukad blazer, bandera shorts, and tangkulo headgear. Farming is their main livelihood, 
-              producing rice, corn, cassava, bananas, and other root crops, with the baloloy variety of rice highly valued.
+              Their traditional lifestyle is not preserved but still evident in cultural and artistic expression. Kuglung is a two-stringed guitar, and Bantula
+              is a bamboo instrument used to call community attention, pounded to produce a loud sound depending on the caller’s intention. During panubad, the
+              presence of good spirits is summoned though the ritual called bang-kakawan. It is done by wrapping a huge log with wood stems. This creates a music
+              which draws the people’s attention to panubad. Kalibulungan means celebration in Matigsalug. During the Kalibulungan Festival, the dalupo or community
+              showcase their rich heritage and give honor to their ancestors. Celebrated every October. Activities include itolан to kabubuyahon (tracing of genealogy),
+              panguman (transfer of stories and values), sayew’t keglung wey salurey, uulahingan, tungkuk te ulo, plus indigenous games, and displays and selling of
+              traditional arts and crafts. The Matigsalug believes that Magbabaya is their ultimate protector. They invoke Magbabaya’s divine intervention through
+              the Panubad or panubadtubad ritual, the highest expression of faith. The babaylan, datuen, or talabawian leads the ritual using panubaran, an altar
+              decorated with white, black and red cloths (hinabel ne maangkag, me itum, malalab). Offerings include chicken, tobacco, betel nut, pepper plant, and
+              unted te selepi or coins to keep spirits away. Panubad is also done to appease the spirits living in the waters, especially when someone gets sick
+              after visiting a river. Sungud or Sungged Te Kamanga is a Matigsalug ritual performed every 2nd day of December to mark the start of the planting season
+              where they offer a white chicken and sprinkle its blood on the plants to ask the spirits to protect the land, environment, and crops, expressing gratitude
+              and requesting guidance, care, and a fruitful harvest; after the planting season they perform Pasalamat te Mamama as a thanksgiving ceremony for the
+              harvest, and they also observe Kalag-kalag to honor the spirits or givers of the harvest, showing the Matigsalug’s deep respect for nature, the land,
+              the forest, and the spirits that protect them.
             </p>
-          
+
             <div className="bg-bgLogin rounded-md mt-3">
               <div className="bg-white p-4 border-l-2 border-blue-500">
                 <p className="text-xs text-gray-400 cursor-default">Reference</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
                   <li>
-                    <a
-                      href="https://www.facebook.com/photo/?fbid=1060752616263731&set=a.483263987345933"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Kadayawan sa Davao. (2025). Matigsalog
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Matigsalug [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
-
                   <li>
-                    <a
-                      href="https://tribesinthephilippines.wordpress.com/2018/03/24/bukidnon-the-matigsalug-tribe/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Tribes in the Philippines. (2018, March 24). Bukidnon: The Matigsalug tribe. Tribes in the Philippines.
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Matigsalug [Photograph]. Magsaysay Park, Davao City, Philippines.
+                  </li>
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Matigsalug [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
                 </ul>
               </div>
@@ -246,7 +246,7 @@ export default function Page1() {
       </section>
 
 
-     <section
+      <section
         className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-500 
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}
