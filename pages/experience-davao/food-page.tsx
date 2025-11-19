@@ -2,19 +2,24 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft, FaFax } from "react-icons/fa";
 import Image from "next/image";
 import Vikings from "@/image/Food/Vikings.png";
 import TongYang from "@/image/Food/TongYang.png";
 import Huckle from "@/image/Food/Huckle.png";
+import Yoshi from "@/image/Food/Yoshi.png"
+import Asian from "@/image/Food/Asian.png"
+import Rekado from "@/image/Food/Rekado.png"
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
   FaFacebookSquare,
-  FaInstagram
+  FaInstagram,
+  FaCalendarAlt
 } from "react-icons/fa";
 
 import { HiStar } from "react-icons/hi";
@@ -42,6 +47,24 @@ export default function FoodsPage() {
   const handleClickHuckle = () => {
     setTimeout(() => {
       router.push("/experience-davao/food/huckleberry");
+    }, 600);
+  };
+
+  const handleClickYoshi = () => {
+    setTimeout(() => {
+      router.push("/experience-davao/food/yoshi");
+    }, 600);
+  };
+
+  const handleClickAsian = () => {
+    setTimeout(() => {
+      router.push("/experience-davao/food/asian");
+    }, 600);
+  };
+
+  const handleClickRekado = () => {
+    setTimeout(() => {
+      router.push("/experience-davao/food/rekado");
     }, 600);
   };
 
@@ -82,7 +105,7 @@ export default function FoodsPage() {
               px-4 sm:px-6 py-2 rounded-tl-3xl rounded-br-3xl 
               text-sm sm:text-base md:text-lg font-semibold shadow-md 
               cursor-default flex items-center gap-3">
-              
+
               <span>Vikings Luxury Buffet</span>
 
               <span className="flex items-center text-yellow-400 text-xl">
@@ -150,7 +173,7 @@ export default function FoodsPage() {
           </div>
 
 
-          {/* Tong Yang */}  
+          {/* Tong Yang */}
 
 
           <div className="relative bg-white rounded-xl shadow-xl 
@@ -162,7 +185,7 @@ export default function FoodsPage() {
               px-4 sm:px-6 py-2 rounded-tl-3xl rounded-br-3xl 
               text-sm sm:text-base md:text-lg font-semibold shadow-md 
               cursor-default flex items-center gap-3">
-              
+
               <span> Tong Yang </span>
 
               <span className="flex items-center text-yellow-400 text-xl">
@@ -263,14 +286,14 @@ export default function FoodsPage() {
 
           <div className="relative bg-white rounded-xl shadow-xl 
               p-5 sm:p-8 mt-12 flex flex-col md:flex-row 
-              items-center md:items-start gap-6 sm:gap-8 w-full overflow-visible mb-10">
+              items-center md:items-start gap-6 sm:gap-8 w-full overflow-visible">
 
             <div className="
               absolute -top-5 left-4 sm:left-5 bg-red-700 text-white 
               px-4 sm:px-6 py-2 rounded-tl-3xl rounded-br-3xl 
               text-sm sm:text-base md:text-lg font-semibold shadow-md 
               cursor-default flex items-center gap-3">
-              
+
               <span> Huckleberry Southern Kitchen & Bar Location </span>
 
               <span className="flex items-center text-yellow-400 text-xl">
@@ -341,6 +364,256 @@ export default function FoodsPage() {
               </span>
             </div>
           </div>
+
+
+          {/* Yoshimeatsu Davao */}
+
+
+          <div className="relative bg-white rounded-xl shadow-xl 
+              p-5 sm:p-8 mt-12 flex flex-col md:flex-row 
+              items-center md:items-start gap-6 sm:gap-8 w-full overflow-visible">
+
+            <div className="
+              absolute -top-5 left-4 sm:left-5 bg-red-700 text-white 
+              px-4 sm:px-6 py-2 rounded-tl-3xl rounded-br-3xl 
+              text-sm sm:text-base md:text-lg font-semibold shadow-md 
+              cursor-default flex items-center gap-3">
+
+              <span>Yoshimeatsu Davao</span>
+
+              <span className="flex items-center text-yellow-400 text-xl">
+                <HiStar /> <HiStar /> <HiStar /> <HiStar />
+              </span>
+            </div>
+
+
+            <div className="flex flex-col gap-4 sm:gap-5 flex-1 w-full mt-8 md:mt-6">
+
+              <div className="flex items-start gap-3 cursor-default">
+                <FaMapMarkerAlt className="text-red-700 text-lg sm:text-xl md:text-2xl mt-1" />
+                <p className="text-gray-800 text-xs sm:text-sm md:text-lg leading-snug">
+                  Ascendido Building, Pryce Business Park, Poblacion District, Davao City, 8000 Davao del Sur
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3 mb-20 cursor-default">
+                <FaPhoneAlt className="text-red-700 text-lg sm:text-xl md:text-2xl" />
+                <p className="text-gray-800 text-xs sm:text-sm md:text-lg">
+                  0967 440 3544
+                </p>
+              </div>
+            </div>
+
+            {/* RIGHT — IMAGE */}
+            <div
+              onClick={handleClickYoshi}
+              className="
+                absolute cursor-pointer group
+                top-auto bottom-[20px] right-4  
+                translate-y-0
+
+                sm:bottom-[-30px] sm:right-6        
+                md:top-1/2 md:bottom-[100px] md:right-[-70px] md:-translate-y-1/2 
+
+                w-20 h-20                            
+                sm:w-20 sm:h-24
+                md:w-36 md:h-36
+                lg:w-40 lg:h-40
+
+                rounded-full border-[4px] sm:border-[5px] md:border-[6px] 
+                border-red-700 bg-white 
+                flex items-center justify-center shadow-xl z-20
+                overflow-hidden
+              "
+            >
+              {/* IMAGE */}
+              <Image
+                src={Yoshi}
+                alt="Food"
+                className="w-full h-full object-cover rounded-full transition-all duration-300 group-hover:opacity-50"
+              />
+
+              {/* HOVER OVERLAY */}
+              <span className="
+                absolute text-red-700 font-semibold text-sm sm:text-base md:text-lg
+                opacity-0 group-hover:opacity-100
+                transition-all duration-300
+              ">
+                View
+              </span>
+            </div>
+          </div>
+
+
+          {/* Asian Cow by Chef Patrick Con */}
+
+
+          <div className="relative bg-white rounded-xl shadow-xl 
+              p-5 sm:p-8 mt-12 flex flex-col md:flex-row 
+              items-center md:items-start gap-6 sm:gap-8 w-full overflow-visible">
+
+            <div className="
+              absolute -top-5 left-4 sm:left-5 bg-red-700 text-white 
+              px-4 sm:px-6 py-2 rounded-tl-3xl rounded-br-3xl 
+              text-sm sm:text-base md:text-lg font-semibold shadow-md 
+              cursor-default flex items-center gap-3">
+
+              <span> Asian Cow by Chef Patrick Co </span>
+
+              <span className="flex items-center text-yellow-400 text-xl">
+                <HiStar /> <HiStar /> <HiStar /> <HiStar /> <HiStar />
+              </span>
+            </div>
+
+            <div className="flex flex-col gap-4 mb-10 sm:gap-5 flex-1 w-full mt-8 md:mt-6">
+
+              <div className="flex items-start gap-3 cursor-default">
+                <FaMapMarkerAlt className="text-red-700 text-lg sm:text-xl md:text-2xl mt-1" />
+                <p className="text-gray-800 text-xs sm:text-sm md:text-lg leading-snug">
+                  1020 Mabini Place, Corner Quirino and, Mabini St, Poblacion District, Davao City, Davao del Sur
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3 cursor-default">
+                <FaPhoneAlt className="text-red-700 text-lg sm:text-xl md:text-2xl" />
+                <p className="text-gray-800 text-xs sm:text-sm md:text-lg">
+                  0917 133 2389
+                </p>
+              </div>
+              <Link
+                href="https://asiancow.youcanbook.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex items-center gap-3 cursor-default">
+                  <FaCalendarAlt className="text-red-700 text-lg sm:text-xl md:text-2xl" />
+                  <p className="text-gray-800 text-xs sm:text-sm md:text-lg break-all hover:text-red-500">
+                    youcanbook.me
+                  </p>
+                </div>
+              </Link>
+            </div>
+
+            {/* RIGHT — IMAGE */}
+            <div
+              onClick={handleClickAsian}
+              className="
+                absolute cursor-pointer group
+                top-auto bottom-[20px] right-4  
+                translate-y-0
+
+                sm:bottom-[-30px] sm:right-6        
+                md:top-1/2 md:bottom-[100px] md:right-[-70px] md:-translate-y-1/2 
+
+                w-20 h-20                            
+                sm:w-20 sm:h-24
+                md:w-36 md:h-36
+                lg:w-40 lg:h-40
+
+                rounded-full border-[4px] sm:border-[5px] md:border-[6px] 
+                border-red-700 bg-white 
+                flex items-center justify-center shadow-xl z-20
+                overflow-hidden
+              "
+            >
+              {/* IMAGE */}
+              <Image
+                src={Asian}
+                alt="Food"
+                className="w-full h-full object-cover rounded-full transition-all duration-300 group-hover:opacity-50"
+              />
+
+              {/* HOVER OVERLAY */}
+              <span className="
+                absolute text-red-700 font-semibold text-sm sm:text-base md:text-lg
+                opacity-0 group-hover:opacity-100
+                transition-all duration-300
+              ">
+                View
+              </span>
+            </div>
+          </div>
+
+
+          {/* Rekado Filipino Comfort Cuisine */}
+
+
+          <div className="relative bg-white rounded-xl shadow-xl 
+              p-5 sm:p-8 mt-12 flex flex-col md:flex-row 
+              items-center md:items-start gap-6 sm:gap-8 w-full overflow-visible mb-10">
+
+            <div className="
+              absolute -top-5 left-4 sm:left-5 bg-red-700 text-white 
+              px-4 sm:px-6 py-2 rounded-tl-3xl rounded-br-3xl 
+              text-sm sm:text-base md:text-lg font-semibold shadow-md 
+              cursor-default flex items-center gap-3">
+
+              <span>Rekado Filipino Comfort Cuisine</span>
+
+              <span className="flex items-center text-yellow-400 text-xl">
+                <HiStar /> <HiStar /> <HiStar /> <HiStar /> 
+              </span>
+            </div>
+
+
+            <div className="flex flex-col gap-4 sm:gap-5 flex-1 w-full mt-8 md:mt-6">
+
+              <div className="flex items-start gap-3 cursor-default">
+                <FaMapMarkerAlt className="text-red-700 text-lg sm:text-xl md:text-2xl mt-1" />
+                <p className="text-gray-800 text-xs sm:text-sm md:text-lg leading-snug">
+                  1050 Emilio Jacinto Ext, Poblacion District, Davao City, 8000 Davao del Sur
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3 mb-20 cursor-default">
+                <FaFax className="text-red-700 text-lg sm:text-xl md:text-2xl" />
+                <p className="text-gray-800 text-xs sm:text-sm md:text-lg">
+                  (082) 224 3031
+                </p>
+              </div>
+            </div>
+
+            {/* RIGHT — IMAGE */}
+            <div
+              onClick={handleClickRekado}
+              className="
+                absolute cursor-pointer group
+                top-auto bottom-[20px] right-4  
+                translate-y-0
+
+                sm:bottom-[-30px] sm:right-6        
+                md:top-1/2 md:bottom-[100px] md:right-[-70px] md:-translate-y-1/2 
+
+                w-20 h-20                            
+                sm:w-20 sm:h-24
+                md:w-36 md:h-36
+                lg:w-40 lg:h-40
+
+                rounded-full border-[4px] sm:border-[5px] md:border-[6px] 
+                border-red-700 bg-white 
+                flex items-center justify-center shadow-xl z-20
+                overflow-hidden
+              "
+            >
+              {/* IMAGE */}
+              <Image
+                src={Rekado}
+                alt="Food"
+                className="w-full h-full object-cover rounded-full transition-all duration-300 group-hover:opacity-50"
+              />
+
+              {/* HOVER OVERLAY */}
+              <span className="
+                absolute text-red-700 font-semibold text-sm sm:text-base md:text-lg
+                opacity-0 group-hover:opacity-100
+                transition-all duration-300
+              ">
+                View
+              </span>
+            </div>
+          </div>
+
+
         </section>
       </div>
       <Footer />

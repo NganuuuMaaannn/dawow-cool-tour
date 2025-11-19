@@ -1,0 +1,26 @@
+[
+    {
+        "student_name": "Cecil Ann Tuson",
+        "student_location": "Prk 35 Lower Empress Panacan D.C",
+        "student_phone": ["09295357658"],
+        "student_email": "cecilann.tuson@hcdc.edu.ph"
+    },
+    {
+        "student_name": "Ishi Mae A. Burico",
+        "student_location": "St Peter Julian Eymard Bacaca Diversion Road D.C.",
+        "student_phone": ["09953157059"],
+        "student_email": "ishimae.burico@hcdc.edu.ph"
+    },
+    {
+        "student_name": "Jefer Kent A. Lamique",
+        "student_location": "Vista Verde Subd. Panacan davao city",
+        "student_phone": ["09463616461"],
+        "student_email": "jeferkent.lamique@hcdc.edu.ph"
+    },
+    {
+        "student_name": "Ma. Christine Ann Mantilla",
+        "student_location": "Prudential Village, Daliao, Toril, Davao City",
+        "student_phone": ["09182481542"],
+        "student_email": "ma.christineann.mantilla@hcdc.edu.ph"
+    }
+]
