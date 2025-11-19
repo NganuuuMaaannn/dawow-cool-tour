@@ -7,7 +7,10 @@ import { useRouter } from "next/navigation";
 
 import type { TourGuide } from "@/components/TourGuideCard";
 import TourGuideCard from "@/components/TourGuideCard";
+import TourGuideCardStudent from "@/components/TourGuideCardStudent";
+import type { TourGuideStudent } from "@/components/TourGuideCardStudent";
 import guides from "@/pages/data/tour-guides.json";
+import guideStudent from "@/pages/data/tour-guides-student.json";
 
 export default function TourGuide() {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,6 +19,7 @@ export default function TourGuide() {
   const router = useRouter();
 
   const tourGuides: TourGuide[] = guides;
+  const tourGuidesStudent: TourGuideStudent[] = guideStudent;
 
   useEffect(() => {
     setTimeout(() => setIsVisible(true), 100);
@@ -30,6 +34,16 @@ export default function TourGuide() {
       guide.destinations.toLowerCase().includes(t) ||
       guide.email.toLowerCase().includes(t) ||
       guide.phone.some((p) => p.toLowerCase().includes(t))
+    );
+  });
+
+  const filteredGuidesStudent = tourGuidesStudent.filter((guideStudent) => {
+    const t = search.toLowerCase();
+    return (
+      guideStudent.student_name.toLowerCase().includes(t) ||
+      guideStudent.student_location.toLowerCase().includes(t) ||
+      guideStudent.student_email.toLowerCase().includes(t) ||
+      guideStudent.student_phone.some((p) => p.toLowerCase().includes(t))
     );
   });
 
@@ -104,6 +118,17 @@ export default function TourGuide() {
           ) : (
             <p className="text-center text-gray-600 text-lg mt-20">
               No tour guides found.
+            </p>
+          )}
+          <hr className="w-full border-yellow-400" />
+          <h1 className="text-black text-3xl font-montserrat font-semibold text-center">Student Tour Guides</h1>
+          {filteredGuidesStudent.length > 0 ? (
+            filteredGuidesStudent.map((guide, index) => (
+              <TourGuideCardStudent key={index} guideStudent={guide} />
+            ))
+          ) : (
+            <p className="text-center text-gray-600 text-lg mt-20">
+              No student tour guides found.
             </p>
           )}
         </section>

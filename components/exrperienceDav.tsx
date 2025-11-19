@@ -92,7 +92,7 @@ export default function ExperienceDavao() {
         <h2 className="absolute text-white font-semibold tracking-wide z-10 select-none text-2xl sm:text-5xl md:text-5xl 
                        lg:rotate-[-90deg] lg:bottom-52 lg:-right-32 
                        bottom-10 right-1/2 translate-x-1/2 lg:translate-x-0">
-          Accommodation
+          Accommodations
         </h2>
       </div>
 
