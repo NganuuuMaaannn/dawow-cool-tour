@@ -21,7 +21,7 @@ export default function TourGuideCardStudent({ guideStudent }: Props) {
 
       <div className="flex-1 flex flex-col gap-6 mt-3">
         <div>
-          <p className="font-semibold text-gray-900 text-lg">Location</p>
+          <p className="font-semibold text-gray-900 text-lg">Address</p>
           <p className="text-gray-800 text-sm sm:text-base mt-1 leading-snug">
             {guideStudent.student_location}
           </p>

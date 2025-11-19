@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/AtaManobo/AtaManobo.jpg";
-import ataManobo2 from "@/image/AtaManobo/AtaManobo2.jpg";
+// import ataManobo from "@/image/AtaManobo/AtaManobo.jpg";
+// import ataManobo2 from "@/image/AtaManobo/AtaManobo2.jpg";
 import ataManobo3 from "@/image/AtaManobo/AtaManobo3.jpg";
 
 import ed from "@/image/AtaManobo/ed.png";
@@ -140,11 +140,11 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
+          onClick={() => openFullscreen(ed.src)}
 
         >
           <Image
-            src={ataManobo}
+            src={ed}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -153,13 +153,13 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Ata Manobo</h2>
           <p className="text-sm leading-relaxed text-justify">
-            The Ata Manobo tribe, one of the Lumad groups in Mindanao, is recognized for its distinct culture, spirituality, and traditions that are
-            deeply tied to nature. They primarily live in the hinterlands of Davao and Bukidnon, where farming, hunting, and fishing remain their main
-            sources of livelihood. The Ata are known for their animistic beliefs, honoring spirits of the land, rivers, and forests, which they believe
-            protect and guide their communities. Rituals and ceremonies are central to their lives, often accompanied by chants, prayers, and offerings.
-            Their traditional attire is adorned with colorful beadwork and embroidery that represent their cultural artistry and identity. Music and dance
-            play an important role in their gatherings, using indigenous instruments to celebrate and preserve their heritage. Oral literature such as
-            folktales, chants, and epics also form part of their rich cultural expressions.
+            The Ata lived upland along the headwaters of rivers and identified themselves by their place of origin (matig). They were farmers
+            and hunter-gatherers. During Spanish colonization, religion was imposed, their baylan were detained, and they moved to higher grounds
+            to defend themselves. The Ata family includes the father (amoy), mother (inoy), and their children (mgo anak). The father is the head,
+            the mother is the support and strength of the home, and the children help both in household and livelihood activities. Ibabasuk is
+            the expert in mab-basuk (agriculture) and reads the stars for a successful farming cycle. Neighbors help in the farm through pongakat
+            / polusong. Before fishing, they offer tobacco, coins, and mamoon (betel nut) to water spirits gamow-gamow and alimugkat for an abundant
+            catch. Traditional fishing methods: duruhong, ooti, panikop, susunob, panung-ow, bobogkoy, wowalag, pamanuwit, durulis.
           </p>
         </div>
       </section>
@@ -171,22 +171,22 @@ export default function Page1() {
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-sm leading-relaxed text-justify">
-            Despite the growing influence of modernization, the Ata continue to safeguard their ancestral
-            beliefs and practices. To preserve their heritage, the Ata community began building a cultural village that serves as a living museum of
-            their traditions. This village showcases traditional houses, tools, artifacts, and crafts unique to their way of life. It also provides
-            an educational space for the younger generation to learn and appreciate their roots. At the same time, it serves as a venue for outsiders
-            to understand and respect Ata culture. The initiative reflects the tribe’s resilience and determination to protect their identity despite
-            external challenges. The Ata are also deeply committed to protecting their ancestral domain, which is central to their cultural and
-            spiritual survival. In conclusion, the Ata Manobo tribe embodies strength, creativity, and unity, standing as a proud guardian of their
-            traditions in the modern world.
+            The Ata women augment the family income by weaving. With their skillful hands, the sturdy bagtok or wild bamboo is crafted to produce
+            the short takan and the longer liyang or storage for farm produce. The Ata are known for their strong faith in Manama, the supreme being,
+            and the spirits who continuously guide them. Their ancestors and elders teach the community to obey Manama’s rules and to respect the
+            guidance of the elders. They communicate with Manama through the panubad, a sacred practice performed with deep respect, faith, and
+            devotion, often done before sunset and carried out in several possible ways. The Ata are known for their exceptional faith. They believe
+            that Manama, the supreme being, and the spirits give them guidance. The ancestors and elders teach the community to heed the elders and
+            obey the rules of Manama. They communicate with Manama through the panubad, a sacred practice recited with great faith and devotion and
+            done in several ways.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed3.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed3}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -215,22 +215,11 @@ export default function Page1() {
 
           <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
             <p className="text-sm leading-relaxed text-justify text-black">
-              The Ata-Manobo, whose ancestors once roamed the Pantaron Mountain Range
-              and settled in areas like Kapalong, Bukidnon, and Davao del Norte, are
-              known for their distinct appearance and diverse lifestyles, from
-              riverside living to isolation in the forests. Despite being feared for
-              their role in tribal wars to defend their ancestral lands, they are also
-              approachable and community-oriented. Guided by palabian woy gontangan
-              (customary laws), they uphold kinship and early marriage traditions,
-              though modern influences are gradually reshaping family choices. The
-              bagani play a vital role as leaders, protectors, and mediators, earning
-              deep respect within their society. Ata-Manobo clothing is colorful and
-              symbolic, with women wearing kinabo or konoman and men adorned with
-              tangkulo headpieces symbolizing power. Farming remains their main
-              livelihood, producing rice, corn, bananas, cassava, and other crops,
-              while they also gather forest products, fish, and hunt. Their resilience
-              reflects a balance between cultural heritage and adapting to modern
-              challenges.
+              The Ibabasuk is the Ata expert in agriculture. He uses the stars and celestial signs like Pandorawa and Balatik (seen in January) to determine the
+              start of farming. Before planting, they perform the ritual Sunggud to Kamanga to ask permission from the mountain and forest spirits. They offer a
+              pig, a white chicken, and prepare cooked rice in a nihu. Farming tools are placed in the mixture and prayed over by the Tumanuron (traditional priest).
+              If many rice grains stick to the tools, it means there will be a good harvest. Another ritual called panluoy is done during the farmers’ first visit
+              to the farm before planting.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">
@@ -238,36 +227,13 @@ export default function Page1() {
                 <p className="text-xs text-gray-400 cursor-default">Reference</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
                   <li>
-                    <a
-                      href="https://www.facebook.com/photo/?fbid=1063798645959128&set=a.483263987345933"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Kadayawan sa Davao. (2025). Ata Manobo
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Ata [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
-
                   <li>
-                    <a
-                      href="https://www.yodisphere.com/2023/09/Ata-Manobo-Tribe-Culture-Traditions.html"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Yodisphere. (2023, September 17). Ata Manobo tribe culture and traditions.
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Ata [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
-
                   <li>
-                    <a
-                      href="https://www.sunstar.com.ph/more-articles/ata-tribe-building-cultural-village-to-preserve-their-ways"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      SunStar. (2010, May 16). Ata tribe building cultural village to preserve their ways.
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Ata [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
                 </ul>
               </div>

@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/Maguindanaon/maguindanaon.jpg";
-import ataManobo2 from "@/image/Maguindanaon/maguindanaon2.jpg";
-import ataManobo3 from "@/image/Maguindanaon/maguindanaon3.jpg";
+// import ataManobo from "@/image/Maguindanaon/maguindanaon.jpg";
+// import ataManobo2 from "@/image/Maguindanaon/maguindanaon2.jpg";
+// import ataManobo3 from "@/image/Maguindanaon/maguindanaon3.jpg";
 
 import ed1 from "@/image/Maguindanaon/ed1.png";
 import ed4 from "@/image/Maguindanaon/ed4.png";
@@ -131,17 +131,16 @@ export default function Page1() {
 
       {/* Section 1 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
+          onClick={() => openFullscreen(ed1.src)}
 
         >
           <Image
-            src={ataManobo}
+            src={ed1}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -150,36 +149,37 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Maguindanaon</h2>
           <p className="text-base leading-relaxed text-justify">
-            The Maguindanaon people are a major Muslim group in Mindanao, primarily residing in Maguindanao, Cotabato, and surrounding areas, known for their 
-            rich cultural heritage and Islamic traditions. They have a strong connection to agriculture, especially rice cultivation, and rely on river systems 
-            for fishing and transportation. Social structure is organized around datus, elders, and kinship networks, emphasizing cooperation, respect, and 
-            community cohesion. Islam plays a central role in guiding their daily life, rituals, and celebrations. Music, dance, and oral literature are important 
-            cultural expressions, often performed during weddings, festivals, and religious ceremonies. 
+            The Maguindanaon are a major Muslim ethnolinguistic group in Mindanao, primarily found along the Mindanao River basin in Maguindanao del Norte, Maguindanao
+            del Sur, Sultan Kudarat, and parts of Cotabato City. Their name comes from “Taw sa Maguindanao”, meaning “people of the floodplain,” reflecting their
+            traditional settlement along riverbanks and fertile plains. They are culturally and historically linked with other Moro groups, such as the Iranun and
+            Maranao, and have a rich history of agriculture, trade, and Islamic scholarship. They played a central role in establishing the Maguindanao Sultanate, which
+            governed large areas of central Mindanao prior to Spanish and American colonization.
           </p>
         </div>
       </section>
 
       {/* Section 2 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-base leading-relaxed text-justify">
-            Traditional attire is adorned with intricate embroidery and symbolic patterns that reflect social status and heritage. The Maguindanaon are skilled in 
-            crafts such as weaving, woodcarving, and brasswork, many of which feature Okir designs symbolizing harmony, spirituality, and identity. Their houses, 
-            especially traditional structures, are decorated with these intricate patterns, showcasing artistry and cultural pride. Education, both religious and 
-            secular, is valued for preserving knowledge and skills among the younger generation. Festivals and communal events provide platforms to celebrate cultural 
-            achievements and strengthen identity. Rituals, prayers, and traditional practices reinforce both Islamic faith and indigenous customs.
+            Maguindanaon society is traditionally organized under a Sultanate system, where the Sultan serves as the supreme political and religious authority. The
+            Sultan is supported by datu and panglima, who administer local governance and resolve conflicts within the community. Leadership and social order are guided
+            by a combination of adat (customary law) and Islamic principles, which regulate marriage, inheritance, and dispute settlement. Community peace is often
+            maintained through negotiation, mediation, and ceremonial feasts called kanduli. Traditional Maguindanaon clothing reflects social status and cultural
+            identity. Women wear colorful malong or tube skirts paired with embroidered badju blouses and a head covering called kombong. Men wear badju lapik, trousers
+            called kuput, and often a pis siyabit turban or cloth around the head. Decorative motifs, especially the okir patterns, are used in embroidery, textiles, and
+            woodcraft, symbolizing lineage, identity, and artistry.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed8.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed8}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -189,64 +189,55 @@ export default function Page1() {
 
       {/* Section 3 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-400 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
-        <div
-          className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo3.src)}
+        <div className="flex flex-col md:flex-row items-start gap-8">
+          <div
+            className="md:w-1/2 flex justify-center cursor-pointer order-1 md:order-1"
+            onClick={() => openFullscreen(ed6.src)}
+          >
+            <Image
+              src={ed6}
+              alt="11 Tribes of Davao City"
+              className="rounded-lg shadow-lg object-cover h-auto"
+              priority
+            />
+          </div>
 
-        >
-          <Image
-            src={ataManobo3}
-            alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover h-auto"
-            priority
-          />
-        </div>
-        <div className="md:w-1/2 text-black order-2">
-          <p className="text-base leading-relaxed text-justify">
-              Despite modernization and external pressures, they actively maintain language, traditions, and craftsmanship. Their cultural expressions demonstrate 
-              resilience, creativity, and continuity across generations. Participation in cultural programs and preservation initiatives ensures that heritage remains 
-              vibrant. Overall, the Maguindanaon people exemplify a harmonious blend of artistry, spirituality, and social cohesion that continues to thrive in the 
-              Bangsamoro region.
-          </p>
-          
-          <div className="bg-bgLogin rounded-md mt-3">
-            <div className="bg-white p-4 border-l-2 border-blue-500">
-              <p className="text-xs text-gray-400 cursor-default">Reference</p>
-              <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
-                <li>
-                  <a
-                    href="https://www.facebook.com/photo/?fbid=1066245692381090&set=a.483263987345933"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Kadayawan sa Davao. (2025). Maguindanaon
-                  </a>
-                </li>
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
+            <p className="text-sm leading-relaxed text-justify text-black">
+              The Maguindanaon are primarily agriculturalists, cultivating rice, corn, and root crops along the fertile Mindanao River plains. They also engage in
+              fishing, weaving, trading, and handicrafts, using riverboats to transport goods to neighboring communities. Their economy historically combined
+              subsistence farming with market trade, allowing them to establish social and commercial networks throughout central Mindanao. The Maguindanaon are
+              predominantly Muslim, and their daily lives are guided by Islamic practices. They observe Sambayang (five daily prayers), Ramadan fasting, and perform
+              Islamic marriage and funeral rites. Religious leadership is provided by Imam and community elders who oversee both spiritual and social affairs.
+              Cultural rituals, such as pagkanduli, festive prayers, and offerings, continue to play an important role in maintaining community cohesion and honoring
+              their ancestors.
+            </p>
 
-                <li>
-                  <a
-                    href="https://bcpch.bangsamoro.gov.ph/maguindanaon/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022b, November 28). 
-                    Maguindanaon - Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM.
-                  </a>
-                </li>
-              </ul>
+            <div className="bg-bgLogin rounded-md mt-3">
+              <div className="bg-white p-4 border-l-2 border-blue-500">
+                <p className="text-xs text-gray-400 cursor-default">Reference</p>
+                <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Maguindanaon [Photograph]. Magsaysay Park, Davao City, Philippines.
+                  </li>
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Maguindanaon [Photograph]. Magsaysay Park, Davao City, Philippines.
+                  </li>
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Maguindanaon [Photograph]. Magsaysay Park, Davao City, Philippines.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
 
-     <section
+      <section
         className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-500 
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}

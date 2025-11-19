@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/Iranun/iranun.jpg";
-import ataManobo2 from "@/image/Iranun/iranun2.jpg";
-import ataManobo3 from "@/image/Iranun/iranun3.jpg";
+// import ataManobo from "@/image/Iranun/iranun.jpg";
+// import ataManobo2 from "@/image/Iranun/iranun2.jpg";
+// import ataManobo3 from "@/image/Iranun/iranun3.jpg";
 
 import ed1 from "@/image/Iranun/ed1.png";
 import ed2 from "@/image/Iranun/ed2.png";
@@ -129,17 +129,16 @@ export default function Page1() {
 
       {/* Section 1 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
+          onClick={() => openFullscreen(ed2.src)}
 
         >
           <Image
-            src={ataManobo}
+            src={ed2}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -148,36 +147,38 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Iranun</h2>
           <p className="text-sm leading-relaxed text-justify">
-            The Iranun, an ethnolinguistic group in Mindanao, are historically known as seafarers, traders, and warriors whose culture has strongly 
-            influenced the Moro identity. Their communities are mainly found in Maguindanao, Lanao del Sur, and parts of Cotabato, where they live 
-            close to coastal and riverine areas that sustain their livelihood. Traditionally, the Iranun were skilled in navigation, boat-building, 
-            and maritime trade, connecting Mindanao with neighboring regions. They also had a reputation as fierce defenders of their territory, often 
-            engaging in sea raids during pre-colonial and colonial times. 
+            The Iranun are an ethnolinguistic group traditionally living around the coastal areas of Illana Bay in Mindanao, particularly in Lanao del Sur,
+            Maguindanao del Sur, and parts of Cotabato. The term Iranun is believed to come from Ilianan, meaning “people of the coast or lakeshore.” Though
+            they are culturally and linguistically related to the Maranao and Maguindanao, they maintain their own distinct identity, especially through their
+            strong association with seafaring and maritime navigation. Historically, the Iranun were known as highly skilled boat builders, sailors, and
+            navigators, traveling widely across Southeast Asia, including Malaysia, Borneo, and Indonesia, where they engaged in trade, exploration, and
+            cultural exchange. The Iranun follow a governance system based on adat (customary law) combined with Islamic principles. Leadership within the community
+            is held by the datu, who serves as the political leader and decision-maker. Religious life and spiritual guidance are led by the imam, while the
+            panglima acts as a mediator who helps resolve conflicts. When disputes occur, the community prefers peace-building over punishment. Conflicts are
+            settled through negotiation and kanduli, a ritual feast to restore harmony between parties and maintain unity within the community.
           </p>
         </div>
       </section>
 
       {/* Section 2 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-sm leading-relaxed text-justify">
-            Islam plays a central role in their identity, shaping their values, traditions, and daily practices. Their cultural life includes traditional 
-            attire, music, dances, and rituals that reflect both Islamic influences and indigenous heritage. The Iranun speak their own distinct language, 
-            which is part of the Austronesian family and closely related to Maguindanaon and Maranao. Farming, fishing, and trading remain important sources 
-            of livelihood, though many Iranun have also adapted to modern professions. Oral traditions, epic stories, and genealogies are preserved by 
-            elders to pass on wisdom and history to the youth. Their society values kinship, respect, and loyalty, which strengthen communal ties. 
+            Traditional Iranun clothing is colorful and intricately decorated, reflecting both cultural identity and social status. Women commonly wear the kombong
+            (head covering), a badju (embroidered long-sleeved blouse), and a malong, which is a tube-shaped woven skirt worn in daily life and special occasions.
+            Men wear the badju lapik, an embroidered shirt often worn during ceremonies, paired with kuput trousers and the pis siyabit or a turban-like headcloth.
+            These garments often feature okir designs, a curvilinear motif shared with Maranao and Maguindanao artistic traditions.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed8.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed8}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -187,17 +188,16 @@ export default function Page1() {
 
       {/* Section 3 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-400 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-400 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo3.src)}
+          onClick={() => openFullscreen(ed3.src)}
 
         >
           <Image
-            src={ataManobo3}
+            src={ed3}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -205,51 +205,27 @@ export default function Page1() {
         </div>
         <div className="md:w-1/2 text-black order-2">
           <p className="text-sm leading-relaxed text-justify">
-              The Iranun also uphold artistic expressions such as weaving and brasswork, contributing to Mindanao’s diverse cultural heritage. Despite 
-              challenges from displacement, modernization, and assimilation, they remain determined to preserve their cultural identity. Efforts to revitalize 
-              traditions are supported by cultural organizations and the BARMM government. Their resilience highlights both pride in their heritage and 
-              adaptability to change. Ultimately, the Iranun represent a people whose history, faith, and traditions continue to play a vital role in the 
-              cultural fabric of the Bangsamoro region.
+            The Iranun traditionally make a living through fishing, farming, boat-building, and coastal trade. Because of their maritime heritage, they are skilled
+            in constructing boats and navigating long-distance sea routes. In their home territories, they also cultivate crops such as rice and corn, and gather
+            natural resources from coastal and river environments. Trade has historically been important to the Iranun, linking them with other coastal and island
+            communities across Mindanao and neighboring countries. The Iranun are predominantly Muslim, and Islamic beliefs guide their daily lives, community values,
+            and decision-making. They practice Sambayang (five daily prayers), observe Ramadan, and conduct Islamic marriage and burial rites. Religious and community
+            ceremonies are led by the imam, and family and kinship ties play a strong role in maintaining spiritual unity and community identity.
           </p>
-          
+
           <div className="bg-bgLogin rounded-md mt-3">
             <div className="bg-white p-4 border-l-2 border-blue-500">
               <p className="text-xs text-gray-400 cursor-default">Reference</p>
               <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
                 <li>
-                  <a
-                    href="https://www.facebook.com/photo/?fbid=1064588482546811&set=a.483263987345933"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Kadayawan sa Davao. (2025). Iranun
-                  </a>
+                  Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Iranun [Photograph]. Magsaysay Park, Davao City, Philippines.
                 </li>
-
                 <li>
-                  <a
-                    href="https://www.equatorinitiative.org/2020/04/24/solution11483/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Project, J. (n.d.-a). Iranun in Philippines.
-                  </a>
+                  Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Iranun [Photograph]. Magsaysay Park, Davao City, Philippines.
                 </li>
-
                 <li>
-                  <a
-                    href="https://bcpch.bangsamoro.gov.ph/iranun/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    Bangsamoro Commission for the Preservation of Cultural Heritage - BARMM. (2022, November 28). Iranun - Bangsamoro Commission for the 
-                    Preservation of Cultural Heritage - BARMM.
-                  </a>
+                  Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Iranun [Photograph]. Magsaysay Park, Davao City, Philippines.
                 </li>
-
               </ul>
             </div>
           </div>
@@ -257,7 +233,7 @@ export default function Page1() {
       </section>
 
 
-     <section
+      <section
         className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-500 
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}

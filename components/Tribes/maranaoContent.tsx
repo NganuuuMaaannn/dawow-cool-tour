@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/Maranao/maranao.jpg";
-import ataManobo2 from "@/image/Maranao/maranao2.jpg";
-import ataManobo3 from "@/image/Maranao/maranao3.jpg";
+// import ataManobo from "@/image/Maranao/maranao.jpg";
+// import ataManobo2 from "@/image/Maranao/maranao2.jpg";
+// import ataManobo3 from "@/image/Maranao/maranao3.jpg";
 
 import ed1 from "@/image/Maranao/ed1.png";
 import ed2 from "@/image/Maranao/ed2.png";
@@ -129,17 +129,15 @@ export default function Page1() {
 
       {/* Section 1 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
-
+          onClick={() => openFullscreen(ed7.src)}
         >
           <Image
-            src={ataManobo}
+            src={ed7}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -148,35 +146,31 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Maranao</h2>
           <p className="text-base leading-relaxed text-justify">
-            The Maranao people of Lanao del Sur in Mindanao are celebrated for their vibrant culture, rich traditions, and strong Islamic faith. They are known 
-            for their iconic Sarimanok, a mythical bird symbolizing good fortune and widely depicted in artwork, textiles, and architecture. The Maranao maintain 
-            cultural identity through music, dance, epic storytelling, and elaborate rituals, which reflect both their Islamic faith and ancestral heritage. Their 
-            most famous artistic tradition is Okir, a form of intricate geometric and floral design used in woodcarving, textiles, and metalwork.
+            The Maranao, meaning “People of the Lake,” derive their name from their home around Lake Lanao (also called Ranaw or Danaw) in the Bukidnon–Lanao plateau in
+            Mindanao. They form one of the larger Muslim ethnolinguistic groups in the Philippines. Their land lies at an elevation of about 2,200 feet above sea level.
+            Family / Social Structure Maranao society features royal houses (torogan) belonging to the leading households, which also serve political functions.
           </p>
         </div>
       </section>
 
       {/* Section 2 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-base leading-relaxed text-justify">
-            Okir motifs are featured prominently in torogan houses, traditional ceremonial objects, and clothing, representing spiritual beliefs, social status, 
-            and cultural pride. Music and dance accompany rituals, festivals, and celebrations, serving as both entertainment and a medium for cultural expression. 
-            Traditional attire often includes richly decorated garments, showcasing skilled embroidery and artistry. The Maranao practice communal living, emphasizing
-            kinship, respect, and cooperation, with elders guiding cultural and religious matters. Crafts such as weaving, carving, and embroidery are taught to 
-            younger generations to ensure the preservation of skills and traditions. 
+            Community life is centred around clusters built about a mosque and a torogan (the large house of the elite). The torogan also functions as a meeting-place and
+            symbol of status and leadership in the community. Maranao textiles are famous for their ornate designs and vivid colours, reflecting wearer status. The tube
+            skirt known as the malong is a versatile garment used for clothing, bedding or wrapping, and is a hallmark of Maranao attire.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed10.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed10}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -186,17 +180,16 @@ export default function Page1() {
 
       {/* Section 3 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="flex flex-col md:flex-row items-start gap-8">
           <div
             className="md:w-1/2 flex justify-center cursor-pointer order-1 md:order-1"
-            onClick={() => openFullscreen(ataManobo3.src)}
+            onClick={() => openFullscreen(ed9.src)}
           >
             <Image
-              src={ataManobo3}
+              src={ed9}
               alt="11 Tribes of Davao City"
               className="rounded-lg shadow-lg object-cover h-auto"
               priority
@@ -205,38 +198,28 @@ export default function Page1() {
 
           <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
             <p className="text-base leading-relaxed text-justify text-black">
-              Festivals and ceremonies provide opportunities for the community to celebrate and display their cultural wealth. Education, both religious and secular, 
-              supports the continuity of their cultural knowledge and Islamic values. Despite modernization and external pressures, the Maranao remain committed to 
-              preserving their heritage. Their art and architecture serve as tangible representations of identity and history. Rituals and traditional practices reinforce 
-              spiritual devotion while maintaining social cohesion. Overall, the Maranao exemplify a resilient and creative culture that blends artistry, faith, and 
-              tradition in contemporary Mindanao.
+              Agriculture is the basic mode of food production: wet-rice cultivation in flood plains, dry-rice in uplands, plus corn, sweet potato, coffee, cassava
+              and peanuts. Fishing in Lake Lanao used to be important though it has declined. Trade, artisan crafts, and market linkages extend their economy beyond
+              the local area. The Maranao are renowned for wood-, metal- and textile-craftsmanship. Their architecture (especially the torogan) is among the most
+              remarkable in Philippine vernacular design. Their decorative motifs—such as the sarimanok (legendary bird) and naga (dragon/serpent)—belong to the okir
+              system, a highly systematised design grammar.
             </p>
-          
+
             <div className="bg-bgLogin rounded-md mt-3">
               <div className="bg-white p-4 border-l-2 border-blue-500">
                 <p className="text-xs text-gray-400 cursor-default">Reference</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
                   <li>
-                    <a
-                      href="https://www.facebook.com/photo/?fbid=1067855145553478&set=a.483263987345933"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Kadayawan sa Davao. (2025). Maranao
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Traditional Maranao bedroom at the Tribal Village [Photograph].
+                    Magsaysay Park, Davao City, Philippines.
                   </li>
-
                   <li>
-                    <a
-                      href="https://bangsamoro.gov.ph/news/latest-news/sarimanok-rising-the-colorful-culture-of-maranaos/?fbclid=IwY2xjawMZV9tleHRuA2FlbQIxMQABHu5MyDB6jNT9LjS81i7EV_J7-H_OnbuUX2NOPAOJZi4GbRfSqzF_CkNKw__1_aem_fJmLDqJ82bXu3pTFrf6NCw"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Office, B. I., & Office, B. I. (2022, August 3). Sarimanok rising: The colorful culture of Maranaos - BARMM Official Website. BARMM Official Website - 
-                      Bangsamoro Autonomous Region in Muslim Mindanao.
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Traditional Maranao weapon at the Tribal Village [Photograph].
+                    Magsaysay Park, Davao City, Philippines.
+                  </li>
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Traditional Maranao instrument at the Tribal Village [Photograph].
+                    Magsaysay Park, Davao City, Philippines.
                   </li>
                 </ul>
               </div>
@@ -246,7 +229,7 @@ export default function Page1() {
       </section>
 
 
-     <section
+      <section
         className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-500 
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}

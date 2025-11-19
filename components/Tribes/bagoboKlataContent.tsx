@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/BagoboKlata/Tribu-Klata.jpg";
-import ataManobo2 from "@/image/BagoboKlata/Tribu-Klata2.jpg";
-import ataManobo3 from "@/image/BagoboKlata/Tribu-Klata3.jpg";
+// import ataManobo from "@/image/BagoboKlata/Tribu-Klata.jpg";
+// import ataManobo2 from "@/image/BagoboKlata/Tribu-Klata2.jpg";
+// import ataManobo3 from "@/image/BagoboKlata/Tribu-Klata3.jpg";
 
 import ed1 from "@/image/BagoboKlata/ed1.png";
 import ed3 from "@/image/BagoboKlata/ed3.png";
@@ -134,11 +134,11 @@ export default function Page1() {
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
+          onClick={() => openFullscreen(ed5.src)}
 
         >
           <Image
-            src={ataManobo}
+            src={ed5}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -147,10 +147,13 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Bagobo - Klata</h2>
           <p className="text-sm leading-relaxed text-justify">
-            The Bagobo Klata, one of the recognized indigenous peoples in Davao City, are known for their rich traditions, colorful attire, and deep spiritual
-            connection to nature. Their traditional practices include farming, weaving, and crafting, which not only provide livelihood but also express their
-            artistry and identity. Rituals and ceremonies play an important role in their community, as these are performed to honor ancestral spirits and natural
-            forces that they believe protect and guide them.
+            Klata means “vein” or “life,” from olat meaning “middle.” They were the original inhabitants of the west part of the Davao River’s mouth, a place
+            fit for trading. They also use klat-ang (bamboo stairs with one post). Removing the stairs means no one is home or for safety at night. The klat-ang
+            is important to their identity, so they call themselves “wielders of life stairs.” Their territory is north of Davao River, south of Lipadas River,
+            stretching to the boundary of North Cotabato and Davao City. It includes Manuel Guianga, Sirib, Tamayong, Tugbok, and Calinan Districts in Davao City.
+            Appu Rita is a cultural master naw-woh weaver who helped preserve Bagobo-Klata arts, weaving thousands of meters of fabric for special occasions. Men
+            wear saluwah ngo naw-woh and luk-ko lae, while women wear tawis ngo naw-woh and lokolebo, with bak kus, simple earrings, shell bracelet, and salole
+            head décor.
           </p>
         </div>
       </section>
@@ -162,29 +165,21 @@ export default function Page1() {
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-sm leading-relaxed text-justify">
-            Their traditional clothing, adorned with beads and embroidery, reflects cultural pride and craftsmanship unique to their people. Music and dance are also
-            central to their cultural life, with performances that tell stories of their history and beliefs. Despite the growing influence of modernization and
-            urbanization, the Bagobo Klata remain resilient in maintaining their heritage. They actively teach their youth about customs, values, and traditions to
-            ensure cultural continuity.
-          </p>
-          <p className="text-sm leading-relaxed text-justify mt-2">
-            Community participation in local festivals further strengthens their identity and provides opportunities to share their culture with the wider public. These
-            celebrations often include showcasing traditional dances, music, and crafts that highlight their creativity. Cultural education programs have also been initiated
-            to deepen appreciation of Bagobo Klata heritage among the younger generation. By blending traditional practices with modern lifestyles, the tribe shows adaptability
-            while preserving its authenticity.
-          </p>
-          <p className="text-sm leading-relaxed text-justify mt-2">
-            They face challenges such as assimilation pressures and loss of ancestral lands, but their determination keeps their culture alive. Their efforts to safeguard traditions
-            contribute significantly to Davao’s cultural diversity. The Bagobo Klata stand as a proud example of indigenous resilience and pride in the modern world. Ultimately,
-            their culture remains a living testament to the strength of identity, heritage, and unity among indigenous peoples in the Philippines.
+            These ancestral possessions are priceless and made of tambaga, a mineral second to gold. The maog is a bell used by the talatubad during child baptism,
+            dipped in water then wiped on the child’s forehead. The low-wok is a mortar and pestle for preparing betel nuts, while the lomma is a war weapon, and the
+            kunggi is a tool for cutting betel nuts. Their main livelihood is farming, growing crops like sweet potato, cassava, corn, upland rice, and banana, and now
+            prioritizing durian, cacao, and coffee which made Davao City known internationally. They practice organic farming and also do fishing and hunting as part
+            of their living and pastime. The marriage ritual starts with asking the gwata for consent. The tribal priest (talakasa/talatab’bad) prepares the tabba, where
+            the bride and groom stand face-to-face. Offerings are placed in the buwis, followed by a prayer for blessing and protection. The priest addresses the god of
+            the baliti tree and the spirits in rocks and stones to avoid harming the couple, especially the groom (called kollapu, meaning stranger).
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed4.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed4}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -200,10 +195,10 @@ export default function Page1() {
         <div className="flex flex-col md:flex-row items-start gap-8">
           <div
             className="md:w-1/2 flex justify-center cursor-pointer order-1 md:order-1"
-            onClick={() => openFullscreen(ataManobo3.src)}
+            onClick={() => openFullscreen(ed8.src)}
           >
             <Image
-              src={ataManobo3}
+              src={ed8}
               alt="11 Tribes of Davao City"
               className="rounded-lg shadow-lg object-cover h-auto"
               priority
@@ -212,12 +207,11 @@ export default function Page1() {
 
           <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
             <p className="text-sm leading-relaxed text-justify text-black">
-              The Klata, whose name means &quot;vein&quot; or &quot;life,&quot; were the earliest settlers in the western part of the Davao River mouth. Their culture is deeply tied
-              to the klat-ang (single-post bamboo steps), a symbol of household presence and protection, which earned them the title “wielders of life stairs.” They
-              inhabit areas north of the Davao River, south of the Lipadas River, and parts of Davao City, including Calinan, Manuel Guianga, Sirib, Tamayong, and
-              Tugbok. The Bagobo-Klata are known for their vibrant traditional attire and weaving. Cultural master Appu Rita, a renowned naw-woh weaver, has preserved
-              their heritage by producing intricate fabrics and garments worn on formal occasions. Men typically wear beaded saluwah ngo naw-woh shorts and luk-ko lae
-              garments, while women use tinalak skirts, lokoleboblouses, and beaded belts called bak kus.
+              Maog is a bell placed in the middle finger by the talatubad (ritualist) doing the baptism of a child. The bell is being dipped into the water that is on
+              a marble plate then it will be wiped on the forehead of the child. The Agong called lom-ming is the star of festivals. The tagonggo is a set of lom-ming
+              arranged according to tones. The Menum Festival is done annually and lasts nine days to two weeks with drinking, dancing, singing, and lom-ming playing.
+              Festivals are held after harvest with family heads, male players, and maiden dancers attending. The girls wear their best attire to show gratitude to
+              the god of harvest and serve food and wine.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">
@@ -226,24 +220,20 @@ export default function Page1() {
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
                   <li>
                     <a
-                      href="https://www.facebook.com/photo/?fbid=1065418952463764&set=a.483263987345933"
+                      href="https://www.nomadicexperiences.com/2019/10/a-taste-of-maa-to-ros-bagobo-klata.htm3"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
-                      Kadayawan sa Davao. (2025). Bagobo - Klata
+                      A taste of Maa to Ro’s Bagobo-Klata heritage cuisine. (2019, October 11). Nomadic Experiences.
                     </a>
                   </li>
 
                   <li>
-                    <a
-                      href="https://www.sunstar.com.ph/amp/story/davao/feature/bagobo-klatas-culture-in-the-modern-world"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Albior, A. J. D. (2023, October 2). Bagobo Klata’s culture in the modern world. SunStar Davao.
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Bagobo-Klata [Photograph]. Magsaysay Park, Davao City, Philippines.
+                  </li>
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Bagobo-Klata [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
                 </ul>
               </div>
@@ -307,7 +297,7 @@ export default function Page1() {
           </div>
         </div>
       </section>
-      
+
     </>
   );
 }

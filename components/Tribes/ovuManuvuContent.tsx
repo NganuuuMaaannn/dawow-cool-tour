@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaChevronRight, FaChevronLeft, FaTimes } from "react-icons/fa";
 
-import ataManobo from "@/image/OvuManuvu/ovuManuvu.jpg";
-import ataManobo2 from "@/image/OvuManuvu/ovuManuvu2.jpg";
-import ataManobo3 from "@/image/OvuManuvu/ovuManuvu3.png";
+// import ataManobo from "@/image/OvuManuvu/ovuManuvu.jpg";
+// import ataManobo2 from "@/image/OvuManuvu/ovuManuvu2.jpg";
+// import ataManobo3 from "@/image/OvuManuvu/ovuManuvu3.png";
 
 import ed1 from "@/image/OvuManuvu/ed1.png";
 import ed3 from "@/image/OvuManuvu/ed3.png";
@@ -141,17 +141,16 @@ export default function Page1() {
 
       {/* Section 1 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 mt-14 transition-all duration-700 ease-out cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div
           className="md:w-1/2 flex justify-center order-1 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo.src)}
+          onClick={() => openFullscreen(ed3.src)}
 
         >
           <Image
-            src={ataManobo}
+            src={ed3}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover h-auto"
             priority
@@ -160,41 +159,39 @@ export default function Page1() {
         <div className="md:w-1/2 text-black order-2">
           <h2 className="text-3xl font-bold mb-4">Ovu Manuvu</h2>
           <p className="text-sm leading-relaxed text-justify">
-            The Obu Manuvu tribe is an indigenous group primarily found in Mindanao, particularly in Davao del Sur and nearby areas. They are 
-            known for their rich cultural heritage, traditional knowledge, and strong connection to the environment. The tribe relies heavily 
-            on agriculture, cultivating rice, corn, and other staple crops while also practicing small-scale farming and agroforestry. The Obu 
-            Manuvu have developed sustainable farming techniques that integrate traditional knowledge with modern environmental practices. 
+            Manuvu/Monuvu means “person” and may also come from mansuba, meaning “river people.” The Obo-Manuvu formed through intermarriages among neighboring groups
+            and are related to the Manuvu of southern Bukidnon, northern Cotabato, and northwestern Davao, which is why their language is similar. They were also among
+            the first traders in the mountain areas of Davao. The Monuvu, a sub-tribe of the Bagobo, live in the highlands north of Tammuhan River and west of Davao
+            River. Their ancestral domains are mainly in Marilog and Baguio Districts of Davao City, including areas like Dalag Lumot, Salaysay, Marilog Proper, Malamba,
+            Suawan, Tamugan, Tambobong, Carmen, Tawantawan, Malagos, Gumalang, and parts of Arakan Valley. The Minonuvo No Boyo To Od Possopong-Ngoy is the highest
+            governing body of the Obu-Manuvu, where all decisions and policies come from. It is made up of leaders and elders of the entire ancestral domain. Their rules
+            follow pooviyan woy gontangan, meaning proper procedure and standards, which guide the Obu-Manuvu ancestral domain.
           </p>
         </div>
       </section>
 
       {/* Section 2 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8 transition-all duration-700 ease-out delay-200 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <p className="text-sm leading-relaxed text-justify">
-            Their community governance is kinship-based, with elders and leaders guiding decisions that affect social and economic life. Spiritual 
-            beliefs combine animism with influences from Christianity in some areas, emphasizing respect for nature and ancestral spirits. Cultural 
-            practices include ritual ceremonies, music, dance, and oral storytelling, which preserve history, moral values, and traditions. 
-            Traditional attire and crafts reflect their identity and artistry, often featuring handwoven fabrics and symbolic motifs. The tribe is 
-            recognized for its efforts in environmental conservation, protecting forests, rivers, and biodiversity through community-based initiatives. 
-            Education programs have been introduced to combine formal learning with the preservation of indigenous knowledge. The Obu Manuvu actively 
-            participate in regional and national initiatives to safeguard cultural and environmental heritage. Festivals and communal activities serve 
-            to strengthen social cohesion and intergenerational knowledge transfer. Despite modernization and external pressures, they remain resilient 
-            in maintaining their cultural identity. Their practices highlight the importance of sustainability, community solidarity, and cultural 
-            pride. Overall, the Obu Manuvu exemplify a harmonious balance between tradition, environmental stewardship, and adaptation to contemporary 
-            challenges. 
+            Obu-Manuvu women wear a colorful top with an ampit skirt and tabod, and adorn themselves with beads, earrings, necklace, bracelets, and anklets. Men wear a
+            binukad blazer with souwan molivutut and sinalapid belt, and may use a tanku headgear with horse hair to show leadership. The Obu-Manuvu enjoy and depend on
+            the natural resources given by Magbabaya, as their culture and way of life are deeply tied to the land. They are skilled farmers, planting various crops,
+            and also fish in the Tamugan and Davao Rivers. They practice hunting during Pongannop, often with a trained mohoruwag no tuyyang dog to catch sarong (deer)
+            and mohintownan no baboy (wild pig) and usa (wild deer). Sumaya is a ritual offering to God done to ask for help to end plagues and epidemic and to ensure a
+            good and bountiful harvest. It can also be performed before starting important acts, such as the crafting of this Book that narrates the life of the
+            indigenous peoples. It shows their faith and dependence on God during challenges and significant activities.
           </p>
         </div>
         <div
           className="md:w-1/2 flex justify-center order-1 md:order-2 cursor-pointer"
-          onClick={() => openFullscreen(ataManobo2.src)}
+          onClick={() => openFullscreen(ed16.src)}
         >
           <Image
-            src={ataManobo2}
+            src={ed16}
             alt="11 Tribes of Davao City"
             className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
             priority
@@ -204,17 +201,16 @@ export default function Page1() {
 
       {/* Section 3 */}
       <section
-        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-400 cursor-default ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="flex flex-col md:flex-row items-start gap-8">
           <div
             className="md:w-1/2 flex justify-center cursor-pointer order-1 md:order-1"
-            onClick={() => openFullscreen(ataManobo3.src)}
+            onClick={() => openFullscreen(ed5.src)}
           >
             <Image
-              src={ataManobo3}
+              src={ed5}
               alt="11 Tribes of Davao City"
               className="rounded-lg shadow-lg object-cover h-auto"
               priority
@@ -223,49 +219,45 @@ export default function Page1() {
 
           <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
             <p className="text-sm leading-relaxed text-justify text-black">
-              The Obo-Manuvu, also called Manuvu or Monuvu, trace their name to “mansuba” meaning “river people,” as they originally lived along rivers. Formed through 
-              intermarriage, they are closely related to the Manuvu of Bukidnon, Cotabato, and northwestern Davao, sharing a similar language and culture. Their ancestral 
-              domains are in Marilog and Baguio districts of Davao, as well as parts of Arakan Valley. Governance is led by the Minonuvo No Boyo To Od Possopong-Ngoy, 
-              the highest council of leaders and elders, guided by customary laws. Traditional clothing is colorful and richly adorned with beads, jewelry, and headgear 
-              symbolizing status, with distinct designs for men and women. Their livelihood is deeply tied to the land, relying on farming, fishing, and hunting, with 
-              trained dogs aiding them in capturing wild pigs and deer. Rich in heritage, they are one of Mindanao’s largest indigenous groups with a strong identity 
-              rooted in tradition.
+              Panuvad is a ritual asking Magbabaya and the spirits for guidance, healing, and protection. A respected elder or healer performs it using chicken, tobacco,
+              betel nut, and pepper plant as offerings. The moon and constellations guide decisions on farming and marriage arrangements. Panuvad is done before and after
+              farming to ask permission from spirits and ensure a good harvest of crops like rice, corn, cassava, sweet potato, coffee, and abaca. The Allow Tu
+              Obu-Manuvu is a yearly thanksgiving celebration where the Obu-Manuvu show gratitude to Monama by gathering and sharing their bountiful harvest. The event
+              includes dances, instrument playing, and games as part of the festivities. Pokaa’t kollu/sunggod to kamanga is a January 1 festival honoring Kaya’g to
+              Pomuwa, where farm tools are displayed and included in the ritual. Music is the highlight, with women playing the Kagoo, and when they play while dancing,
+              it is called Soroy.
             </p>
-            
+
             <div className="bg-bgLogin rounded-md mt-3">
               <div className="bg-white p-4 border-l-2 border-blue-500">
                 <p className="text-xs text-gray-400 cursor-default">Reference</p>
                 <ul className="list-disc pl-5 text-xs text-gray-400 mt-2 space-y-2 cursor-default">
                   <li>
                     <a
-                      href="https://www.facebook.com/photo/?fbid=1075432648129061&set=a.483264004012598"
+                      href="https://www.facebook.com/share/p/1VrkdUJXnq/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
-                      Kadayawan sa Davao. (2025). Ovu Manuvu
+                      Department of Tourism - Davao Region. (2025).
                     </a>
                   </li>
 
                   <li>
-                    <a
-                      href="https://www.equatorinitiative.org/2020/04/24/solution11483/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      Obu manuvu tribe – Equator Initiative. (2020, April 24)
-                    </a>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Obu- Manuvu [Photograph]. Magsaysay Park, Davao City, Philippines.
+                  </li>
+                  <li>
+                    Mantilla, M. C. A., Tuson, C. A., Lamique, J. K., & Burico, I. M. (2025). Obu- Manuvu [Photograph]. Magsaysay Park, Davao City, Philippines.
                   </li>
                 </ul>
               </div>
             </div>
-          </div>      
+          </div>
         </div>
       </section>
 
 
-     <section
+      <section
         className={`max-w-6xl mx-auto px-4 py-12 transition-all duration-700 ease-out delay-500 
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}
