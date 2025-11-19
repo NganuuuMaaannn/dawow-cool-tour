@@ -6,7 +6,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaFax, FaEnvelope } from "react-icons/fa";
 
 // import dvo from "../image/dvo.png";
 import logo1 from "@/image/Logo/cca.jpg";
-import logo2 from "@/image/Logo/chatme.jpg";
+import logo2 from "@/image/Logo/chatme.png";
 import logo3 from "@/image/Logo/dc logo.jpg";
 import logo4 from "@/image/Logo/DOT.png";
 // import logo5 from "@/image/Logo/hcdc_logo.png";
