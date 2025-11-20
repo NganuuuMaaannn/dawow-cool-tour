@@ -179,19 +179,19 @@ export default function Page1() {
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
           <h2 className="text-lg font-bold mb-2">Tahakan and Liyang</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            The Ata women augment the family income by weaving. With their skillful hands, the sturdy bagtok or wild bamboo is crafted to produce the short takan and the
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Ata women augment the family income by weaving. With their skillful hands, the sturdy bagtok or wild bamboo is crafted to produce the short takan and the
             longer liyang or storage for farm produce.
           </p>
           <h2 className="text-lg font-bold mt-5 mb-2">Panubad</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            The Ata are known for their strong faith in Manama, the supreme being, and the spirits who continuously guide them. Their ancestors and elders teach the
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Ata are known for their strong faith in Manama, the supreme being, and the spirits who continuously guide them. Their ancestors and elders teach the
             community to obey Manama’s rules and to respect the guidance of the elders. They communicate with Manama through the panubad, a sacred practice performed with
             deep respect, faith, and devotion, often done before sunset and carried out in several possible ways.
           </p>
           <h2 className="text-lg font-bold mt-5 mb-2">Kalibungan Festival</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            The Ata are known for their exceptional faith. They believe that Manama, the supreme being, and the spirits give them guidance. The ancestors and elders teach
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Ata are known for their exceptional faith. They believe that Manama, the supreme being, and the spirits give them guidance. The ancestors and elders teach
             the community to heed the elders and obey the rules of Manama. They communicate with Manama through the panubad, a sacred practice recited with great faith
             and devotion and done in several ways.
           </p>
@@ -203,7 +203,7 @@ export default function Page1() {
           <Image
             src={ed3}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
+            className="rounded-lg shadow-lg object-cover h-[600px]"
             priority
           />
         </div>
@@ -230,8 +230,8 @@ export default function Page1() {
 
           <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
             <h2 className="text-lg font-bold mb-2">Sunggod to Kamanga</h2>
-            <p className="text-sm leading-relaxed text-justify">
-              The Ibabasuk is the Ata expert in agriculture. He uses the stars and celestial signs like Pandorawa and Balatik (seen in January) to determine the
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Ibabasuk is the Ata expert in agriculture. He uses the stars and celestial signs like Pandorawa and Balatik (seen in January) to determine the
               start of farming. Before planting, they perform the ritual Sunggud to Kamanga to ask permission from the mountain and forest spirits. They offer a
               pig, a white chicken, and prepare cooked rice in a nihu. Farming tools are placed in the mixture and prayed over by the Tumanuron (traditional priest).
               If many rice grains stick to the tools, it means there will be a good harvest. Another ritual called panluoy is done during the farmers’ first visit

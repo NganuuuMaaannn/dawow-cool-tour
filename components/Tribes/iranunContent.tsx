@@ -145,17 +145,21 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Iranun</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            The Iranun are an ethnolinguistic group traditionally living around the coastal areas of Illana Bay in Mindanao, particularly in Lanao del Sur,
-            Maguindanao del Sur, and parts of Cotabato. The term Iranun is believed to come from Ilianan, meaning “people of the coast or lakeshore.” Though
-            they are culturally and linguistically related to the Maranao and Maguindanao, they maintain their own distinct identity, especially through their
-            strong association with seafaring and maritime navigation. Historically, the Iranun were known as highly skilled boat builders, sailors, and
-            navigators, traveling widely across Southeast Asia, including Malaysia, Borneo, and Indonesia, where they engaged in trade, exploration, and
-            cultural exchange. The Iranun follow a governance system based on adat (customary law) combined with Islamic principles. Leadership within the community
-            is held by the datu, who serves as the political leader and decision-maker. Religious life and spiritual guidance are led by the imam, while the
-            panglima acts as a mediator who helps resolve conflicts. When disputes occur, the community prefers peace-building over punishment. Conflicts are
-            settled through negotiation and kanduli, a ritual feast to restore harmony between parties and maintain unity within the community.
+          <h2 className="text-3xl font-bold mb-10">Iranun</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Iranun are an ethnolinguistic group traditionally living around the coastal areas of Illana Bay in Mindanao, particularly in Lanao del Sur, Maguindanao
+            del Sur, and parts of Cotabato. The term Iranun is believed to come from Ilianan, meaning “people of the coast or lakeshore.” Though they are culturally and
+            linguistically related to the Maranao and Maguindanao, they maintain their own distinct identity, especially through their strong association with seafaring
+            and maritime navigation. Historically, the Iranun were known as highly skilled boat builders, sailors, and navigators, traveling widely across Southeast
+            Asia, including Malaysia, Borneo, and Indonesia, where they engaged in trade, exploration, and cultural exchange.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Governance</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Iranun follow a governance system based on adat (customary law) combined with Islamic principles. Leadership within the community is held by the datu,
+            who serves as the political leader and decision-maker. Religious life and spiritual guidance are led by the imam, while the panglima acts as a mediator who
+            helps resolve conflicts. When disputes occur, the community prefers peace-building over punishment. Conflicts are settled through negotiation and kanduli, a
+            ritual feast to restore harmony between parties and maintain unity within the community.
           </p>
         </div>
       </section>
@@ -166,11 +170,12 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-sm leading-relaxed text-justify">
-            Traditional Iranun clothing is colorful and intricately decorated, reflecting both cultural identity and social status. Women commonly wear the kombong
-            (head covering), a badju (embroidered long-sleeved blouse), and a malong, which is a tube-shaped woven skirt worn in daily life and special occasions.
-            Men wear the badju lapik, an embroidered shirt often worn during ceremonies, paired with kuput trousers and the pis siyabit or a turban-like headcloth.
-            These garments often feature okir designs, a curvilinear motif shared with Maranao and Maguindanao artistic traditions.
+          <h2 className="text-lg font-bold mb-2">Clothing</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Traditional Iranun clothing is colorful and intricately decorated, reflecting both cultural identity and social status. Women commonly wear the kombong
+            (head covering), a badju (embroidered long-sleeved blouse), and a malong, which is a tube-shaped woven skirt worn in daily life and special occasions. Men
+            wear the badju lapik, an embroidered shirt often worn during ceremonies, paired with kuput trousers and the pis siyabit or a turban-like headcloth. These
+            garments often feature okir designs, a curvilinear motif shared with Maranao and Maguindanao artistic traditions.
           </p>
         </div>
         <div
@@ -204,13 +209,18 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <p className="text-sm leading-relaxed text-justify">
-            The Iranun traditionally make a living through fishing, farming, boat-building, and coastal trade. Because of their maritime heritage, they are skilled
-            in constructing boats and navigating long-distance sea routes. In their home territories, they also cultivate crops such as rice and corn, and gather
-            natural resources from coastal and river environments. Trade has historically been important to the Iranun, linking them with other coastal and island
-            communities across Mindanao and neighboring countries. The Iranun are predominantly Muslim, and Islamic beliefs guide their daily lives, community values,
-            and decision-making. They practice Sambayang (five daily prayers), observe Ramadan, and conduct Islamic marriage and burial rites. Religious and community
-            ceremonies are led by the imam, and family and kinship ties play a strong role in maintaining spiritual unity and community identity.
+          <h2 className="text-lg font-bold mb-2">Livelihood</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Iranun traditionally make a living through fishing, farming, boat-building, and coastal trade. Because of their maritime heritage, they are skilled
+            in constructing boats and navigating long-distance sea routes. In their home territories, they also cultivate crops such as rice and corn, and gather natural
+            resources from coastal and river environments. Trade has historically been important to the Iranun, linking them with other coastal and island communities
+            across Mindanao and neighboring countries.
+          </p>
+          <h2 className="text-lg font-bold mb-2">Religion and Ritual Practices</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Iranun are predominantly Muslim, and Islamic beliefs guide their daily lives, community values, and decision-making. They practice Sambayang
+            (five daily prayers), observe Ramadan, and conduct Islamic marriage and burial rites. Religious and community ceremonies are led by the imam, and family and
+            kinship ties play a strong role in maintaining spiritual unity and community identity.
           </p>
 
           <div className="bg-bgLogin rounded-md mt-3">

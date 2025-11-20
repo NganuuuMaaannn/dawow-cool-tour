@@ -145,13 +145,17 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Bangsa - Sama</h2>
-          <p className="text-base leading-relaxed text-justify">
-            The Sama are the original inhabitants of the Samal Islands (now Island Garden City of Samal). They are known as Isamal or Samalnon to distinguish them
-            from other Sama groups. Their history tells of conflicts with the Dinagat, whom they later defeated. Over time, intruders took advantage of their hospitality,
-            causing the Sama to lose most of their land, leaving them with only small portions of land and water. The Sama people wore simple yet appropriately- made
-            dresses usually of black cloth designed with sequins and trimmings. The lower attire of women are patadyong or any striped cloth. For the Sama men, their
-            lower attire are black pants or loose shorts.
+          <h2 className="text-3xl font-bold mb-10">Bangsa - Sama</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Sama are the original inhabitants of the Samal Islands (now Island Garden City of Samal). They are known as Isamal or Samalnon to distinguish them from
+            other Sama groups. Their history tells of conflicts with the Dinagat, whom they later defeated. Over time, intruders took advantage of their hospitality, causing
+            the Sama to lose most of their land, leaving them with only small portions of land and water.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Clothing</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Sama people wore simple yet appropriately- made dresses usually of black cloth designed with sequins and trimmings. The lower attire of women are patadyong
+            or any striped cloth. For the Sama men, their lower attire are black pants or loose shorts.
           </p>
         </div>
       </section>
@@ -162,12 +166,20 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-base leading-relaxed text-justify">
-            The Sama strictly follow sacred customary laws enforced by the datu, who settles conflicts. The bagani, balyan, and pangabaga assist him, while the
-            kaupodanan or community supports and guides their leadership. The Sama rely mainly on fishing, using their taundas and traditional methods to gather
-            fish, shells, and seaweeds. They also farm crops like rice and bananas for barter or sale. Whatever they catch or hunt is shared equally among the
-            community. Panawagtawag is performed during calamities. The balyan asks permission through the dugso for bounty and protection, using buyo (betel nut),
-            apog (pulverized limestone), tobacco, and animal parts (usually live) as ritual elements.
+          <h2 className="text-lg font-bold mb-2">Kaupodanan</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Sama strictly follow sacred customary laws enforced by the datu, who settles conflicts. The bagani, balyan, and pangabaga assist him, while the kaupodanan or
+            community supports and guides their leadership.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Livelihood</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Sama rely mainly on fishing, using their taundas and traditional methods to gather fish, shells, and seaweeds. They also farm crops like rice and bananas for
+            barter or sale. Whatever they catch or hunt is shared equally among the community.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Panawagtawag</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Panawagtawag is performed during calamities. The balyan asks permission through the dugso for bounty and protection, using buyo (betel nut), apog (pulverized limestone),
+            tobacco, and animal parts (usually live) as ritual elements.
           </p>
         </div>
         <div
@@ -201,12 +213,16 @@ export default function Page1() {
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-base leading-relaxed text-justify text-black">
-              The Sama perform rituals to show respect to ancestors and unseen spirits, seeking signs of approval to guide decisions and penalties. If unfavorable,
-              the balyan prevents misfortune. The balyan and people gather in a circle with buyo, mamaon, bagaybay, and ritual materials. A festival that celebrates
-              the heritage of the Sama based on their skills, talents, and craftsmanship. They gather as a family to promote unity, camaraderie, and love, and celebrate
-              yearly as a way of showing appreciation to those who supported their plans and goals.
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Taginiit and Magbabaya</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Sama perform rituals to show respect to ancestors and unseen spirits, seeking signs of approval to guide decisions and penalties. If unfavorable, the
+              balyan prevents misfortune. The balyan and people gather in a circle with buyo, mamaon, bagaybay, and ritual materials.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Pangapog</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - A festival that celebrates the heritage of the Sama based on their skills, talents, and craftsmanship. They gather as a family to promote unity, camaraderie, 
+              and love, and celebrate yearly as a way of showing appreciation to those who supported their plans and goals.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">

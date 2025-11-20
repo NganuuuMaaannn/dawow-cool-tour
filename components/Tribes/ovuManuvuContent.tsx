@@ -152,20 +152,28 @@ export default function Page1() {
           <Image
             src={ed3}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover h-auto"
+            className="rounded-lg shadow-lg object-cover h-[600px]"
             priority
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Ovu Manuvu</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            Manuvu/Monuvu means “person” and may also come from mansuba, meaning “river people.” The Obo-Manuvu formed through intermarriages among neighboring groups
-            and are related to the Manuvu of southern Bukidnon, northern Cotabato, and northwestern Davao, which is why their language is similar. They were also among
-            the first traders in the mountain areas of Davao. The Monuvu, a sub-tribe of the Bagobo, live in the highlands north of Tammuhan River and west of Davao
-            River. Their ancestral domains are mainly in Marilog and Baguio Districts of Davao City, including areas like Dalag Lumot, Salaysay, Marilog Proper, Malamba,
-            Suawan, Tamugan, Tambobong, Carmen, Tawantawan, Malagos, Gumalang, and parts of Arakan Valley. The Minonuvo No Boyo To Od Possopong-Ngoy is the highest
-            governing body of the Obu-Manuvu, where all decisions and policies come from. It is made up of leaders and elders of the entire ancestral domain. Their rules
-            follow pooviyan woy gontangan, meaning proper procedure and standards, which guide the Obu-Manuvu ancestral domain.
+          <h2 className="text-3xl font-bold mb-10">Ovu Manuvu</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Manuvu/Monuvu means “person” and may also come from mansuba, meaning “river people.” The Obo-Manuvu formed through intermarriages among neighboring
+            groups and are related to the Manuvu of southern Bukidnon, northern Cotabato, and northwestern Davao, which is why their language is similar. They were
+            also among the first traders in the mountain areas of Davao.
+          </p>
+          <p className="text-sm leading-relaxed mt-2 text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Monuvu, a sub-tribe of the Bagobo, live in the highlands north of Tammuhan River and west of Davao River. Their ancestral domains are mainly in
+            Marilog and Baguio Districts of Davao City, including areas like Dalag Lumot, Salaysay, Marilog Proper, Malamba, Suawan, Tamugan, Tambobong, Carmen,
+            Tawantawan, Malagos, Gumalang, and parts of Arakan Valley.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Minonuvo No Boyo To Od Possopong-Ngoy</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Minonuvo No Boyo To Od Possopong-Ngoy is the highest governing body of the Obu-Manuvu, where all decisions and policies come from. It is made up of
+            leaders and elders of the entire ancestral domain. Their rules follow pooviyan woy gontangan, meaning proper procedure and standards, which guide the
+            Obu-Manuvu ancestral domain.
           </p>
         </div>
       </section>
@@ -176,14 +184,22 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-sm leading-relaxed text-justify">
-            Obu-Manuvu women wear a colorful top with an ampit skirt and tabod, and adorn themselves with beads, earrings, necklace, bracelets, and anklets. Men wear a
-            binukad blazer with souwan molivutut and sinalapid belt, and may use a tanku headgear with horse hair to show leadership. The Obu-Manuvu enjoy and depend on
-            the natural resources given by Magbabaya, as their culture and way of life are deeply tied to the land. They are skilled farmers, planting various crops,
-            and also fish in the Tamugan and Davao Rivers. They practice hunting during Pongannop, often with a trained mohoruwag no tuyyang dog to catch sarong (deer)
-            and mohintownan no baboy (wild pig) and usa (wild deer). Sumaya is a ritual offering to God done to ask for help to end plagues and epidemic and to ensure a
-            good and bountiful harvest. It can also be performed before starting important acts, such as the crafting of this Book that narrates the life of the
-            indigenous peoples. It shows their faith and dependence on God during challenges and significant activities.
+          <h2 className="text-lg font-bold mb-2">Clothing</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Obu-Manuvu women wear a colorful top with an ampit skirt and tabod, and adorn themselves with beads, earrings, necklace, bracelets, and anklets. Men wear a
+            binukad blazer with souwan molivutut and sinalapid belt, and may use a tanku headgear with horse hair to show leadership.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Livelihood</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Obu-Manuvu enjoy and depend on the natural resources given by Magbabaya, as their culture and way of life are deeply tied to the land. They are skilled
+            farmers, planting various crops, and also fish in the Tamugan and Davao Rivers. They practice hunting during Pongannop, often with a trained mohoruwag no
+            tuyyang dog to catch sarong (deer) and mohintownan no baboy (wild pig) and usa (wild deer).
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Sumaya</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Sumaya is a ritual offering to God done to ask for help to end plagues and epidemic and to ensure a good and bountiful harvest. It can also be performed
+            before starting important acts, such as the crafting of this Book that narrates the life of the indigenous peoples. It shows their faith and dependence on
+            God during challenges and significant activities.
           </p>
         </div>
         <div
@@ -193,7 +209,7 @@ export default function Page1() {
           <Image
             src={ed16}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
+            className="rounded-lg shadow-lg object-cover h-[550px]"
             priority
           />
         </div>
@@ -212,20 +228,27 @@ export default function Page1() {
             <Image
               src={ed5}
               alt="11 Tribes of Davao City"
-              className="rounded-lg shadow-lg object-cover h-auto"
+              className="rounded-lg shadow-lg object-cover h-[550px]"
               priority
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-sm leading-relaxed text-justify text-black">
-              Panuvad is a ritual asking Magbabaya and the spirits for guidance, healing, and protection. A respected elder or healer performs it using chicken, tobacco,
-              betel nut, and pepper plant as offerings. The moon and constellations guide decisions on farming and marriage arrangements. Panuvad is done before and after
-              farming to ask permission from spirits and ensure a good harvest of crops like rice, corn, cassava, sweet potato, coffee, and abaca. The Allow Tu
-              Obu-Manuvu is a yearly thanksgiving celebration where the Obu-Manuvu show gratitude to Monama by gathering and sharing their bountiful harvest. The event
-              includes dances, instrument playing, and games as part of the festivities. Pokaa’t kollu/sunggod to kamanga is a January 1 festival honoring Kaya’g to
-              Pomuwa, where farm tools are displayed and included in the ritual. Music is the highlight, with women playing the Kagoo, and when they play while dancing,
-              it is called Soroy.
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Panuvad</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - Panuvad is a ritual asking Magbabaya and the spirits for guidance, healing, and protection. A respected elder or healer performs it using chicken,
+              tobacco, betel nut, and pepper plant as offerings. The moon and constellations guide decisions on farming and marriage arrangements. Panuvad is done
+              before and after farming to ask permission from spirits and ensure a good harvest of crops like rice, corn, cassava, sweet potato, coffee, and abaca.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Allow to Obu Manuvu</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Allow Tu Obu-Manuvu is a yearly thanksgiving celebration where the Obu-Manuvu show gratitude to Monama by gathering and sharing their bountiful
+              harvest. The event includes dances, instrument playing, and games as part of the festivities.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Pokaa’t Kollu/Sunggod to Kamanga</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - Pokaa’t kollu/sunggod to kamanga is a January 1 festival honoring Kaya’g to Pomuwa, where farm tools are displayed and included in the ritual. Music
+              is the highlight, with women playing the Kagoo, and when they play while dancing, it is called Soroy.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">

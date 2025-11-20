@@ -147,13 +147,14 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Maguindanaon</h2>
-          <p className="text-base leading-relaxed text-justify">
-            The Maguindanaon are a major Muslim ethnolinguistic group in Mindanao, primarily found along the Mindanao River basin in Maguindanao del Norte, Maguindanao
-            del Sur, Sultan Kudarat, and parts of Cotabato City. Their name comes from “Taw sa Maguindanao”, meaning “people of the floodplain,” reflecting their
-            traditional settlement along riverbanks and fertile plains. They are culturally and historically linked with other Moro groups, such as the Iranun and
-            Maranao, and have a rich history of agriculture, trade, and Islamic scholarship. They played a central role in establishing the Maguindanao Sultanate, which
-            governed large areas of central Mindanao prior to Spanish and American colonization.
+          <h2 className="text-3xl font-bold mb-10">Maguindanaon</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Maguindanaon are a major Muslim ethnolinguistic group in Mindanao, primarily found along the Mindanao River basin in Maguindanao del Norte, Maguindanao
+            del Sur, Sultan Kudarat, and parts of Cotabato City. Their name comes from “Taw sa Maguindanao”, meaning “people of the floodplain,” reflecting their traditional
+            settlement along riverbanks and fertile plains. They are culturally and historically linked with other Moro groups, such as the Iranun and Maranao, and have a
+            rich history of agriculture, trade, and Islamic scholarship. They played a central role in establishing the Maguindanao Sultanate, which governed large areas of
+            central Mindanao prior to Spanish and American colonization.
           </p>
         </div>
       </section>
@@ -164,14 +165,18 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-base leading-relaxed text-justify">
-            Maguindanaon society is traditionally organized under a Sultanate system, where the Sultan serves as the supreme political and religious authority. The
-            Sultan is supported by datu and panglima, who administer local governance and resolve conflicts within the community. Leadership and social order are guided
-            by a combination of adat (customary law) and Islamic principles, which regulate marriage, inheritance, and dispute settlement. Community peace is often
-            maintained through negotiation, mediation, and ceremonial feasts called kanduli. Traditional Maguindanaon clothing reflects social status and cultural
-            identity. Women wear colorful malong or tube skirts paired with embroidered badju blouses and a head covering called kombong. Men wear badju lapik, trousers
-            called kuput, and often a pis siyabit turban or cloth around the head. Decorative motifs, especially the okir patterns, are used in embroidery, textiles, and
-            woodcraft, symbolizing lineage, identity, and artistry.
+          <h2 className="text-lg font-bold mb-2">Governance</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Maguindanaon society is traditionally organized under a Sultanate system, where the Sultan serves as the supreme political and religious authority. The Sultan
+            is supported by datu and panglima, who administer local governance and resolve conflicts within the community. Leadership and social order are guided by a
+            combination of adat (customary law) and Islamic principles, which regulate marriage, inheritance, and dispute settlement. Community peace is often maintained
+            through negotiation, mediation, and ceremonial feasts called kanduli.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Clothing</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Traditional Maguindanaon clothing reflects social status and cultural identity. Women wear colorful malong or tube skirts paired with embroidered badju blouses
+            and a head covering called kombong. Men wear badju lapik, trousers called kuput, and often a pis siyabit turban or cloth around the head. Decorative motifs,
+            especially the okir patterns, are used in embroidery, textiles, and woodcraft, symbolizing lineage, identity, and artistry.
           </p>
         </div>
         <div
@@ -181,7 +186,7 @@ export default function Page1() {
           <Image
             src={ed8}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
+            className="rounded-lg shadow-lg object-cover h-[450px]"
             priority
           />
         </div>
@@ -205,15 +210,19 @@ export default function Page1() {
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-sm leading-relaxed text-justify text-black">
-              The Maguindanaon are primarily agriculturalists, cultivating rice, corn, and root crops along the fertile Mindanao River plains. They also engage in
-              fishing, weaving, trading, and handicrafts, using riverboats to transport goods to neighboring communities. Their economy historically combined
-              subsistence farming with market trade, allowing them to establish social and commercial networks throughout central Mindanao. The Maguindanaon are
-              predominantly Muslim, and their daily lives are guided by Islamic practices. They observe Sambayang (five daily prayers), Ramadan fasting, and perform
-              Islamic marriage and funeral rites. Religious leadership is provided by Imam and community elders who oversee both spiritual and social affairs.
-              Cultural rituals, such as pagkanduli, festive prayers, and offerings, continue to play an important role in maintaining community cohesion and honoring
-              their ancestors.
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Livelihood</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Maguindanaon are primarily agriculturalists, cultivating rice, corn, and root crops along the fertile Mindanao River plains. They also engage in fishing,
+              weaving, trading, and handicrafts, using riverboats to transport goods to neighboring communities. Their economy historically combined subsistence farming with
+              market trade, allowing them to establish social and commercial networks throughout central Mindanao.
+            </p>
+            <h2 className="text-lg font-bold mt-5    mb-2">Religion and Ritual Practices</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Maguindanaon are predominantly Muslim, and their daily lives are guided by Islamic practices. They observe Sambayang (five daily prayers), Ramadan fasting,
+              and perform Islamic marriage and funeral rites. Religious leadership is provided by Imam and community elders who oversee both spiritual and social affairs.
+              Cultural rituals, such as pagkanduli, festive prayers, and offerings, continue to play an important role in maintaining community cohesion and honoring their
+              ancestors.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">

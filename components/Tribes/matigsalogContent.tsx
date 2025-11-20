@@ -137,20 +137,23 @@ export default function Page1() {
           <Image
             src={ed5}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover h-auto"
+            className="rounded-lg shadow-lg object-cover h-[500px]"
             priority
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Matigsalug</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            The Matigsalug are the people along the Salug River, originally living in the Pantaron mountain ranges of central Mindanao.
-            They named rivers, creeks, mountains, and places after their ancestors. They are typically small in stature, dark brown in
-            complexion, and curly-haired. Today, around 50,000 Matigsalug live in the Salug Valley (Kitaotao and San Fernando, Bukidnon),
-            recognized as their ancestral domain. The Matigsalug family has a strong kinship with the father as the main decision-maker,
-            while the mother plays an important supportive role. The children are expected to respect and follow their parents. They used
-            to practice lapowan or arranged marriage, sometimes even from childhood, but this is now rarely practiced because the younger
-            generation values love and respect in relationships. The elders now accept these changes, showing cultural sensitivity between
+          <h2 className="text-3xl font-bold mb-10">Matigsalug</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Matigsalug are the people along the Salug River, originally living in the Pantaron mountain ranges of central Mindanao. They named rivers, creeks,
+            mountains, and places after their ancestors. They are typically small in stature, dark brown in complexion, and curly-haired. Today, around 50,000
+            Matigsalug live in the Salug Valley (Kitaotao and San Fernando, Bukidnon), recognized as their ancestral domain.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Marriage</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Matigsalug family has a strong kinship with the father as the main decision-maker, while the mother plays an important supportive role. The children
+            are expected to respect and follow their parents. They used to practice lapowan or arranged marriage, sometimes even from childhood, but this is now rarely
+            practiced because the younger generation values love and respect in relationships. The elders now accept these changes, showing cultural sensitivity between
             generations.
           </p>
         </div>
@@ -162,17 +165,23 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-sm leading-relaxed text-justify">
-            The Matigsalug are known for their distinct and elaborate traditional clothing. Women wear the malalab blouse, ampit skirt with a tabed,
-            and accessories like arang, arites, bali-eg, binukol, bulusu, and bobbat. Men wear the binukad with bandera/salu shorts tied with sinalapid,
-            and a tangkulo headgear showing leadership. Their binenus beaded sling bag completes their cultural identity. Matigsalug men wear short,
-            tight-fitting knee-length pants and beaded turbans with goat/horse hair. Matigsalug women wear mid-length blouses, skirts, and bead strands
-            on wooden ear disks. Their clothing is colorfully embroidered with geometric patterns. The Matigsalug rely on agriculture as their primary
-            livelihood, planting corn, sweet potato, rice, banana, cassava, and vegetables. Their fertile soil and good climate make crops productive,
-            and these products are sold fresh along the Bukidnon-Davao National Road at affordable prices. The Matigsalug rely mainly on farming as their
-            livelihood, planting rice, corn, camote, cassava, banana, and fruit trees, with baloloy as their best rice variety. Men prepare seedlings using
-            a todak or orak, and grains are pounded through binayo using traditional tools. They also do pangayam or hunting at night with dogs to catch
-            deer, wild boar, snake, monkey, monitor lizard, and civet cat.
+          <h2 className="text-lg font-bold mb-2">Clothing</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Matigsalug are known for their distinct and elaborate traditional clothing. Women wear the malalab blouse, ampit skirt with a tabed, and accessories like
+            arang, arites, bali-eg, binukol, bulusu, and bobbat. Men wear the binukad with bandera/salu shorts tied with sinalapid, and a tangkulo headgear showing
+            leadership. Their binenus beaded sling bag completes their cultural identity. Matigsalug men wear short, tight-fitting knee-length pants and beaded turbans
+            with goat/horse hair. Matigsalug women wear mid-length blouses, skirts, and bead strands on wooden ear disks. Their clothing is colorfully embroidered with
+            geometric patterns.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Livelihood</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Matigsalug rely on agriculture as their primary livelihood, planting corn, sweet potato, rice, banana, cassava, and vegetables. Their fertile soil and
+            good climate make crops productive, and these products are sold fresh along the Bukidnon-Davao National Road at affordable prices.
+          </p>
+          <p className="text-sm leading-relaxed mt-2 text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Matigsalug rely mainly on farming as their livelihood, planting rice, corn, camote, cassava, banana, and fruit trees, with baloloy as their best rice
+            variety. Men prepare seedlings using a todak or orak, and grains are pounded through binayo using traditional tools. They also do pangayam or hunting at night
+            with dogs to catch deer, wild boar, snake, monkey, monitor lizard, and civet cat.
           </p>
         </div>
         <div
@@ -182,7 +191,7 @@ export default function Page1() {
           <Image
             src={ed6}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
+            className="rounded-lg shadow-lg object-cover h-[600px]"
             priority
           />
         </div>
@@ -201,28 +210,42 @@ export default function Page1() {
             <Image
               src={ed2}
               alt="11 Tribes of Davao City"
-              className="rounded-lg shadow-lg object-cover h-auto"
+              className="rounded-lg shadow-lg object-cover h-[1000px]"
               priority
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-sm leading-relaxed text-justify text-black">
-              Their traditional lifestyle is not preserved but still evident in cultural and artistic expression. Kuglung is a two-stringed guitar, and Bantula
-              is a bamboo instrument used to call community attention, pounded to produce a loud sound depending on the caller’s intention. During panubad, the
-              presence of good spirits is summoned though the ritual called bang-kakawan. It is done by wrapping a huge log with wood stems. This creates a music
-              which draws the people’s attention to panubad. Kalibulungan means celebration in Matigsalug. During the Kalibulungan Festival, the dalupo or community
-              showcase their rich heritage and give honor to their ancestors. Celebrated every October. Activities include itolан to kabubuyahon (tracing of genealogy),
-              panguman (transfer of stories and values), sayew’t keglung wey salurey, uulahingan, tungkuk te ulo, plus indigenous games, and displays and selling of
-              traditional arts and crafts. The Matigsalug believes that Magbabaya is their ultimate protector. They invoke Magbabaya’s divine intervention through
-              the Panubad or panubadtubad ritual, the highest expression of faith. The babaylan, datuen, or talabawian leads the ritual using panubaran, an altar
-              decorated with white, black and red cloths (hinabel ne maangkag, me itum, malalab). Offerings include chicken, tobacco, betel nut, pepper plant, and
-              unted te selepi or coins to keep spirits away. Panubad is also done to appease the spirits living in the waters, especially when someone gets sick
-              after visiting a river. Sungud or Sungged Te Kamanga is a Matigsalug ritual performed every 2nd day of December to mark the start of the planting season
-              where they offer a white chicken and sprinkle its blood on the plants to ask the spirits to protect the land, environment, and crops, expressing gratitude
-              and requesting guidance, care, and a fruitful harvest; after the planting season they perform Pasalamat te Mamama as a thanksgiving ceremony for the
-              harvest, and they also observe Kalag-kalag to honor the spirits or givers of the harvest, showing the Matigsalug’s deep respect for nature, the land,
-              the forest, and the spirits that protect them.
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Music</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - Their traditional lifestyle is not preserved but still evident in cultural and artistic expression. Kuglung is a two-stringed guitar, and Bantula is a
+              bamboo instrument used to call community attention, pounded to produce a loud sound depending on the caller’s intention.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Bangkakawan</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - During panubad, the presence of good spirits is summoned though the ritual called bang-kakawan. It is done by wrapping a huge log with wood stems. This
+              creates a music which draws the people’s attention to panubad.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Kalibunglungan Festival</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - Kalibulungan means celebration in Matigsalug. During the Kalibulungan Festival, the dalupo or community showcase their rich heritage and give honor to
+              their ancestors. Celebrated every October. Activities include itolан to kabubuyahon (tracing of genealogy), panguman (transfer of stories and values),
+              sayew’t keglung wey salurey, uulahingan, tungkuk te ulo, plus indigenous games, and displays and selling of traditional arts and crafts.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Panubad</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Matigsalug believes that Magbabaya is their ultimate protector. They invoke Magbabaya’s divine intervention through the Panubad or panubadtubad ritual,
+              the highest expression of faith. The babaylan, datuen, or talabawian leads the ritual using panubaran, an altar decorated with white, black and red cloths
+              (hinabel ne maangkag, me itum, malalab). Offerings include chicken, tobacco, betel nut, pepper plant, and unted te selepi or coins to keep spirits away.
+              Panubad is also done to appease the spirits living in the waters, especially when someone gets sick after visiting a river.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Sungud or Sungged Te Kamanga</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - Sungud or Sungged Te Kamanga is a Matigsalug ritual performed every 2nd day of December to mark the start of the planting season where they offer a white 
+              chicken and sprinkle its blood on the plants to ask the spirits to protect the land, environment, and crops, expressing gratitude and requesting guidance, 
+              care, and a fruitful harvest; after the planting season they perform Pasalamat te Mamama as a thanksgiving ceremony for the harvest, and they also observe 
+              Kalag-kalag to honor the spirits or givers of the harvest, showing the Matigsalug’s deep respect for nature, the land, the forest, and the spirits that 
+              protect them.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">

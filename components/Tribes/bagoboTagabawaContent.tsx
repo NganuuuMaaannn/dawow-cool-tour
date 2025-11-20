@@ -138,19 +138,27 @@ export default function Page1() {
           <Image
             src={ed9}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover h-auto"
+            className="rounded-lg shadow-lg object-cover h-[600px]"
             priority
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Bagobo - Tagabawa</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            The Bagobo-Tagabawa are the first inhabitants of the southern and eastern slopes of Mt. Apo, committed to protecting the mountain’s rich biodiversity.
+          <h2 className="text-3xl font-bold mb-10">Bagobo - Tagabawa</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Bagobo-Tagabawa are the first inhabitants of the southern and eastern slopes of Mt. Apo, committed to protecting the mountain’s rich biodiversity.
             Their ancestral domain stretches from Lipadas River (Davao City) to Saguing River (Makilala), including areas in Toril, Sta. Cruz, Digos, Bansalan,
-            Kidapawan, and nearby upland and coastal areas. The Bagobo-Tagabawa family is patriarchal in nature with the father as the head. It also includes the
-            other relatives who wish to live with them. The Bagobo-Tagabawa family observes close family ties and a closer relationship to Manama (God). For the
-            Bagobo-Tagabawa, marriage is a community responsibility, not just a family matter. Elders from both sides, called togal, meet to decide the marriage and
-            agree on the sablag or bride price, which may include horses, carabaos, and a kamag’ge (gold necklace).
+            Kidapawan, and nearby upland and coastal areas.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Family</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Bagobo-Tagabawa family is patriarchal in nature with the father as the head. It also includes the other relatives who wish to live with them. The
+            Bagobo-Tagabawa family observes close family ties and a closer relationship to Manama (God).
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Marriage</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - For the Bagobo-Tagabawa, marriage is a community responsibility, not just a family matter. Elders from both sides, called togal, meet to decide the
+            marriage and agree on the sablag or bride price, which may include horses, carabaos, and a kamag’ge (gold necklace).
           </p>
         </div>
       </section>
@@ -161,14 +169,22 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-sm leading-relaxed text-justify">
-            The Bagobo-Tagabawa serve as Bantay Bukid or forest guards to protect their ancestral land, especially the home of the Philippine Eagle. Their knowledge
-            and strength make them effective stewards of Mt. Apo, helping keep the air and water clean for their people. Farming supports the daily needs of the
-            Bagobo-Tagabawa. They grow rice, corn, banana, coffee, cacao, vegetables, and fruits like durian, marang, lanzones, rambutan, and mangosteen in the rich
-            volcanic soil of Mt. Apo. They plant rice with corn, and sesame, cassava, and other root crops around the fields. To protect health and the environment,
-            they practice organic farming, especially in Brgy. Sibulan, which is declared an organic zone. Bagobo-Tagabawa is very spiritual. As such, most activities
-            are coupled with rituals and paying attention to signs in the environment. Panubadtubad is one of the rituals performed by a Taranitoan (ritualist) seeking
-            guidance from Manama (God) when an activity is undertaken in the community. A white-feathered chicken is often slain during the ritual.
+          <h2 className="text-lg font-bold mb-2">Bantay Bukid</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Bagobo-Tagabawa serve as Bantay Bukid or forest guards to protect their ancestral land, especially the home of the Philippine Eagle. Their knowledge
+            and strength make them effective stewards of Mt. Apo, helping keep the air and water clean for their people.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Livelihood</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Farming supports the daily needs of the Bagobo-Tagabawa. They grow rice, corn, banana, coffee, cacao, vegetables, and fruits like durian, marang, lanzones,
+            rambutan, and mangosteen in the rich volcanic soil of Mt. Apo. They plant rice with corn, and sesame, cassava, and other root crops around the fields. To protect
+            health and the environment, they practice organic farming, especially in Brgy. Sibulan, which is declared an organic zone.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Panubadtubad</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Bagobo-Tagabawa is very spiritual. As such, most activities are coupled with rituals and paying attention to signs in the environment. Panubadtubad is one of the
+            rituals performed by a Taranitoan (ritualist) seeking guidance from Manama (God) when an activity is undertaken in the community. A white-feathered chicken is often
+            slain during the ritual.
           </p>
         </div>
         <div
@@ -178,7 +194,7 @@ export default function Page1() {
           <Image
             src={ed4}
             alt="11 Tribes of Davao City"
-            className="rounded-lg shadow-lg object-cover w-full max-w-[600px] h-auto"
+            className="rounded-lg shadow-lg object-cover h-[600px]"
             priority
           />
         </div>
@@ -197,21 +213,29 @@ export default function Page1() {
             <Image
               src={ed1}
               alt="11 Tribes of Davao City"
-              className="rounded-lg shadow-lg object-cover h-auto"
+              className="rounded-lg shadow-lg object-cover h-[600px]"
               priority
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-sm leading-relaxed text-justify text-black">
-              It means the flow of the water, symbolizing continuing life through the grace of Manama. Subuwan/Sibulan signifies the water where ancestors ended conflicts
-              with other IP groups. The festival showcases authentic Bagobo-Tagabawa cultures, with each sitio having a booth for local products, and the youths lead in
-              educating others about Bagobo-Tagabawa culture and arts. In Brgy. Kapatagan in Digos City, Davao del Sur, the Dorong Festival is held to give honor or
-              dorong to Manama for blessing Bagobo-Tagabawa leaders with wisdom and heart to serve unconditionally. The Dorong Festival is open to other communities in
-              Davao del Sur as a gesture of strengthening peace and unity. Dorong is now an attraction in Kapatagan every September. The Sin’abban Festival celebrates
-              the oneness of the Bagobo-Tagabawa and gives the ancestors the opportunity to solidify unity with neighboring communities. Held in Sta. Cruz, Davao del Sur,
-              and Bagobo-Tagabawa are the leading initiators of the festival. The highlights include indigenous games, cuisines, arts and crafts, the playing of musical
-              instruments, and community dancing.
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Arrus Ka Subuwan</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - It means the flow of the water, symbolizing continuing life through the grace of Manama. Subuwan/Sibulan signifies the water where ancestors ended
+              conflicts with other IP groups. The festival showcases authentic Bagobo-Tagabawa cultures, with each sitio having a booth for local products, and the
+              youths lead in educating others about Bagobo-Tagabawa culture and arts.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Dorong Festival</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - In Brgy. Kapatagan in Digos City, Davao del Sur, the Dorong Festival is held to give honor or dorong to Manama for blessing Bagobo-Tagabawa leaders
+              with wisdom and heart to serve unconditionally. The Dorong Festival is open to other communities in Davao del Sur as a gesture of strengthening peace
+              and unity. Dorong is now an attraction in Kapatagan every September.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Sin’abbadan Festival</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Sin’abban Festival celebrates the oneness of the Bagobo-Tagabawa and gives the ancestors the opportunity to solidify unity with neighboring
+              communities. Held in Sta. Cruz, Davao del Sur, and Bagobo-Tagabawa are the leading initiators of the festival. The highlights include indigenous games,
+              cuisines, arts and crafts, the playing of musical instruments, and community dancing.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">
