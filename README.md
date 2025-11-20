@@ -1,16 +1,17 @@
-# Dawow Cool Tour
+# Love Davao
 
-A project of HCDC 4th year Tourism.
+A web project created by HCDC 4th-year Tourism students showcasing Davao City’s culture, attractions, and the 11 Indigenous Tribes of Davao.
 
-![DawowCoolTour](https://github.com/user-attachments/assets/ef8f86f6-7b9b-42da-b25b-2dd85429d31c)
+![LoveDavao](https://github.com/user-attachments/assets/ef8f86f6-7b9b-42da-b25b-2dd85429d31c)
 ---
 
 ## Features
 
-* **Welcome Page** for welcoming users
-* **Home, About Indigenous Communities, and Visit Us!** for users to navigate with
-* **11 tribes icon** about the 11 tribes
-* **User-Friendly UI** it can view using mobile phones
+* **Welcome Page** to greet users upon entry
+* **Carousel Page** highlighting key sections
+* **Kadayawan E-Village, Experience, Davao!, Connect, Davao!, and About Love, Davao!** pages for easy navigation
+* **11 tribes icon** highlighting each Indigenous group
+* **User-Friendly UI** designed for accessibility on all devices
 
 ---
 
@@ -19,20 +20,20 @@ A project of HCDC 4th year Tourism.
 | Tech         | Description                          |
 | ------------ | ------------------------------------ |
 | NextJS       | Frontend framework                   |
-| Vercel       | Building & Deploying                |
+| Vercel       | Hosting & deployment                 |
 
 ---
 
 ## Live Demo Link
 
-* 🔗 **Live Demo**: [dawow-cool-tour.vercel.app](https://dawow-cool-tour.vercel.app)
+**Live Demo**: [love-davao.vercel.app](https://love-davao.vercel.app)
 
 ---
 
 ## License
 
 ```
-This project was developed as part of a HCDC 4th-year Tourism student project.  
-All rights reserved to the client (Tourism Dept, Holy Cross of Davao College, 2025).  
-Not for commercial redistribution without permission.
+This project was produced as a student requirement under the HCDC 4th-year Tourism program.  
+It is intended for academic and client presentation purposes only.  
+Unauthorized commercial use, modification, or redistribution is not permitted.
 ```
