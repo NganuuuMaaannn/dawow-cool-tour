@@ -145,13 +145,17 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Bagobo - Klata</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            Klata means “vein” or “life,” from olat meaning “middle.” They were the original inhabitants of the west part of the Davao River’s mouth, a place
+          <h2 className="text-3xl font-bold mb-10">Bagobo - Klata</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Klata means “vein” or “life,” from olat meaning “middle.” They were the original inhabitants of the west part of the Davao River’s mouth, a place
             fit for trading. They also use klat-ang (bamboo stairs with one post). Removing the stairs means no one is home or for safety at night. The klat-ang
             is important to their identity, so they call themselves “wielders of life stairs.” Their territory is north of Davao River, south of Lipadas River,
             stretching to the boundary of North Cotabato and Davao City. It includes Manuel Guianga, Sirib, Tamayong, Tugbok, and Calinan Districts in Davao City.
-            Appu Rita is a cultural master naw-woh weaver who helped preserve Bagobo-Klata arts, weaving thousands of meters of fabric for special occasions. Men
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Hand of History</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Appu Rita is a cultural master naw-woh weaver who helped preserve Bagobo-Klata arts, weaving thousands of meters of fabric for special occasions. Men
             wear saluwah ngo naw-woh and luk-ko lae, while women wear tawis ngo naw-woh and lokolebo, with bak kus, simple earrings, shell bracelet, and salole
             head décor.
           </p>
@@ -164,14 +168,22 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-sm leading-relaxed text-justify">
-            These ancestral possessions are priceless and made of tambaga, a mineral second to gold. The maog is a bell used by the talatubad during child baptism,
+          <h2 className="text-lg font-bold mb-2">Priceless Treasures</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - These ancestral possessions are priceless and made of tambaga, a mineral second to gold. The maog is a bell used by the talatubad during child baptism,
             dipped in water then wiped on the child’s forehead. The low-wok is a mortar and pestle for preparing betel nuts, while the lomma is a war weapon, and the
-            kunggi is a tool for cutting betel nuts. Their main livelihood is farming, growing crops like sweet potato, cassava, corn, upland rice, and banana, and now
-            prioritizing durian, cacao, and coffee which made Davao City known internationally. They practice organic farming and also do fishing and hunting as part
-            of their living and pastime. The marriage ritual starts with asking the gwata for consent. The tribal priest (talakasa/talatab’bad) prepares the tabba, where
-            the bride and groom stand face-to-face. Offerings are placed in the buwis, followed by a prayer for blessing and protection. The priest addresses the god of
-            the baliti tree and the spirits in rocks and stones to avoid harming the couple, especially the groom (called kollapu, meaning stranger).
+            kunggi is a tool for cutting betel nuts.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Economic Resources</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Their main livelihood is farming, growing crops like sweet potato, cassava, corn, upland rice, and banana, and now prioritizing durian, cacao, and coffee
+            which made Davao City known internationally. They practice organic farming and also do fishing and hunting as part of their living and pastime.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Marriage Ritual</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The marriage ritual starts with asking the gwata for consent. The tribal priest (talakasa/talatab’bad) prepares the tabba, where the bride and groom stand
+            face-to-face. Offerings are placed in the buwis, followed by a prayer for blessing and protection. The priest addresses the god of the baliti tree and the
+            spirits in rocks and stones to avoid harming the couple, especially the groom (called kollapu, meaning stranger).
           </p>
         </div>
         <div
@@ -205,13 +217,17 @@ export default function Page1() {
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-sm leading-relaxed text-justify text-black">
-              Maog is a bell placed in the middle finger by the talatubad (ritualist) doing the baptism of a child. The bell is being dipped into the water that is on
-              a marble plate then it will be wiped on the forehead of the child. The Agong called lom-ming is the star of festivals. The tagonggo is a set of lom-ming
-              arranged according to tones. The Menum Festival is done annually and lasts nine days to two weeks with drinking, dancing, singing, and lom-ming playing.
-              Festivals are held after harvest with family heads, male players, and maiden dancers attending. The girls wear their best attire to show gratitude to
-              the god of harvest and serve food and wine.
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Maog Angnga</h2>
+            <p className="text-sm leading-relaxed text-justif">
+              - Maog is a bell placed in the middle finger by the talatubad (ritualist) doing the baptism of a child. The bell is being dipped into the water that is on
+              a marble plate then it will be wiped on the forehead of the child.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Menum Festival</h2>
+            <p className="text-sm leading-relaxed text-justify">
+              - The Agong called lom-ming is the star of festivals. The tagonggo is a set of lom-ming arranged according to tones. The Menum Festival is done annually and
+              lasts nine days to two weeks with drinking, dancing, singing, and lom-ming playing. Festivals are held after harvest with family heads, male players, and
+              maiden dancers attending. The girls wear their best attire to show gratitude to the god of harvest and serve food and wine.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">

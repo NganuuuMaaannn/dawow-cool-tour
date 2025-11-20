@@ -144,9 +144,10 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Maranao</h2>
-          <p className="text-base leading-relaxed text-justify">
-            The Maranao, meaning “People of the Lake,” derive their name from their home around Lake Lanao (also called Ranaw or Danaw) in the Bukidnon–Lanao plateau in
+          <h2 className="text-3xl font-bold mb-10">Maranao</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Maranao, meaning “People of the Lake,” derive their name from their home around Lake Lanao (also called Ranaw or Danaw) in the Bukidnon–Lanao plateau in
             Mindanao. They form one of the larger Muslim ethnolinguistic groups in the Philippines. Their land lies at an elevation of about 2,200 feet above sea level.
             Family / Social Structure Maranao society features royal houses (torogan) belonging to the leading households, which also serve political functions.
           </p>
@@ -159,9 +160,14 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-base leading-relaxed text-justify">
-            Community life is centred around clusters built about a mosque and a torogan (the large house of the elite). The torogan also functions as a meeting-place and
-            symbol of status and leadership in the community. Maranao textiles are famous for their ornate designs and vivid colours, reflecting wearer status. The tube
+          <h2 className="text-lg font-bold mb-2">Governance</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Community life is centred around clusters built about a mosque and a torogan (the large house of the elite). The torogan also functions as a meeting-place and
+            symbol of status and leadership in the community.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Clothing</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Maranao textiles are famous for their ornate designs and vivid colours, reflecting wearer status. The tube
             skirt known as the malong is a versatile garment used for clothing, bedding or wrapping, and is a hallmark of Maranao attire.
           </p>
         </div>
@@ -196,13 +202,18 @@ export default function Page1() {
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-base leading-relaxed text-justify text-black">
-              Agriculture is the basic mode of food production: wet-rice cultivation in flood plains, dry-rice in uplands, plus corn, sweet potato, coffee, cassava
-              and peanuts. Fishing in Lake Lanao used to be important though it has declined. Trade, artisan crafts, and market linkages extend their economy beyond
-              the local area. The Maranao are renowned for wood-, metal- and textile-craftsmanship. Their architecture (especially the torogan) is among the most
-              remarkable in Philippine vernacular design. Their decorative motifs—such as the sarimanok (legendary bird) and naga (dragon/serpent)—belong to the okir
-              system, a highly systematised design grammar.
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Livelihood</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - Agriculture is the basic mode of food production: wet-rice cultivation in flood plains, dry-rice in uplands, plus corn, sweet potato, coffee, cassava and
+              peanuts. Fishing in Lake Lanao used to be important though it has declined. Trade, artisan crafts, and market linkages extend their economy beyond the local
+              area.
+            </p>
+            <h2 className="text-lg font-bold mb-2">Arts and Material Culture</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Maranao are renowned for wood-, metal- and textile-craftsmanship. Their architecture (especially the torogan) is among the most remarkable in Philippine 
+              vernacular design. Their decorative motifs—such as the sarimanok (legendary bird) and naga (dragon/serpent)—belong to the okir system, a highly systematised 
+              design grammar.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">

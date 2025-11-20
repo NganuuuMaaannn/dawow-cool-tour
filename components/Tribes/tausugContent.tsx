@@ -147,9 +147,10 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Tausug</h2>
-          <p className="text-base leading-relaxed text-justify">
-            The Tausug, whose name means “People of the Current” (from tau meaning “people” and sug meaning “sea current”), are one of the major Muslim ethnolinguistic
+          <h2 className="text-3xl font-bold mb-10">Tausug</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Tausug, whose name means “People of the Current” (from tau meaning “people” and sug meaning “sea current”), are one of the major Muslim ethnolinguistic
             groups in the Sulu Archipelago, particularly in Sulu, Basilan, Tawi-Tawi, and parts of Zamboanga Peninsula. They are historically known as warriors, sailors,
             and traders, playing a central role in the political and cultural development of the Sulu Sultanate, which was one of the most powerful Islamic kingdoms in
             Southeast Asia. Their language, Sinug, is spoken widely in Sulu and serves as a lingua franca in many Muslim communities in Mindanao.
@@ -163,8 +164,9 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
-          <p className="text-base leading-relaxed text-justify">
-            Tausug traditional governance was shaped by the Sulu Sultanate, which served as the highest political and religious authority. At the top of the hierarchy
+          <h2 className="text-lg font-bold mb-2">Governance</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Tausug traditional governance was shaped by the Sulu Sultanate, which served as the highest political and religious authority. At the top of the hierarchy
             is the Sultan, who represents both political leadership and spiritual legitimacy. Supporting the Sultan are the Datu, who govern specific territories and
             clans. Within the communities, disputes are resolved through the values of maratabat (honor) and bud (custom), which ensure that respect, dignity, and
             family reputation are maintained. Today, Tausug communities still recognize religious leaders such as the imam and khalifa, who guide Islamic practices and
@@ -202,19 +204,27 @@ export default function Page1() {
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-sm leading-relaxed text-justify text-black">
-              Traditional Tausug clothing is elegant and vibrant, symbolizing beauty, nobility, and cultural identity. Women wear the sablay or badju (embroidered blouse)
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Clothing</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - Traditional Tausug clothing is elegant and vibrant, symbolizing beauty, nobility, and cultural identity. Women wear the sablay or badju (embroidered blouse)
               paired with a patadyong or habbul tiyahian (handwoven wrap skirt), often accessorized with jewelry and a hiḍjut (head covering). Men typically wear the badju
-              lapi, a fitted long-sleeved shirt with colorful embroidery, paired with sawal (trousers), and a pis siyabit, which is a handwoven square cloth worn around
-              the head or shoulder. Tausug textiles often feature intricate geometric patterns symbolizing lineage, bravery, and social class. The Tausug economy traditionally
-              revolves around fishing, sea trade, pearl diving, coconut farming, and handicrafts. Because they live in coastal and island environments, the sea plays a
-              central role in their way of life. They are skilled navigators and fishermen, traveling between islands for trade and fishing. Tausug communities are also known
-              for crafting barong and kris, traditional bladed weapons that represent honor and warrior identity. Many Tausug also engage in weaving, mat making, and producing
-              cultural textiles and garments. The Tausug are predominantly Muslim, and Islam influences their values, social behavior, and communal traditions. They observe
-              Sambayang (five daily prayers), fasting during Ramadan, and Islamic marriage and burial rites. Religious observances are guided by the imam, while spiritual leaders
-              and elders ensure that customs and Islamic teachings are maintained. Cultural practices such as pagkanduli (thanksgiving feast) and pagduwaa (prayer ritual)
-              demonstrate the blending of Islamic devotion and Tausug cultural heritage.
+              lapi, a fitted long-sleeved shirt with colorful embroidery, paired with sawal (trousers), and a pis siyabit, which is a handwoven square cloth worn around the
+              head or shoulder. Tausug textiles often feature intricate geometric patterns symbolizing lineage, bravery, and social class.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Livelihood</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Tausug economy traditionally revolves around fishing, sea trade, pearl diving, coconut farming, and handicrafts. Because they live in coastal and island
+              environments, the sea plays a central role in their way of life. They are skilled navigators and fishermen, traveling between islands for trade and fishing.
+              Tausug communities are also known for crafting barong and kris, traditional bladed weapons that represent honor and warrior identity. Many Tausug also engage
+              in weaving, mat making, and producing cultural textiles and garments.
+            </p>
+            <h2 className="text-lg font-bold mt-5 mb-2">Religion and Ritual Practices</h2>
+            <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+              - The Tausug are predominantly Muslim, and Islam influences their values, social behavior, and communal traditions. They observe Sambayang (five daily prayers),
+              fasting during Ramadan, and Islamic marriage and burial rites. Religious observances are guided by the imam, while spiritual leaders and elders ensure that
+              customs and Islamic teachings are maintained. Cultural practices such as pagkanduli (thanksgiving feast) and pagduwaa (prayer ritual) demonstrate the blending
+              of Islamic devotion and Tausug cultural heritage.
             </p>
 
             <div className="bg-bgLogin rounded-md mt-3">
