@@ -26,7 +26,7 @@ A web project created by HCDC 4th-year Tourism students showcasing Davao City’
 
 ## Live Demo Link
 
-**Live Demo**: [love-davao.vercel.app](https://love-davao.vercel.app)
+* **Live Demo**: [love-davao.vercel.app](https://love-davao.vercel.app)
 
 ---
 
