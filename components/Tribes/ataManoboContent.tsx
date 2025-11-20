@@ -151,15 +151,23 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-4">Ata Manobo</h2>
-          <p className="text-sm leading-relaxed text-justify">
-            The Ata lived upland along the headwaters of rivers and identified themselves by their place of origin (matig). They were farmers
-            and hunter-gatherers. During Spanish colonization, religion was imposed, their baylan were detained, and they moved to higher grounds
-            to defend themselves. The Ata family includes the father (amoy), mother (inoy), and their children (mgo anak). The father is the head,
-            the mother is the support and strength of the home, and the children help both in household and livelihood activities. Ibabasuk is
-            the expert in mab-basuk (agriculture) and reads the stars for a successful farming cycle. Neighbors help in the farm through pongakat
-            / polusong. Before fishing, they offer tobacco, coins, and mamoon (betel nut) to water spirits gamow-gamow and alimugkat for an abundant
-            catch. Traditional fishing methods: duruhong, ooti, panikop, susunob, panung-ow, bobogkoy, wowalag, pamanuwit, durulis.
+          <h2 className="text-3xl font-bold mb-10">Ata Manobo</h2>
+          <h2 className="text-lg font-bold mb-2">Profile</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Ata lived upland along the headwaters of rivers and identified themselves by their place of origin (matig). They were farmers and
+            hunter-gatherers. During Spanish colonization, religion was imposed, their baylan were detained, and they moved to higher grounds to defend
+            themselves.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Family</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - The Ata family includes the father (amoy), mother (inoy), and their children (mgo anak). The father is the head, the mother is the support
+            and strength of the home, and the children help both in household and livelihood activities.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Livelihood</h2>
+          <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
+            - Ibabasuk is the expert in mab-basuk (agriculture) and reads the stars for a successful farming cycle. Neighbors help in the farm through pongakat
+            / polusong. Before fishing, they offer tobacco, coins, and mamoon (betel nut) to water spirits gamow-gamow and alimugkat for an abundant catch. Traditional
+            fishing methods: duruhong, ooti, panikop, susunob, panung-ow, bobogkoy, wowalag, pamanuwit, durulis.
           </p>
         </div>
       </section>
@@ -170,15 +178,22 @@ export default function Page1() {
           }`}
       >
         <div className="md:w-1/2 text-black order-2 md:order-1">
+          <h2 className="text-lg font-bold mb-2">Tahakan and Liyang</h2>
           <p className="text-sm leading-relaxed text-justify">
-            The Ata women augment the family income by weaving. With their skillful hands, the sturdy bagtok or wild bamboo is crafted to produce
-            the short takan and the longer liyang or storage for farm produce. The Ata are known for their strong faith in Manama, the supreme being,
-            and the spirits who continuously guide them. Their ancestors and elders teach the community to obey Manama’s rules and to respect the
-            guidance of the elders. They communicate with Manama through the panubad, a sacred practice performed with deep respect, faith, and
-            devotion, often done before sunset and carried out in several possible ways. The Ata are known for their exceptional faith. They believe
-            that Manama, the supreme being, and the spirits give them guidance. The ancestors and elders teach the community to heed the elders and
-            obey the rules of Manama. They communicate with Manama through the panubad, a sacred practice recited with great faith and devotion and
-            done in several ways.
+            The Ata women augment the family income by weaving. With their skillful hands, the sturdy bagtok or wild bamboo is crafted to produce the short takan and the
+            longer liyang or storage for farm produce.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Panubad</h2>
+          <p className="text-sm leading-relaxed text-justify">
+            The Ata are known for their strong faith in Manama, the supreme being, and the spirits who continuously guide them. Their ancestors and elders teach the
+            community to obey Manama’s rules and to respect the guidance of the elders. They communicate with Manama through the panubad, a sacred practice performed with
+            deep respect, faith, and devotion, often done before sunset and carried out in several possible ways.
+          </p>
+          <h2 className="text-lg font-bold mt-5 mb-2">Kalibungan Festival</h2>
+          <p className="text-sm leading-relaxed text-justify">
+            The Ata are known for their exceptional faith. They believe that Manama, the supreme being, and the spirits give them guidance. The ancestors and elders teach
+            the community to heed the elders and obey the rules of Manama. They communicate with Manama through the panubad, a sacred practice recited with great faith
+            and devotion and done in several ways.
           </p>
         </div>
         <div
@@ -213,8 +228,9 @@ export default function Page1() {
             />
           </div>
 
-          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2">
-            <p className="text-sm leading-relaxed text-justify text-black">
+          <div className="md:w-1/2 order-2 md:order-2 flex flex-col mt-5 gap-2 text-black">
+            <h2 className="text-lg font-bold mb-2">Sunggod to Kamanga</h2>
+            <p className="text-sm leading-relaxed text-justify">
               The Ibabasuk is the Ata expert in agriculture. He uses the stars and celestial signs like Pandorawa and Balatik (seen in January) to determine the
               start of farming. Before planting, they perform the ritual Sunggud to Kamanga to ask permission from the mountain and forest spirits. They offer a
               pig, a white chicken, and prepare cooked rice in a nihu. Farming tools are placed in the mixture and prayed over by the Tumanuron (traditional priest).
