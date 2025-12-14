@@ -21,7 +21,7 @@ export default function HomePage() {
   };
 
   const tribes = [
-    { name: "Ata Manobo", img: "/images/AtaManobo.png", link: "/tribes/ataManobo" },
+    { name: "ATA", img: "/images/AtaManobo.png", link: "/tribes/ataManobo" },
     { name: "Bagobo - Klata", img: "/images/bagobo-klata.png", link: "/tribes/bagoboKlata" },
     { name: "Bagobo - Tagabawa", img: "/images/bagobo-tagabawa.png", link: "/tribes/bagoboTagabawa" },
     { name: "Matigsalug", img: "/images/matigsalog.png", link: "/tribes/matigsalog" },

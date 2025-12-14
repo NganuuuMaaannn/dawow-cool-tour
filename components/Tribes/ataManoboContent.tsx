@@ -151,7 +151,7 @@ export default function Page1() {
           />
         </div>
         <div className="md:w-1/2 text-black order-2">
-          <h2 className="text-3xl font-bold mb-10">Ata Manobo</h2>
+          <h2 className="text-3xl font-bold mb-10">ATA</h2>
           <h2 className="text-lg font-bold mb-2">Profile</h2>
           <p className="text-sm leading-relaxed text-justify ml-0 sm:ml-0 lg:ml-5">
             - The Ata lived upland along the headwaters of rivers and identified themselves by their place of origin (matig). They were farmers and
