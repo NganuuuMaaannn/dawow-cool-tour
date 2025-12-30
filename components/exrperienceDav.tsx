@@ -27,7 +27,7 @@ export default function ExperienceDavao() {
 
   return (
     <main
-      className={`relative flex flex-col lg:flex-row w-full min-h-screen overflow-hidden transition-all duration-700 ease-out ${
+      className={`relative flex flex-col lg:flex-row w-full min-h-screen overflow-hidden transition-all duration-700 ease-out cursor-pointer ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
